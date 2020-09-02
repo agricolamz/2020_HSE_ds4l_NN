@@ -1,0 +1,20 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+# Data manipulation: `dplyr` {#dplyr}
+
+First, load the library:
+
+```{r, message=FALSE}
+library(tidyverse)
+```
+
+## Data
+
+In this chapter we will use the following datasets.
+
+### Misspelling dataset
+I gathered this dataset after some manipulations with data from [The Gyllenhaal Experiment](https://pudding.cool/2019/02/gyllenhaal/) by Russell Goldenberg and Matt Daniels for [pudding](https://pudding.cool). They analized mistakes in spellings of celebrities during the searching process.
+

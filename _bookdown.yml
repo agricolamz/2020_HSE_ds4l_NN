@@ -1,0 +1,8 @@
+book_filename: "moroz-2020-ds4l_NN"
+delete_merged_file: true
+language:
+  ui:
+    edit: Edit
+    chapter_name: ''
+output_dir: "docs"
+

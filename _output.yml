@@ -1,0 +1,15 @@
+bookdown::gitbook:
+  df_print: paged
+  css: style.css
+  always_allow_html: yes
+  config:
+    self_contained: yes
+    toc:
+      collapse: section
+      before: |
+        <li><a href="./">Основы анализа данных</a></li>
+    download: ["pdf"]
+    sharing: no
+    edit:
+      link: https://github.com/agricolamz/2020_HSE_ds4l_NN/edit/master/%s
+      text: "Edit"

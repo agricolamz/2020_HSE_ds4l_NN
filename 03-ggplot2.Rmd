@@ -1,0 +1,19 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+# Data visualisation: `ggplot2` {#ggplot2}
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+```{r}
+library("tidyverse")
+```
+
+## Why visualising data?
+### The Anscombe’s Quartet
+In Anscombe, F. J. (1973). "Graphs in Statistical Analysis" there was the following dataset:
+

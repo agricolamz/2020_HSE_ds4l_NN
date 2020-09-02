@@ -1,0 +1,433 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+# Введение {#intro}
+
+## Наука о данных
+### Why data science?
+Data science is a new field that is actively developing lately. This field merges computer science, mathematics, statistics, and it is hard to say how much science in data science. In many scientific fields a new data science paradigm arises and even forms a new sub-field:
+
+* Bioinformatics
+* Crime data analysis
+* Digital humanities
+* Data journalism
+* Data driven medicine
+* ...
+
+There are a lot of new books "Data Science for ...":
+
+* psychologists [@hansjoerg19]
+* immunologists [@thomas19]
+* business [@provost13]
+* public policy [@brooks13]
+* fraud detection [@baesens15]
+* ...
+
+Data scientists need to be able to:
+
+* gather data
+* transform data
+* visualize data
+* create a statistical model based on data
+* share and represent the results of this work
+* organize the whole workflow in a reproducible way
+
+### Why R?
+
+R [@r19] is a programming language with a big infrastructure of packages that helps to work in different fields of science and computer technology.
+
+There are several alternatives:
+
+* Python [@vanderplas16; @grus19]
+* Julia [@bezanson17]
+* bash [@janssens14]
+* java [@brzustowicz17]
+* ...
+
+You can find some R answers here:
+
+* R for data science [@wickham16], it is online
+* [R community](https://community.rstudio.com/)
+* [stackoverflow](https://stackoverflow.com)
+* any search engine you use
+* ...
+
+### Основные этапы исследования
+
+## Введение в RStudio
+R is the programming language. RStudio is the most popular IDE (Integrated Development Environment) for R language.
+
+When you open RStudio for the first time you can see something like this:
+
+![](images/01.01.rstudio.png)
+
+When you press ![](images/01.02.rstudio_button.png) button at the top of the left window you will be able to see all four panels of RStudio.
+
+![](images/01.03.rstudio.png)
+
+## R как калькулятор
+
+Lets first start with the calculator. Press in R console
+
+```{r}
+2+9
+50*(9-20)
+3^3
+9^0.5
+9+0.5
+9+.5
+pi
+```
+
+Remainder after division
+
+```{r}
+10 %% 3
+```
+
+```{block, type = "rmdtask"}
+So you are ready to solve some really hard equations (round it four decimal places):
+```
+
+
+$$\frac{\pi+2}{2^{3-\pi}}$$
+
+```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
+checkdown::check_question(answer =  round((pi+2)/(2^(3-pi)), 4))
+```
+
+## Comments
+
+Any text after a hash `#` within the same line is considered a comment. 
+
+```{r}
+2+2 # it is four
+
+# you can put any comments here
+3+3
+```
+
+
+## Functions
+
+The most important part of R is functions: here are some of them:
+
+```{r}
+sqrt(4)
+abs(-5)
+sin(pi/2)
+cos(pi)
+sum(2, 3, 9)
+prod(5, 3, 9)
+sin(cos(pi))
+```
+
+Each function has a name and zero or more arguments. All arguments of the function should be listed in parenthesis and separated by comma:
+
+```{r}
+pi
+round(pi, 2)
+```
+
+Each function's argument has its own name and serial number. If you use names of the function's arguments, you can put them in any order. If you do not use names of the function's arguments, you should put them according the serial number.
+
+```{r}
+round(x = pi, digits = 2)
+round(digits = 2, x = pi)
+round(x = pi, d = 2)
+round(d = 2, x = pi)
+round(pi, 2)
+round(2, pi) # this is not the same as all previous!
+```
+
+There are some functions without any arguments, but you still should use parenthesis:
+
+```{r}
+Sys.Date() # correct
+Sys.Date # wrong
+```
+
+Each function in R is documented. You can read its documentation typing a question mark before the function name:
+
+```{r, eval = FALSE}
+?Sys.Date
+```
+
+```{block, type = "rmdtask"}
+Explore the function `log()` and calculate the following logarithm:
+```
+
+$$\log_3(3486784401)$$
+
+```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
+checkdown::check_question(answer = log(3486784401, base = 3))
+```
+
+
+## Variables
+
+Everything in R can be stored in a variable:
+
+```{r}
+x <- 5 + 6
+```
+
+![](images/01.04.variable.png)
+As a result, no output in the Console, and a new variable *x* appear in the Environment window. From now on I can use this new variable:
+
+```{r}
+x + x
+sum(x, x, 7)
+```
+
+All those operations don't change the variable value. In order to change the variable value you need to make a new assignment:
+
+```{r}
+x <- 5 + 6 + 7
+```
+
+The fast way for creating `<-` in RStudio is to press `Alt -` on your keyboard.
+
+It is possible to use equal sign `=` for assignment operation, but the recommendations are to use arrow `<-` for the assignment, and equal sign `=` for giving arguments' value inside the functions.
+
+For removing vector you need to use the function `rm()`:
+
+```{r error = TRUE}
+rm(x)
+x
+```
+
+
+### Variable comparison
+
+It is possible to compare different variables
+
+```{r}
+x <- 18
+x > 18
+x >= 18
+x < 100
+x <= 18
+x == 18
+x != 18
+```
+
+Operator `!` can work by itself changing logical values into reverse:
+
+```{r}
+!TRUE
+!FALSE
+```
+
+
+### Variable types
+
+There are several types of variables in R. In this course the only important types will be `double` (all numbers), `character` (or strings), and `logical`:
+
+```{r}
+x <- 2+3
+typeof(x)
+y <- "Cześć"
+typeof(y)
+z <- TRUE
+typeof(z)
+```
+
+## Vector
+An R object that contains multiple values of the same type is called **vector**. It could be created with the command `c()`:
+
+```{r}
+c(3, 0, pi, 23.4, -53)
+c("Kraków", "Warszawa", "Cieszyn")
+c(FALSE, FALSE, TRUE)
+
+a <- c(2, 3, 4)
+b <- c(5, 6, 7)
+c(a, b)
+```
+
+For the number sequences there is an easy way:
+
+```{r}
+1:10
+3:-5
+```
+
+From now on you can understand that everything we have seen before is a vector of length one. That is why there is `[1]` in all outputs: it is just an index of elements in a vector. Have a look here:
+
+```{r}
+1:60
+60:1
+```
+
+There is also a function `seq()` for creation of arithmetic progressions:
+
+```{r}
+1:20
+seq(from = 1, to = 20, by = 1)
+seq(from = 2, to = 100, by = 13)
+```
+
+
+```{block, type = "rmdtask"}
+Use the argument `length.out` of function `seq()` and create an arithmetic sequence from $\pi$ to $2\pi$ of length 50.
+
+```
+
+```{r, include=FALSE}
+seq(pi, 2*pi, length.out = 50)
+```
+
+There are also some built-in vectors:
+
+```{r}
+letters
+LETTERS
+month.name
+month.abb
+```
+
+### Vector coercion
+Vectors are R objects that contain multiple values of **the same type**. But what if we merged together different types?
+
+```{r}
+c(1, "34")
+c(1, TRUE)
+c(TRUE, "34")
+```
+
+It is clear that there is a hierarchy: strings > double > logical. It is not universal across different programming languages. It doesn't correspond to the amount of values of particular type:
+
+```{r}
+c(1, 2, 3, "34")
+c(1, TRUE, FALSE, FALSE)
+```
+
+The same story could happen during other operations:
+
+```{r}
+5+TRUE
+```
+
+### Vector operations
+
+All operations, that we discussed earlier, could be done with vectors of the same length:
+
+```{r}
+1:5 + 6:10
+1:5 - 6:10
+1:5 * 6:10
+```
+
+There are operations where the vector of any length and vector of length one is involved:
+
+```{r}
+1:5 + 7
+1:5 - 7
+1:5 / 7
+```
+
+There are a lot of functions in R that are **vectorised**. That means that applying this function to a vector is the same as applying this function to each element of the vector:
+
+```{r}
+sin(1:5)
+sqrt(1:5)
+abs(-5:3)
+```
+
+### Indexing vectors
+
+How to get some value or banch of values from a vector? You need to index them:
+
+```{r}
+x <- c(3, 0, pi, 23.4, -53)
+y <- c("Kraków", "Warszawa", "Cieszyn")
+
+x[4]
+y[2]
+```
+
+It is possible to have a vector as index:
+
+```{r}
+x[1:2]
+y[c(1, 3)]
+```
+
+It is possible to index something that you **do not** want to see in the result:
+```{r}
+y[-2]
+x[-c(1, 4)]
+```
+
+It is possible to have other variables as an index
+
+```{r}
+z <- c(3, 2)
+x[z]
+y[z]
+```
+
+It is possible to index with a logical vector:
+
+```{r}
+x[c(TRUE, FALSE, TRUE, TRUE, FALSE)]
+```
+
+That means that we could use `TRUE/FALSE`-vector produced by comparison:
+
+```{r}
+x[x > 2]
+```
+
+It works because `x > 2` is a vector of logical values:
+
+```{r}
+x > 2
+```
+
+
+It is possible to use `!` operator here changing all `TRUE` values to `FALSE` and vice versa.
+
+```{r}
+x[!(x > 2)]
+```
+
+
+```{block, type = "rmdtask"}
+How many elements in the vector `g` if expression `g[pi < 1000]` does not return an error?
+```
+
+### `NA`
+
+Sometimes there are some missing values in the data, so it is represented with `NA`
+```{r}
+NA
+c(1, NA, 9)
+c("Kraków", NA, "Cieszyn")
+c(TRUE, FALSE, NA)
+```
+
+It is possible to check, whether there are missing values or not
+
+```{r}
+x <- c("Kraków", NA, "Cieszyn")
+y <- c("Kraków", "Warszawa", "Cieszyn")
+is.na(x)
+is.na(y)
+```
+
+Some functions doesn't work with vecotors that contain missed values, so you need to add argument `na.rm = TRUE`:
+
+
+```{r}
+x <- c(1, NA, 9, 5)
+mean(x)
+mean(x, na.rm = TRUE)
+min(x, na.rm = TRUE)
+max(x, na.rm = TRUE)
+median(x, na.rm = TRUE)
+range(x, na.rm = TRUE)
+```

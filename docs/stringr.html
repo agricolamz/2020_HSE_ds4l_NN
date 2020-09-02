@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>5 Strings manipulation: stringr | Polish Language(s) and Digital Humanities Using R</title>
+  <meta name="description" content="5 Strings manipulation: stringr | Polish Language(s) and Digital Humanities Using R" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="5 Strings manipulation: stringr | Polish Language(s) and Digital Humanities Using R" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="5 Strings manipulation: stringr | Polish Language(s) and Digital Humanities Using R" />
+  
+  
+  
+
+<meta name="author" content="G. Moroz" />
+
+
+<meta name="date" content="2020-01-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="ggplot2.html"/>
+<link rel="next" href="texts.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="libs/pagedtable-1.1/js/pagedtable.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Polish Language(s) and Digital Humanities Using R</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction to R and RStudio</a><ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#introduction"><i class="fa fa-check"></i><b>2.1</b> Introduction</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="intro.html"><a href="intro.html#why-data-science"><i class="fa fa-check"></i><b>2.1.1</b> Why data science?</a></li>
+<li class="chapter" data-level="2.1.2" data-path="intro.html"><a href="intro.html#why-r"><i class="fa fa-check"></i><b>2.1.2</b> Why R?</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#introduction-to-rstudio"><i class="fa fa-check"></i><b>2.2</b> Introduction to RStudio</a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#r-as-a-calculator"><i class="fa fa-check"></i><b>2.3</b> R as a calculator</a></li>
+<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#comments"><i class="fa fa-check"></i><b>2.4</b> Comments</a></li>
+<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#functions"><i class="fa fa-check"></i><b>2.5</b> Functions</a></li>
+<li class="chapter" data-level="2.6" data-path="intro.html"><a href="intro.html#variables"><i class="fa fa-check"></i><b>2.6</b> Variables</a><ul>
+<li class="chapter" data-level="2.6.1" data-path="intro.html"><a href="intro.html#variable-comparison"><i class="fa fa-check"></i><b>2.6.1</b> Variable comparison</a></li>
+<li class="chapter" data-level="2.6.2" data-path="intro.html"><a href="intro.html#variable-types"><i class="fa fa-check"></i><b>2.6.2</b> Variable types</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="intro.html"><a href="intro.html#vector"><i class="fa fa-check"></i><b>2.7</b> Vector</a><ul>
+<li class="chapter" data-level="2.7.1" data-path="intro.html"><a href="intro.html#vector-coercion"><i class="fa fa-check"></i><b>2.7.1</b> Vector coercion</a></li>
+<li class="chapter" data-level="2.7.2" data-path="intro.html"><a href="intro.html#vector-operations"><i class="fa fa-check"></i><b>2.7.2</b> Vector operations</a></li>
+<li class="chapter" data-level="2.7.3" data-path="intro.html"><a href="intro.html#indexing-vectors"><i class="fa fa-check"></i><b>2.7.3</b> Indexing vectors</a></li>
+<li class="chapter" data-level="2.7.4" data-path="intro.html"><a href="intro.html#na"><i class="fa fa-check"></i><b>2.7.4</b> <code>NA</code></a></li>
+</ul></li>
+<li class="chapter" data-level="2.8" data-path="intro.html"><a href="intro.html#packages"><i class="fa fa-check"></i><b>2.8</b> Packages</a><ul>
+<li class="chapter" data-level="2.8.1" data-path="intro.html"><a href="intro.html#tidyverse"><i class="fa fa-check"></i><b>2.8.1</b> <code>tidyverse</code></a></li>
+</ul></li>
+<li class="chapter" data-level="2.9" data-path="intro.html"><a href="intro.html#dataframe-tibble"><i class="fa fa-check"></i><b>2.9</b> Dataframe (tibble)</a><ul>
+<li class="chapter" data-level="2.9.1" data-path="intro.html"><a href="intro.html#indexing-dataframes"><i class="fa fa-check"></i><b>2.9.1</b> Indexing dataframes</a></li>
+</ul></li>
+<li class="chapter" data-level="2.10" data-path="intro.html"><a href="intro.html#data-import"><i class="fa fa-check"></i><b>2.10</b> Data import</a><ul>
+<li class="chapter" data-level="2.10.1" data-path="intro.html"><a href="intro.html#csv-files"><i class="fa fa-check"></i><b>2.10.1</b> <code>.csv</code> files</a></li>
+<li class="chapter" data-level="2.10.2" data-path="intro.html"><a href="intro.html#xls-and-.xlsx-files"><i class="fa fa-check"></i><b>2.10.2</b> <code>.xls</code> and <code>.xlsx</code> files</a></li>
+</ul></li>
+<li class="chapter" data-level="2.11" data-path="intro.html"><a href="intro.html#rmarkdown"><i class="fa fa-check"></i><b>2.11</b> Rmarkdown</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="dplyr.html"><a href="dplyr.html"><i class="fa fa-check"></i><b>3</b> Data manipulation: <code>dplyr</code></a><ul>
+<li class="chapter" data-level="3.1" data-path="dplyr.html"><a href="dplyr.html#data"><i class="fa fa-check"></i><b>3.1</b> Data</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="dplyr.html"><a href="dplyr.html#misspelling-dataset"><i class="fa fa-check"></i><b>3.1.1</b> Misspelling dataset</a></li>
+<li class="chapter" data-level="3.1.2" data-path="dplyr.html"><a href="dplyr.html#diamonds"><i class="fa fa-check"></i><b>3.1.2</b> <code>diamonds</code></a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="dplyr.html"><a href="dplyr.html#dplyr-1"><i class="fa fa-check"></i><b>3.2</b> <code>dplyr</code></a><ul>
+<li class="chapter" data-level="3.2.1" data-path="dplyr.html"><a href="dplyr.html#filter"><i class="fa fa-check"></i><b>3.2.1</b> <code>filter()</code></a></li>
+<li class="chapter" data-level="3.2.2" data-path="dplyr.html"><a href="dplyr.html#slice"><i class="fa fa-check"></i><b>3.2.2</b> <code>slice()</code></a></li>
+<li class="chapter" data-level="3.2.3" data-path="dplyr.html"><a href="dplyr.html#select"><i class="fa fa-check"></i><b>3.2.3</b> <code>select()</code></a></li>
+<li class="chapter" data-level="3.2.4" data-path="dplyr.html"><a href="dplyr.html#arrange"><i class="fa fa-check"></i><b>3.2.4</b> <code>arrange()</code></a></li>
+<li class="chapter" data-level="3.2.5" data-path="dplyr.html"><a href="dplyr.html#distinct"><i class="fa fa-check"></i><b>3.2.5</b> <code>distinct()</code></a></li>
+<li class="chapter" data-level="3.2.6" data-path="dplyr.html"><a href="dplyr.html#mutate"><i class="fa fa-check"></i><b>3.2.6</b> <code>mutate()</code></a></li>
+<li class="chapter" data-level="3.2.7" data-path="dplyr.html"><a href="dplyr.html#group_by...-summarise..."><i class="fa fa-check"></i><b>3.2.7</b> <code>group_by(...) %&gt;% summarise(...)</code></a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="dplyr.html"><a href="dplyr.html#merging-dataframes"><i class="fa fa-check"></i><b>3.3</b> Merging dataframes</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="dplyr.html"><a href="dplyr.html#bind_..."><i class="fa fa-check"></i><b>3.3.1</b> <code>bind_...</code></a></li>
+<li class="chapter" data-level="3.3.2" data-path="dplyr.html"><a href="dplyr.html#join"><i class="fa fa-check"></i><b>3.3.2</b> <code>.._join()</code></a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="dplyr.html"><a href="dplyr.html#tidyr-package"><i class="fa fa-check"></i><b>3.4</b> <code>tidyr</code> package</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="dplyr.html"><a href="dplyr.html#tidy-data"><i class="fa fa-check"></i><b>3.4.1</b> Tidy data</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="ggplot2.html"><a href="ggplot2.html"><i class="fa fa-check"></i><b>4</b> Data visualisation: <code>ggplot2</code></a><ul>
+<li class="chapter" data-level="4.1" data-path="ggplot2.html"><a href="ggplot2.html#why-visualising-data"><i class="fa fa-check"></i><b>4.1</b> Why visualising data?</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="ggplot2.html"><a href="ggplot2.html#the-anscombes-quartet"><i class="fa fa-check"></i><b>4.1.1</b> The Anscombe’s Quartet</a></li>
+<li class="chapter" data-level="4.1.2" data-path="ggplot2.html"><a href="ggplot2.html#the-datasaurus"><i class="fa fa-check"></i><b>4.1.2</b> The DataSaurus</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="ggplot2.html"><a href="ggplot2.html#basic-ggplot2"><i class="fa fa-check"></i><b>4.2</b> Basic <code>ggplot2</code></a><ul>
+<li class="chapter" data-level="4.2.1" data-path="ggplot2.html"><a href="ggplot2.html#scatterplot"><i class="fa fa-check"></i><b>4.2.1</b> Scatterplot</a></li>
+<li class="chapter" data-level="4.2.2" data-path="ggplot2.html"><a href="ggplot2.html#barplots"><i class="fa fa-check"></i><b>4.2.2</b> Barplots</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="ggplot2.html"><a href="ggplot2.html#faceting"><i class="fa fa-check"></i><b>4.3</b> Faceting</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="stringr.html"><a href="stringr.html"><i class="fa fa-check"></i><b>5</b> Strings manipulation: <code>stringr</code></a><ul>
+<li class="chapter" data-level="5.1" data-path="stringr.html"><a href="stringr.html#how-to-create-a-string"><i class="fa fa-check"></i><b>5.1</b> How to create a string?</a></li>
+<li class="chapter" data-level="5.2" data-path="stringr.html"><a href="stringr.html#merging-strings"><i class="fa fa-check"></i><b>5.2</b> Merging strings</a></li>
+<li class="chapter" data-level="5.3" data-path="stringr.html"><a href="stringr.html#analysing-strings"><i class="fa fa-check"></i><b>5.3</b> Analysing strings</a></li>
+<li class="chapter" data-level="5.4" data-path="stringr.html"><a href="stringr.html#changing-strings"><i class="fa fa-check"></i><b>5.4</b> Changing strings</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="stringr.html"><a href="stringr.html#convert-case"><i class="fa fa-check"></i><b>5.4.1</b> Convert case</a></li>
+<li class="chapter" data-level="5.4.2" data-path="stringr.html"><a href="stringr.html#extracting-a-substring-from-a-string"><i class="fa fa-check"></i><b>5.4.2</b> Extracting a substring from a string</a></li>
+<li class="chapter" data-level="5.4.3" data-path="stringr.html"><a href="stringr.html#replacing-a-substring"><i class="fa fa-check"></i><b>5.4.3</b> Replacing a substring</a></li>
+<li class="chapter" data-level="5.4.4" data-path="stringr.html"><a href="stringr.html#removing-substrings"><i class="fa fa-check"></i><b>5.4.4</b> Removing substrings</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="texts.html"><a href="texts.html"><i class="fa fa-check"></i><b>6</b> Text manipulations</a><ul>
+<li class="chapter" data-level="6.1" data-path="texts.html"><a href="texts.html#read_lines"><i class="fa fa-check"></i><b>6.1</b> <code>read_lines()</code></a></li>
+<li class="chapter" data-level="6.2" data-path="texts.html"><a href="texts.html#gutenbergr"><i class="fa fa-check"></i><b>6.2</b> <code>gutenbergr</code></a></li>
+<li class="chapter" data-level="6.3" data-path="texts.html"><a href="texts.html#tidytext"><i class="fa fa-check"></i><b>6.3</b> <code>tidytext</code></a></li>
+<li class="chapter" data-level="6.4" data-path="texts.html"><a href="texts.html#udpipe"><i class="fa fa-check"></i><b>6.4</b> <code>udpipe</code></a></li>
+<li class="chapter" data-level="6.5" data-path="texts.html"><a href="texts.html#stylo"><i class="fa fa-check"></i><b>6.5</b> <code>stylo</code></a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Polish Language(s) and Digital Humanities Using R</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="stringr" class="section level1">
+<h1><span class="header-section-number">5</span> Strings manipulation: <code>stringr</code></h1>
+<p>We will use <code>stringr</code> package (in <code>tidyverse</code>) for string manipulation, so do not forget to load the <code>tidyverse</code> library.</p>
+<div class="sourceCode" id="cb343"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb343-1"><a href="stringr.html#cb343-1"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div>
+<div id="how-to-create-a-string" class="section level2">
+<h2><span class="header-section-number">5.1</span> How to create a string?</h2>
+<p>In order to create a string you need to keep an eye on quotes:</p>
+<div class="sourceCode" id="cb344"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb344-1"><a href="stringr.html#cb344-1"></a><span class="st">&quot;the quick brown fox jumps over the lazy dog&quot;</span></span></code></pre></div>
+<pre><code>## [1] &quot;the quick brown fox jumps over the lazy dog&quot;</code></pre>
+<div class="sourceCode" id="cb346"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb346-1"><a href="stringr.html#cb346-1"></a><span class="st">&#39;the quick brown fox jumps over the lazy dog&#39;</span></span></code></pre></div>
+<pre><code>## [1] &quot;the quick brown fox jumps over the lazy dog&quot;</code></pre>
+<div class="sourceCode" id="cb348"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb348-1"><a href="stringr.html#cb348-1"></a><span class="st">&quot;the quick &#39;brown&#39; fox jumps over the lazy dog&quot;</span></span></code></pre></div>
+<pre><code>## [1] &quot;the quick &#39;brown&#39; fox jumps over the lazy dog&quot;</code></pre>
+<div class="sourceCode" id="cb350"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb350-1"><a href="stringr.html#cb350-1"></a><span class="st">&#39;the quick &quot;brown&quot; fox jumps over the lazy dog&#39;</span></span></code></pre></div>
+<pre><code>## [1] &quot;the quick \&quot;brown\&quot; fox jumps over the lazy dog&quot;</code></pre>
+<div class="sourceCode" id="cb352"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb352-1"><a href="stringr.html#cb352-1"></a><span class="st">&quot;the quick </span><span class="ch">\&quot;</span><span class="st">brown</span><span class="ch">\&quot;</span><span class="st"> fox jumps over the lazy dog&quot;</span></span></code></pre></div>
+<pre><code>## [1] &quot;the quick \&quot;brown\&quot; fox jumps over the lazy dog&quot;</code></pre>
+<p>There is also an empty string (it is not the same as <code>NA</code>):</p>
+<div class="sourceCode" id="cb354"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb354-1"><a href="stringr.html#cb354-1"></a><span class="st">&quot;&quot;</span></span></code></pre></div>
+<pre><code>## [1] &quot;&quot;</code></pre>
+<div class="sourceCode" id="cb356"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb356-1"><a href="stringr.html#cb356-1"></a><span class="st">&#39;&#39;</span></span></code></pre></div>
+<pre><code>## [1] &quot;&quot;</code></pre>
+<div class="sourceCode" id="cb358"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb358-1"><a href="stringr.html#cb358-1"></a><span class="kw">character</span>(<span class="dv">3</span>)</span></code></pre></div>
+<pre><code>## [1] &quot;&quot; &quot;&quot; &quot;&quot;</code></pre>
+<p>It is possible to convert something to a string:</p>
+<div class="sourceCode" id="cb360"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb360-1"><a href="stringr.html#cb360-1"></a><span class="kw">typeof</span>(<span class="dv">4</span><span class="op">:</span><span class="dv">7</span>)</span></code></pre></div>
+<pre><code>## [1] &quot;integer&quot;</code></pre>
+<div class="sourceCode" id="cb362"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb362-1"><a href="stringr.html#cb362-1"></a><span class="kw">as.character</span>(<span class="dv">4</span><span class="op">:</span><span class="dv">7</span>)</span></code></pre></div>
+<pre><code>## [1] &quot;4&quot; &quot;5&quot; &quot;6&quot; &quot;7&quot;</code></pre>
+<p>In this section I will show all examples using build-in datasets:</p>
+<div class="sourceCode" id="cb364"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb364-1"><a href="stringr.html#cb364-1"></a>letters</span></code></pre></div>
+<pre><code>##  [1] &quot;a&quot; &quot;b&quot; &quot;c&quot; &quot;d&quot; &quot;e&quot; &quot;f&quot; &quot;g&quot; &quot;h&quot; &quot;i&quot; &quot;j&quot; &quot;k&quot; &quot;l&quot; &quot;m&quot; &quot;n&quot; &quot;o&quot; &quot;p&quot; &quot;q&quot; &quot;r&quot; &quot;s&quot;
+## [20] &quot;t&quot; &quot;u&quot; &quot;v&quot; &quot;w&quot; &quot;x&quot; &quot;y&quot; &quot;z&quot;</code></pre>
+<div class="sourceCode" id="cb366"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb366-1"><a href="stringr.html#cb366-1"></a>LETTERS</span></code></pre></div>
+<pre><code>##  [1] &quot;A&quot; &quot;B&quot; &quot;C&quot; &quot;D&quot; &quot;E&quot; &quot;F&quot; &quot;G&quot; &quot;H&quot; &quot;I&quot; &quot;J&quot; &quot;K&quot; &quot;L&quot; &quot;M&quot; &quot;N&quot; &quot;O&quot; &quot;P&quot; &quot;Q&quot; &quot;R&quot; &quot;S&quot;
+## [20] &quot;T&quot; &quot;U&quot; &quot;V&quot; &quot;W&quot; &quot;X&quot; &quot;Y&quot; &quot;Z&quot;</code></pre>
+<div class="sourceCode" id="cb368"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb368-1"><a href="stringr.html#cb368-1"></a>month.name</span></code></pre></div>
+<pre><code>##  [1] &quot;January&quot;   &quot;February&quot;  &quot;March&quot;     &quot;April&quot;     &quot;May&quot;       &quot;June&quot;     
+##  [7] &quot;July&quot;      &quot;August&quot;    &quot;September&quot; &quot;October&quot;   &quot;November&quot;  &quot;December&quot;</code></pre>
+<div class="sourceCode" id="cb370"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb370-1"><a href="stringr.html#cb370-1"></a>month.abb</span></code></pre></div>
+<pre><code>##  [1] &quot;Jan&quot; &quot;Feb&quot; &quot;Mar&quot; &quot;Apr&quot; &quot;May&quot; &quot;Jun&quot; &quot;Jul&quot; &quot;Aug&quot; &quot;Sep&quot; &quot;Oct&quot; &quot;Nov&quot; &quot;Dec&quot;</code></pre>
+</div>
+<div id="merging-strings" class="section level2">
+<h2><span class="header-section-number">5.2</span> Merging strings</h2>
+<p>The function <code>str_c()</code> joins two or more vectors element-wise into a single character vector:</p>
+<div class="sourceCode" id="cb372"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb372-1"><a href="stringr.html#cb372-1"></a><span class="kw">tibble</span>(<span class="dt">upper =</span> <span class="kw">rev</span>(LETTERS), <span class="dt">smaller =</span> letters) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb372-2"><a href="stringr.html#cb372-2"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">merge =</span> <span class="kw">str_c</span>(upper, smaller))</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["upper"],"name":[1],"type":["chr"],"align":["left"]},{"label":["smaller"],"name":[2],"type":["chr"],"align":["left"]},{"label":["merge"],"name":[3],"type":["chr"],"align":["left"]}],"data":[{"1":"Z","2":"a","3":"Za"},{"1":"Y","2":"b","3":"Yb"},{"1":"X","2":"c","3":"Xc"},{"1":"W","2":"d","3":"Wd"},{"1":"V","2":"e","3":"Ve"},{"1":"U","2":"f","3":"Uf"},{"1":"T","2":"g","3":"Tg"},{"1":"S","2":"h","3":"Sh"},{"1":"R","2":"i","3":"Ri"},{"1":"Q","2":"j","3":"Qj"},{"1":"P","2":"k","3":"Pk"},{"1":"O","2":"l","3":"Ol"},{"1":"N","2":"m","3":"Nm"},{"1":"M","2":"n","3":"Mn"},{"1":"L","2":"o","3":"Lo"},{"1":"K","2":"p","3":"Kp"},{"1":"J","2":"q","3":"Jq"},{"1":"I","2":"r","3":"Ir"},{"1":"H","2":"s","3":"Hs"},{"1":"G","2":"t","3":"Gt"},{"1":"F","2":"u","3":"Fu"},{"1":"E","2":"v","3":"Ev"},{"1":"D","2":"w","3":"Dw"},{"1":"C","2":"x","3":"Cx"},{"1":"B","2":"y","3":"By"},{"1":"A","2":"z","3":"Az"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<p>It is possible to specify a string, that will be inserted between input vectors.</p>
+<div class="sourceCode" id="cb373"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb373-1"><a href="stringr.html#cb373-1"></a><span class="kw">tibble</span>(<span class="dt">upper =</span> <span class="kw">rev</span>(LETTERS), <span class="dt">smaller =</span> letters) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb373-2"><a href="stringr.html#cb373-2"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">merge =</span> <span class="kw">str_c</span>(upper, smaller, <span class="dt">sep =</span> <span class="st">&quot;_&quot;</span>))</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["upper"],"name":[1],"type":["chr"],"align":["left"]},{"label":["smaller"],"name":[2],"type":["chr"],"align":["left"]},{"label":["merge"],"name":[3],"type":["chr"],"align":["left"]}],"data":[{"1":"Z","2":"a","3":"Z_a"},{"1":"Y","2":"b","3":"Y_b"},{"1":"X","2":"c","3":"X_c"},{"1":"W","2":"d","3":"W_d"},{"1":"V","2":"e","3":"V_e"},{"1":"U","2":"f","3":"U_f"},{"1":"T","2":"g","3":"T_g"},{"1":"S","2":"h","3":"S_h"},{"1":"R","2":"i","3":"R_i"},{"1":"Q","2":"j","3":"Q_j"},{"1":"P","2":"k","3":"P_k"},{"1":"O","2":"l","3":"O_l"},{"1":"N","2":"m","3":"N_m"},{"1":"M","2":"n","3":"M_n"},{"1":"L","2":"o","3":"L_o"},{"1":"K","2":"p","3":"K_p"},{"1":"J","2":"q","3":"J_q"},{"1":"I","2":"r","3":"I_r"},{"1":"H","2":"s","3":"H_s"},{"1":"G","2":"t","3":"G_t"},{"1":"F","2":"u","3":"F_u"},{"1":"E","2":"v","3":"E_v"},{"1":"D","2":"w","3":"D_w"},{"1":"C","2":"x","3":"C_x"},{"1":"B","2":"y","3":"B_y"},{"1":"A","2":"z","3":"A_z"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<p>The <code>str_c()</code> function is vectorised, so it returns the number of strings that it got to the input. It is possible to merge all merged strings into one bigger string using the <code>collapse</code> argument.</p>
+<div class="sourceCode" id="cb374"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb374-1"><a href="stringr.html#cb374-1"></a><span class="kw">str_c</span>(<span class="kw">rev</span>(LETTERS), letters, <span class="dt">sep =</span> <span class="st">&quot;_&quot;</span>) <span class="co"># results 26 strings</span></span></code></pre></div>
+<pre><code>##  [1] &quot;Z_a&quot; &quot;Y_b&quot; &quot;X_c&quot; &quot;W_d&quot; &quot;V_e&quot; &quot;U_f&quot; &quot;T_g&quot; &quot;S_h&quot; &quot;R_i&quot; &quot;Q_j&quot; &quot;P_k&quot; &quot;O_l&quot;
+## [13] &quot;N_m&quot; &quot;M_n&quot; &quot;L_o&quot; &quot;K_p&quot; &quot;J_q&quot; &quot;I_r&quot; &quot;H_s&quot; &quot;G_t&quot; &quot;F_u&quot; &quot;E_v&quot; &quot;D_w&quot; &quot;C_x&quot;
+## [25] &quot;B_y&quot; &quot;A_z&quot;</code></pre>
+<div class="sourceCode" id="cb376"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb376-1"><a href="stringr.html#cb376-1"></a><span class="kw">str_c</span>(<span class="kw">rev</span>(LETTERS), letters, <span class="dt">sep =</span> <span class="st">&quot;_&quot;</span>, <span class="dt">collapse =</span> <span class="st">&quot;-&quot;</span>) <span class="co"># results 1 string</span></span></code></pre></div>
+<pre><code>## [1] &quot;Z_a-Y_b-X_c-W_d-V_e-U_f-T_g-S_h-R_i-Q_j-P_k-O_l-N_m-M_n-L_o-K_p-J_q-I_r-H_s-G_t-F_u-E_v-D_w-C_x-B_y-A_z&quot;</code></pre>
+<p>The <code>separate()</code> function turns a single character column into multiple columns using some pattern. This function has three arguments:</p>
+<ul>
+<li><code>col</code> – column with vectors, that should be separated</li>
+<li><code>into</code> – vector of names of new columns</li>
+<li><code>sep</code> – pattern that should be used as a separator</li>
+</ul>
+<div class="sourceCode" id="cb378"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb378-1"><a href="stringr.html#cb378-1"></a><span class="kw">tibble</span>(<span class="dt">mn =</span> month.name) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb378-2"><a href="stringr.html#cb378-2"></a><span class="st">  </span><span class="kw">separate</span>(<span class="dt">col =</span> mn, <span class="dt">into =</span> <span class="kw">c</span>(<span class="st">&quot;column_1&quot;</span>, <span class="st">&quot;column_2&quot;</span>), <span class="dt">sep =</span> <span class="st">&quot;r&quot;</span>)</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["column_1"],"name":[1],"type":["chr"],"align":["left"]},{"label":["column_2"],"name":[2],"type":["chr"],"align":["left"]}],"data":[{"1":"Janua","2":"y"},{"1":"Feb","2":"ua"},{"1":"Ma","2":"ch"},{"1":"Ap","2":"il"},{"1":"May","2":"NA"},{"1":"June","2":"NA"},{"1":"July","2":"NA"},{"1":"August","2":"NA"},{"1":"Septembe","2":""},{"1":"Octobe","2":""},{"1":"Novembe","2":""},{"1":"Decembe","2":""}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+<div id="analysing-strings" class="section level2">
+<h2><span class="header-section-number">5.3</span> Analysing strings</h2>
+<p>In order to calculate the number of symbols in a string you can use the <code>str_count()</code> function.</p>
+<p><img src="images/5.01_str_length.png" /></p>
+<div class="sourceCode" id="cb379"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb379-1"><a href="stringr.html#cb379-1"></a><span class="kw">tibble</span>(<span class="dt">mn =</span> month.name) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb379-2"><a href="stringr.html#cb379-2"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">number_charactars =</span> <span class="kw">str_count</span>(mn))</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["mn"],"name":[1],"type":["chr"],"align":["left"]},{"label":["number_charactars"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"January","2":"7"},{"1":"February","2":"8"},{"1":"March","2":"5"},{"1":"April","2":"5"},{"1":"May","2":"3"},{"1":"June","2":"4"},{"1":"July","2":"4"},{"1":"August","2":"6"},{"1":"September","2":"9"},{"1":"October","2":"7"},{"1":"November","2":"8"},{"1":"December","2":"8"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<p>There is an additional argument in the <code>str_count()</code> function that defines a string for counting:</p>
+<p><img src="images/5.02_str_count.png" /></p>
+<div class="sourceCode" id="cb380"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb380-1"><a href="stringr.html#cb380-1"></a><span class="kw">tibble</span>(<span class="dt">mn =</span> month.name) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb380-2"><a href="stringr.html#cb380-2"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">number_r =</span> <span class="kw">str_count</span>(mn, <span class="dt">pattern =</span> <span class="st">&quot;r&quot;</span>))</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["mn"],"name":[1],"type":["chr"],"align":["left"]},{"label":["number_r"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"January","2":"1"},{"1":"February","2":"2"},{"1":"March","2":"1"},{"1":"April","2":"1"},{"1":"May","2":"0"},{"1":"June","2":"0"},{"1":"July","2":"0"},{"1":"August","2":"0"},{"1":"September","2":"1"},{"1":"October","2":"1"},{"1":"November","2":"1"},{"1":"December","2":"1"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<div class="rmdtask">
+<p>
+There is an <a href="https://pudding.cool/2019/10/pubs/">article</a> on Pudding about English pubs. <a href="https://raw.githubusercontent.com/agricolamz/DS_for_DH/master/data/UK_pubs.csv">Here</a> is an aggregated dataset, that they used. Visualise 40 most popular pub names in UK: number of symbols on <em>x</em> axis and number of pubs with this name on <em>y</em> axis.
+</p>
+</div>
+<p><img src="moroz-2020-Polish-Language-and-Digital-Humanities-Using-R_files/figure-html/unnamed-chunk-164-1.png" width="672" /></p>
+<p>There is also a useful function <code>str_detect()</code>, that returns <code>TRUE</code>, when a substring is found in a greater string, or <code>FALSE</code>, when a substring is absent.</p>
+<p><img src="images/5.03_str_detect.png" /></p>
+<div class="sourceCode" id="cb381"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb381-1"><a href="stringr.html#cb381-1"></a><span class="kw">tibble</span>(<span class="dt">mn =</span> month.name) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb381-2"><a href="stringr.html#cb381-2"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">is_there_r =</span> <span class="kw">str_detect</span>(mn, <span class="dt">pattern =</span> <span class="st">&quot;r&quot;</span>))</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["mn"],"name":[1],"type":["chr"],"align":["left"]},{"label":["is_there_r"],"name":[2],"type":["lgl"],"align":["right"]}],"data":[{"1":"January","2":"TRUE"},{"1":"February","2":"TRUE"},{"1":"March","2":"TRUE"},{"1":"April","2":"TRUE"},{"1":"May","2":"FALSE"},{"1":"June","2":"FALSE"},{"1":"July","2":"FALSE"},{"1":"August","2":"FALSE"},{"1":"September","2":"TRUE"},{"1":"October","2":"TRUE"},{"1":"November","2":"TRUE"},{"1":"December","2":"TRUE"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+<div id="changing-strings" class="section level2">
+<h2><span class="header-section-number">5.4</span> Changing strings</h2>
+<div id="convert-case" class="section level3">
+<h3><span class="header-section-number">5.4.1</span> Convert case</h3>
+<div class="sourceCode" id="cb382"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb382-1"><a href="stringr.html#cb382-1"></a>latin &lt;-<span class="st"> &quot;tHe QuIcK BrOwN fOx JuMpS OvEr ThE lAzY dOg&quot;</span></span>
+<span id="cb382-2"><a href="stringr.html#cb382-2"></a><span class="kw">str_to_upper</span>(latin)</span></code></pre></div>
+<pre><code>## [1] &quot;THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG&quot;</code></pre>
+<div class="sourceCode" id="cb384"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb384-1"><a href="stringr.html#cb384-1"></a><span class="kw">str_to_lower</span>(latin)</span></code></pre></div>
+<pre><code>## [1] &quot;the quick brown fox jumps over the lazy dog&quot;</code></pre>
+<div class="sourceCode" id="cb386"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb386-1"><a href="stringr.html#cb386-1"></a><span class="kw">str_to_title</span>(latin)</span></code></pre></div>
+<pre><code>## [1] &quot;The Quick Brown Fox Jumps Over The Lazy Dog&quot;</code></pre>
+</div>
+<div id="extracting-a-substring-from-a-string" class="section level3">
+<h3><span class="header-section-number">5.4.2</span> Extracting a substring from a string</h3>
+<p>Extract the substring from a string: по индексам функцией <code>str_sub()</code>, и по подстроке функцией <code>str_extract()</code>.</p>
+<p><img src="images/5.04_str_sub.png" /></p>
+<div class="sourceCode" id="cb388"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb388-1"><a href="stringr.html#cb388-1"></a><span class="kw">tibble</span>(<span class="dt">mn =</span> month.name) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb388-2"><a href="stringr.html#cb388-2"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">mutate =</span> <span class="kw">str_sub</span>(mn, <span class="dt">start =</span> <span class="dv">1</span>, <span class="dt">end =</span> <span class="dv">2</span>))</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["mn"],"name":[1],"type":["chr"],"align":["left"]},{"label":["mutate"],"name":[2],"type":["chr"],"align":["left"]}],"data":[{"1":"January","2":"Ja"},{"1":"February","2":"Fe"},{"1":"March","2":"Ma"},{"1":"April","2":"Ap"},{"1":"May","2":"Ma"},{"1":"June","2":"Ju"},{"1":"July","2":"Ju"},{"1":"August","2":"Au"},{"1":"September","2":"Se"},{"1":"October","2":"Oc"},{"1":"November","2":"No"},{"1":"December","2":"De"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<p><img src="images/5.05_str_extract.png" /></p>
+<div class="sourceCode" id="cb389"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb389-1"><a href="stringr.html#cb389-1"></a><span class="kw">tibble</span>(<span class="dt">mn =</span> month.name) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb389-2"><a href="stringr.html#cb389-2"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">mutate =</span> <span class="kw">str_extract</span>(mn, <span class="st">&quot;r&quot;</span>))</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["mn"],"name":[1],"type":["chr"],"align":["left"]},{"label":["mutate"],"name":[2],"type":["chr"],"align":["left"]}],"data":[{"1":"January","2":"r"},{"1":"February","2":"r"},{"1":"March","2":"r"},{"1":"April","2":"r"},{"1":"May","2":"NA"},{"1":"June","2":"NA"},{"1":"July","2":"NA"},{"1":"August","2":"NA"},{"1":"September","2":"r"},{"1":"October","2":"r"},{"1":"November","2":"r"},{"1":"December","2":"r"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<p>By default the <code>str_extract()</code> function returns first instances of substrings. It is possible to use the <code>str_extract_all()</code> function in order to extract all instances of a substring, but the result needs to be converted to the <code>tibble</code> format.</p>
+<div class="sourceCode" id="cb390"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb390-1"><a href="stringr.html#cb390-1"></a><span class="kw">str_extract_all</span>(month.name, <span class="st">&quot;r&quot;</span>, <span class="dt">simplify =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb390-2"><a href="stringr.html#cb390-2"></a><span class="st">  </span><span class="kw">as_tibble</span>()</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["V1"],"name":[1],"type":["chr"],"align":["left"]},{"label":["V2"],"name":[2],"type":["chr"],"align":["left"]}],"data":[{"1":"r","2":""},{"1":"r","2":"r"},{"1":"r","2":""},{"1":"r","2":""},{"1":"","2":""},{"1":"","2":""},{"1":"","2":""},{"1":"","2":""},{"1":"r","2":""},{"1":"r","2":""},{"1":"r","2":""},{"1":"r","2":""}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+<div id="replacing-a-substring" class="section level3">
+<h3><span class="header-section-number">5.4.3</span> Replacing a substring</h3>
+<p>There is a function <code>str_replace()</code>, that will replace a substring in a string with another string:</p>
+<p><img src="images/5.06_str_replace.png" /></p>
+<div class="sourceCode" id="cb391"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb391-1"><a href="stringr.html#cb391-1"></a><span class="kw">tibble</span>(<span class="dt">mn =</span> month.name) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb391-2"><a href="stringr.html#cb391-2"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">mutate =</span> <span class="kw">str_replace</span>(mn, <span class="st">&quot;r&quot;</span>, <span class="st">&quot;R&quot;</span>))</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["mn"],"name":[1],"type":["chr"],"align":["left"]},{"label":["mutate"],"name":[2],"type":["chr"],"align":["left"]}],"data":[{"1":"January","2":"JanuaRy"},{"1":"February","2":"FebRuary"},{"1":"March","2":"MaRch"},{"1":"April","2":"ApRil"},{"1":"May","2":"May"},{"1":"June","2":"June"},{"1":"July","2":"July"},{"1":"August","2":"August"},{"1":"September","2":"SeptembeR"},{"1":"October","2":"OctobeR"},{"1":"November","2":"NovembeR"},{"1":"December","2":"DecembeR"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<p>As other functions the <code>str_replace()</code> function makes only one replacement. If you need to change multiple substrings in a string you can use the <code>str_replace_all()</code> function:</p>
+<p><img src="images/5.07_str_replace_all.png" /></p>
+<div class="sourceCode" id="cb392"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb392-1"><a href="stringr.html#cb392-1"></a><span class="kw">tibble</span>(<span class="dt">mn =</span> month.name) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb392-2"><a href="stringr.html#cb392-2"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">mutate =</span> <span class="kw">str_replace_all</span>(mn, <span class="st">&quot;r&quot;</span>, <span class="st">&quot;R&quot;</span>))</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["mn"],"name":[1],"type":["chr"],"align":["left"]},{"label":["mutate"],"name":[2],"type":["chr"],"align":["left"]}],"data":[{"1":"January","2":"JanuaRy"},{"1":"February","2":"FebRuaRy"},{"1":"March","2":"MaRch"},{"1":"April","2":"ApRil"},{"1":"May","2":"May"},{"1":"June","2":"June"},{"1":"July","2":"July"},{"1":"August","2":"August"},{"1":"September","2":"SeptembeR"},{"1":"October","2":"OctobeR"},{"1":"November","2":"NovembeR"},{"1":"December","2":"DecembeR"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+<div id="removing-substrings" class="section level3">
+<h3><span class="header-section-number">5.4.4</span> Removing substrings</h3>
+<p>The <code>str_remove()</code> and <code>str_remove_all()</code> functions remove matched patterns in a string.</p>
+<div class="sourceCode" id="cb393"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb393-1"><a href="stringr.html#cb393-1"></a><span class="kw">tibble</span>(month.name) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb393-2"><a href="stringr.html#cb393-2"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">mutate =</span> <span class="kw">str_remove</span>(month.name, <span class="st">&quot;r&quot;</span>))</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["month.name"],"name":[1],"type":["chr"],"align":["left"]},{"label":["mutate"],"name":[2],"type":["chr"],"align":["left"]}],"data":[{"1":"January","2":"Januay"},{"1":"February","2":"Febuary"},{"1":"March","2":"Mach"},{"1":"April","2":"Apil"},{"1":"May","2":"May"},{"1":"June","2":"June"},{"1":"July","2":"July"},{"1":"August","2":"August"},{"1":"September","2":"Septembe"},{"1":"October","2":"Octobe"},{"1":"November","2":"Novembe"},{"1":"December","2":"Decembe"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<div class="sourceCode" id="cb394"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb394-1"><a href="stringr.html#cb394-1"></a><span class="kw">tibble</span>(month.name) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb394-2"><a href="stringr.html#cb394-2"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">mutate =</span> <span class="kw">str_remove_all</span>(month.name, <span class="st">&quot;r&quot;</span>))</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["month.name"],"name":[1],"type":["chr"],"align":["left"]},{"label":["mutate"],"name":[2],"type":["chr"],"align":["left"]}],"data":[{"1":"January","2":"Januay"},{"1":"February","2":"Febuay"},{"1":"March","2":"Mach"},{"1":"April","2":"Apil"},{"1":"May","2":"May"},{"1":"June","2":"June"},{"1":"July","2":"July"},{"1":"August","2":"August"},{"1":"September","2":"Septembe"},{"1":"October","2":"Octobe"},{"1":"November","2":"Novembe"},{"1":"December","2":"Decembe"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="ggplot2.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="texts.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": false,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/agricolamz/2020.02_Naumburg_R/edit/master/04-stringr.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["moroz-2020-Polish-Language-and-Digital-Humanities-Using-R.pdf"],
+"toc": {
+"collapse": "section"
+},
+"self_contained": true
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
