@@ -6,17 +6,15 @@ editor_options:
 # Введение {#intro}
 
 ## Наука о данных
-### Why data science?
-Data science is a new field that is actively developing lately. This field merges computer science, mathematics, statistics, and it is hard to say how much science in data science. In many scientific fields a new data science paradigm arises and even forms a new sub-field:
+Наука о данных --- это новая область знаний, которая активно развивается в последнее время. Она находиться на пересечении компьютерных наук, статистики и математики, и трудно сказать, действительно ли это наука. При этом это движение развивается в самых разных научных направлениях, иногда даже оформляясь в отдельную отрасль:
 
-* Bioinformatics
-* Crime data analysis
-* Digital humanities
-* Data journalism
-* Data driven medicine
+* биоинформатика
+* вычислительная криминалистика
+* цифровые гуманитарные исследования
+* датажурналистика
 * ...
 
-There are a lot of new books "Data Science for ...":
+Все больше книг "Data Science for ...":
 
 * psychologists [@hansjoerg19]
 * immunologists [@thomas19]
@@ -25,20 +23,18 @@ There are a lot of new books "Data Science for ...":
 * fraud detection [@baesens15]
 * ...
 
-Data scientists need to be able to:
+Среди умений датасаентистов можно перечислить следующие:
 
-* gather data
-* transform data
-* visualize data
-* create a statistical model based on data
-* share and represent the results of this work
-* organize the whole workflow in a reproducible way
+* сбор и обработка данных
+* трансформация данных
+* визуализация данных
+* статистическое моделирование данных
+* представление полученных результатов
+* организация всей работы **воспроизводимым способом**
 
-### Why R?
+## Не R единым
 
-R [@r19] is a programming language with a big infrastructure of packages that helps to work in different fields of science and computer technology.
-
-There are several alternatives:
+R [@r19] --- это один из популярных языков для анализа данных. Однако у него вполне есть и альтернативы:
 
 * Python [@vanderplas16; @grus19]
 * Julia [@bezanson17]
@@ -46,15 +42,48 @@ There are several alternatives:
 * java [@brzustowicz17]
 * ...
 
-You can find some R answers here:
+Кроме того ответы на любые проблемы можно найти в...
 
-* R for data science [@wickham16], it is online
+* R for data science [@wickham16], [онлайн](https://r4ds.had.co.nz/)
 * [R community](https://community.rstudio.com/)
 * [stackoverflow](https://stackoverflow.com)
-* any search engine you use
+* любой поисковик
 * ...
 
-### Основные этапы исследования
+## Основные этапы исследования
+
+* формулировка гипотез(ы)
+* выбор зависимой и независимых переменных
+* сбор данных
+* работа с данными, которую можно представить следующей схемой:
+```{r, echo = FALSE}
+DiagrammeR::grViz("digraph {
+
+graph [compound = true, fillcolor = red, layout = dot]
+node [shape = rectangle]
+
+импорт; трансформация; визуализация; моделирование; представление
+
+subgraph cluster0 {
+  трансформация -> визуализация -> моделирование -> трансформация
+  }
+
+импорт -> трансформация [lhead = cluster0]
+моделирование -> представление  [ltail = cluster0]
+
+}")
+```
+
+При анализе данных бывают разные соблазны, с которыми нужно бороться:
+
+* **Cherry Picking** --- выбор только тех данных, которые удовлетворяют гипотезе.
+* **Data Dredging** --- проведение множества тестов, пока не появится статистически значимый результат.
+* **Систематическая ошибка выжившего** --- анализ только одной группы объектов (выжившим), так как данных по другой группе (погибшим) данных нет.
+* **Ложная корреляция** --- наличие высокой корреляции между переменными не гарантирует, что между ними есть причино-следственная связь.
+* **Неуравновешанная выборка** --- если выборка неуравновешена, она перестает представлять генеральную совокупность, что может исказить выводы.
+
+Чтобы проиллюстрировать этапы исследования давайте возьмем данные из [опрос](https://docs.google.com/forms/d/e/1FAIpQLSdJWr27JJGi0xSoBZV-xEmwLwlclpdLDtkU5mWUncMv7O6vAg/viewform), который вы сейчас пройдете.
+
 
 ## Введение в RStudio
 R is the programming language. RStudio is the most popular IDE (Integrated Development Environment) for R language.

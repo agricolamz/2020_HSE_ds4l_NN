@@ -52,6 +52,10 @@
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="libs/pagedtable-1.1/js/pagedtable.js"></script>
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<script src="libs/viz-1.8.2/viz.js"></script>
+<link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+<script src="libs/grViz-binding-1.0.6.1/grViz.js"></script>
 
 
 <style type="text/css">
@@ -137,24 +141,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Требования</a></li>
 <li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Введение</a><ul>
-<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#наука-о-данных"><i class="fa fa-check"></i><b>2.1</b> Наука о данных</a><ul>
-<li class="chapter" data-level="2.1.1" data-path="intro.html"><a href="intro.html#why-data-science"><i class="fa fa-check"></i><b>2.1.1</b> Why data science?</a></li>
-<li class="chapter" data-level="2.1.2" data-path="intro.html"><a href="intro.html#why-r"><i class="fa fa-check"></i><b>2.1.2</b> Why R?</a></li>
-<li class="chapter" data-level="2.1.3" data-path="intro.html"><a href="intro.html#основные-этапы-исследования"><i class="fa fa-check"></i><b>2.1.3</b> Основные этапы исследования</a></li>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#наука-о-данных"><i class="fa fa-check"></i><b>2.1</b> Наука о данных</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#не-r-единым"><i class="fa fa-check"></i><b>2.2</b> Не R единым</a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#основные-этапы-исследования"><i class="fa fa-check"></i><b>2.3</b> Основные этапы исследования</a></li>
+<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#введение-в-rstudio"><i class="fa fa-check"></i><b>2.4</b> Введение в RStudio</a></li>
+<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#r-как-калькулятор"><i class="fa fa-check"></i><b>2.5</b> R как калькулятор</a></li>
+<li class="chapter" data-level="2.6" data-path="intro.html"><a href="intro.html#comments"><i class="fa fa-check"></i><b>2.6</b> Comments</a></li>
+<li class="chapter" data-level="2.7" data-path="intro.html"><a href="intro.html#functions"><i class="fa fa-check"></i><b>2.7</b> Functions</a></li>
+<li class="chapter" data-level="2.8" data-path="intro.html"><a href="intro.html#variables"><i class="fa fa-check"></i><b>2.8</b> Variables</a><ul>
+<li class="chapter" data-level="2.8.1" data-path="intro.html"><a href="intro.html#variable-comparison"><i class="fa fa-check"></i><b>2.8.1</b> Variable comparison</a></li>
+<li class="chapter" data-level="2.8.2" data-path="intro.html"><a href="intro.html#variable-types"><i class="fa fa-check"></i><b>2.8.2</b> Variable types</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#введение-в-rstudio"><i class="fa fa-check"></i><b>2.2</b> Введение в RStudio</a></li>
-<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#r-как-калькулятор"><i class="fa fa-check"></i><b>2.3</b> R как калькулятор</a></li>
-<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#comments"><i class="fa fa-check"></i><b>2.4</b> Comments</a></li>
-<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#functions"><i class="fa fa-check"></i><b>2.5</b> Functions</a></li>
-<li class="chapter" data-level="2.6" data-path="intro.html"><a href="intro.html#variables"><i class="fa fa-check"></i><b>2.6</b> Variables</a><ul>
-<li class="chapter" data-level="2.6.1" data-path="intro.html"><a href="intro.html#variable-comparison"><i class="fa fa-check"></i><b>2.6.1</b> Variable comparison</a></li>
-<li class="chapter" data-level="2.6.2" data-path="intro.html"><a href="intro.html#variable-types"><i class="fa fa-check"></i><b>2.6.2</b> Variable types</a></li>
-</ul></li>
-<li class="chapter" data-level="2.7" data-path="intro.html"><a href="intro.html#vector"><i class="fa fa-check"></i><b>2.7</b> Vector</a><ul>
-<li class="chapter" data-level="2.7.1" data-path="intro.html"><a href="intro.html#vector-coercion"><i class="fa fa-check"></i><b>2.7.1</b> Vector coercion</a></li>
-<li class="chapter" data-level="2.7.2" data-path="intro.html"><a href="intro.html#vector-operations"><i class="fa fa-check"></i><b>2.7.2</b> Vector operations</a></li>
-<li class="chapter" data-level="2.7.3" data-path="intro.html"><a href="intro.html#indexing-vectors"><i class="fa fa-check"></i><b>2.7.3</b> Indexing vectors</a></li>
-<li class="chapter" data-level="2.7.4" data-path="intro.html"><a href="intro.html#na"><i class="fa fa-check"></i><b>2.7.4</b> <code>NA</code></a></li>
+<li class="chapter" data-level="2.9" data-path="intro.html"><a href="intro.html#vector"><i class="fa fa-check"></i><b>2.9</b> Vector</a><ul>
+<li class="chapter" data-level="2.9.1" data-path="intro.html"><a href="intro.html#vector-coercion"><i class="fa fa-check"></i><b>2.9.1</b> Vector coercion</a></li>
+<li class="chapter" data-level="2.9.2" data-path="intro.html"><a href="intro.html#vector-operations"><i class="fa fa-check"></i><b>2.9.2</b> Vector operations</a></li>
+<li class="chapter" data-level="2.9.3" data-path="intro.html"><a href="intro.html#indexing-vectors"><i class="fa fa-check"></i><b>2.9.3</b> Indexing vectors</a></li>
+<li class="chapter" data-level="2.9.4" data-path="intro.html"><a href="intro.html#na"><i class="fa fa-check"></i><b>2.9.4</b> <code>NA</code></a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="dplyr.html"><a href="dplyr.html"><i class="fa fa-check"></i><b>3</b> Data manipulation: <code>dplyr</code></a><ul>
@@ -189,18 +191,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">2</span> Введение</h1>
 <div id="наука-о-данных" class="section level2">
 <h2><span class="header-section-number">2.1</span> Наука о данных</h2>
-<div id="why-data-science" class="section level3">
-<h3><span class="header-section-number">2.1.1</span> Why data science?</h3>
-<p>Data science is a new field that is actively developing lately. This field merges computer science, mathematics, statistics, and it is hard to say how much science in data science. In many scientific fields a new data science paradigm arises and even forms a new sub-field:</p>
+<p>Наука о данных — это новая область знаний, которая активно развивается в последнее время. Она находиться на пересечении компьютерных наук, статистики и математики, и трудно сказать, действительно ли это наука. При этом это движение развивается в самых разных научных направлениях, иногда даже оформляясь в отдельную отрасль:</p>
 <ul>
-<li>Bioinformatics</li>
-<li>Crime data analysis</li>
-<li>Digital humanities</li>
-<li>Data journalism</li>
-<li>Data driven medicine</li>
+<li>биоинформатика</li>
+<li>вычислительная криминалистика</li>
+<li>цифровые гуманитарные исследования</li>
+<li>датажурналистика</li>
 <li>…</li>
 </ul>
-<p>There are a lot of new books “Data Science for …”:</p>
+<p>Все больше книг “Data Science for …”:</p>
 <ul>
 <li>psychologists <span class="citation">(Hansjörg <a href="#ref-hansjoerg19" role="doc-biblioref">2019</a>)</span></li>
 <li>immunologists <span class="citation">(Thomas and Pallett <a href="#ref-thomas19" role="doc-biblioref">2019</a>)</span></li>
@@ -209,20 +208,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>fraud detection <span class="citation">(Baesens, Van Vlasselaer, and Verbeke <a href="#ref-baesens15" role="doc-biblioref">2015</a>)</span></li>
 <li>…</li>
 </ul>
-<p>Data scientists need to be able to:</p>
+<p>Среди умений датасаентистов можно перечислить следующие:</p>
 <ul>
-<li>gather data</li>
-<li>transform data</li>
-<li>visualize data</li>
-<li>create a statistical model based on data</li>
-<li>share and represent the results of this work</li>
-<li>organize the whole workflow in a reproducible way</li>
+<li>сбор и обработка данных</li>
+<li>трансформация данных</li>
+<li>визуализация данных</li>
+<li>статистическое моделирование данных</li>
+<li>представление полученных результатов</li>
+<li>организация всей работы <strong>воспроизводимым способом</strong></li>
 </ul>
 </div>
-<div id="why-r" class="section level3">
-<h3><span class="header-section-number">2.1.2</span> Why R?</h3>
-<p>R <span class="citation">(R Core Team <a href="#ref-r19" role="doc-biblioref">2019</a>)</span> is a programming language with a big infrastructure of packages that helps to work in different fields of science and computer technology.</p>
-<p>There are several alternatives:</p>
+<div id="не-r-единым" class="section level2">
+<h2><span class="header-section-number">2.2</span> Не R единым</h2>
+<p>R <span class="citation">(R Core Team <a href="#ref-r19" role="doc-biblioref">2019</a>)</span> — это один из популярных языков для анализа данных. Однако у него вполне есть и альтернативы:</p>
 <ul>
 <li>Python <span class="citation">(VanderPlas <a href="#ref-vanderplas16" role="doc-biblioref">2016</a>; Grus <a href="#ref-grus19" role="doc-biblioref">2019</a>)</span></li>
 <li>Julia <span class="citation">(Bezanson et al. <a href="#ref-bezanson17" role="doc-biblioref">2017</a>)</span></li>
@@ -230,21 +228,37 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>java <span class="citation">(Brzustowicz <a href="#ref-brzustowicz17" role="doc-biblioref">2017</a>)</span></li>
 <li>…</li>
 </ul>
-<p>You can find some R answers here:</p>
+<p>Кроме того ответы на любые проблемы можно найти в…</p>
 <ul>
-<li>R for data science <span class="citation">(Wickham <a href="#ref-wickham16" role="doc-biblioref">2016</a>)</span>, it is online</li>
+<li>R for data science <span class="citation">(Wickham <a href="#ref-wickham16" role="doc-biblioref">2016</a>)</span>, <a href="https://r4ds.had.co.nz/">онлайн</a></li>
 <li><a href="https://community.rstudio.com/">R community</a></li>
 <li><a href="https://stackoverflow.com">stackoverflow</a></li>
-<li>any search engine you use</li>
+<li>любой поисковик</li>
 <li>…</li>
 </ul>
 </div>
-<div id="основные-этапы-исследования" class="section level3">
-<h3><span class="header-section-number">2.1.3</span> Основные этапы исследования</h3>
-</div>
+<div id="основные-этапы-исследования" class="section level2">
+<h2><span class="header-section-number">2.3</span> Основные этапы исследования</h2>
+<ul>
+<li>формулировка гипотез(ы)</li>
+<li>выбор зависимой и независимых переменных</li>
+<li>сбор данных</li>
+<li>работа с данными, которую можно представить следующей схемой:
+<div id="htmlwidget-c87a47968c5b071372ad" style="width:672px;height:480px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c87a47968c5b071372ad">{"x":{"diagram":"digraph {\n\ngraph [compound = true, fillcolor = red, layout = dot]\nnode [shape = rectangle]\n\nимпорт; трансформация; визуализация; моделирование; представление\n\nsubgraph cluster0 {\n  трансформация -> визуализация -> моделирование -> трансформация\n  }\n\nимпорт -> трансформация [lhead = cluster0]\nмоделирование -> представление  [ltail = cluster0]\n\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script></li>
+</ul>
+<p>При анализе данных бывают разные соблазны, с которыми нужно бороться:</p>
+<ul>
+<li><strong>Cherry Picking</strong> — выбор только тех данных, которые удовлетворяют гипотезе.</li>
+<li><strong>Data Dredging</strong> — проведение множества тестов, пока не появится статистически значимый результат.</li>
+<li><strong>Систематическая ошибка выжившего</strong> — анализ только одной группы объектов (выжившим), так как данных по другой группе (погибшим) данных нет.</li>
+<li><strong>Ложная корреляция</strong> — наличие высокой корреляции между переменными не гарантирует, что между ними есть причино-следственная связь.</li>
+<li><strong>Неуравновешанная выборка</strong> — если выборка неуравновешена, она перестает представлять генеральную совокупность, что может исказить выводы.</li>
+</ul>
+<p>Чтобы проиллюстрировать этапы исследования давайте возьмем данные из <a href="https://docs.google.com/forms/d/e/1FAIpQLSdJWr27JJGi0xSoBZV-xEmwLwlclpdLDtkU5mWUncMv7O6vAg/viewform">опрос</a>, который вы сейчас пройдете.</p>
 </div>
 <div id="введение-в-rstudio" class="section level2">
-<h2><span class="header-section-number">2.2</span> Введение в RStudio</h2>
+<h2><span class="header-section-number">2.4</span> Введение в RStudio</h2>
 <p>R is the programming language. RStudio is the most popular IDE (Integrated Development Environment) for R language.</p>
 <p>When you open RStudio for the first time you can see something like this:</p>
 <p><img src="images/01.01.rstudio.png" /></p>
@@ -252,7 +266,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="images/01.03.rstudio.png" /></p>
 </div>
 <div id="r-как-калькулятор" class="section level2">
-<h2><span class="header-section-number">2.3</span> R как калькулятор</h2>
+<h2><span class="header-section-number">2.5</span> R как калькулятор</h2>
 <p>Lets first start with the calculator. Press in R console</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="intro.html#cb1-1"></a><span class="dv">2</span><span class="op">+</span><span class="dv">9</span></span></code></pre></div>
 <pre><code>## [1] 11</code></pre>
@@ -277,15 +291,15 @@ So you are ready to solve some really hard equations (round it four decimal plac
 </p>
 </div>
 <p><span class="math display">\[\frac{\pi+2}{2^{3-\pi}}\]</span></p>
-<form name="form_85157" onsubmit="return validate_form_85157()" method="post">
-<input type="text" name="answer_85157"><br><input type="submit" value="check">
+<form name="form_78882" onsubmit="return validate_form_78882()" method="post">
+<input type="text" name="answer_78882"><br><input type="submit" value="check">
 </form>
-<p id="result_85157">
+<p id="result_78882">
 </p>
-<script> function validate_form_85157() {var x, text; var x = document.forms["form_85157"]["answer_85157"].value;if (x == "5.6718"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_85157').innerHTML = text; return false;} </script>
+<script> function validate_form_78882() {var x, text; var x = document.forms["form_78882"]["answer_78882"].value;if (x == "5.6718"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_78882').innerHTML = text; return false;} </script>
 </div>
 <div id="comments" class="section level2">
-<h2><span class="header-section-number">2.4</span> Comments</h2>
+<h2><span class="header-section-number">2.6</span> Comments</h2>
 <p>Any text after a hash <code>#</code> within the same line is considered a comment.</p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="intro.html#cb17-1"></a><span class="dv">2</span><span class="op">+</span><span class="dv">2</span> <span class="co"># it is four</span></span></code></pre></div>
 <pre><code>## [1] 4</code></pre>
@@ -294,7 +308,7 @@ So you are ready to solve some really hard equations (round it four decimal plac
 <pre><code>## [1] 6</code></pre>
 </div>
 <div id="functions" class="section level2">
-<h2><span class="header-section-number">2.5</span> Functions</h2>
+<h2><span class="header-section-number">2.7</span> Functions</h2>
 <p>The most important part of R is functions: here are some of them:</p>
 <div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="intro.html#cb21-1"></a><span class="kw">sqrt</span>(<span class="dv">4</span>)</span></code></pre></div>
 <pre><code>## [1] 2</code></pre>
@@ -334,7 +348,7 @@ So you are ready to solve some really hard equations (round it four decimal plac
 <div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="intro.html#cb53-1"></a>Sys.Date <span class="co"># wrong</span></span></code></pre></div>
 <pre><code>## function () 
 ## as.Date(as.POSIXlt(Sys.time()))
-## &lt;bytecode: 0x5f7a9af41820&gt;
+## &lt;bytecode: 0x613d82800608&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 <p>Each function in R is documented. You can read its documentation typing a question mark before the function name:</p>
 <div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="intro.html#cb55-1"></a>?Sys.Date</span></code></pre></div>
@@ -344,15 +358,15 @@ Explore the function <code>log()</code> and calculate the following logarithm:
 </p>
 </div>
 <p><span class="math display">\[\log_3(3486784401)\]</span></p>
-<form name="form_43519" onsubmit="return validate_form_43519()" method="post">
-<input type="text" name="answer_43519"><br><input type="submit" value="check">
+<form name="form_41096" onsubmit="return validate_form_41096()" method="post">
+<input type="text" name="answer_41096"><br><input type="submit" value="check">
 </form>
-<p id="result_43519">
+<p id="result_41096">
 </p>
-<script> function validate_form_43519() {var x, text; var x = document.forms["form_43519"]["answer_43519"].value;if (x == "20"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_43519').innerHTML = text; return false;} </script>
+<script> function validate_form_41096() {var x, text; var x = document.forms["form_41096"]["answer_41096"].value;if (x == "20"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_41096').innerHTML = text; return false;} </script>
 </div>
 <div id="variables" class="section level2">
-<h2><span class="header-section-number">2.6</span> Variables</h2>
+<h2><span class="header-section-number">2.8</span> Variables</h2>
 <p>Everything in R can be stored in a variable:</p>
 <div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="intro.html#cb56-1"></a>x &lt;-<span class="st"> </span><span class="dv">5</span> <span class="op">+</span><span class="st"> </span><span class="dv">6</span></span></code></pre></div>
 <p><img src="images/01.04.variable.png" />
@@ -370,7 +384,7 @@ As a result, no output in the Console, and a new variable <em>x</em> appear in t
 <span id="cb62-2"><a href="intro.html#cb62-2"></a>x</span></code></pre></div>
 <pre><code>## Error in eval(expr, envir, enclos): object &#39;x&#39; not found</code></pre>
 <div id="variable-comparison" class="section level3">
-<h3><span class="header-section-number">2.6.1</span> Variable comparison</h3>
+<h3><span class="header-section-number">2.8.1</span> Variable comparison</h3>
 <p>It is possible to compare different variables</p>
 <div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="intro.html#cb64-1"></a>x &lt;-<span class="st"> </span><span class="dv">18</span></span>
 <span id="cb64-2"><a href="intro.html#cb64-2"></a>x <span class="op">&gt;</span><span class="st"> </span><span class="dv">18</span></span></code></pre></div>
@@ -392,7 +406,7 @@ As a result, no output in the Console, and a new variable <em>x</em> appear in t
 <pre><code>## [1] TRUE</code></pre>
 </div>
 <div id="variable-types" class="section level3">
-<h3><span class="header-section-number">2.6.2</span> Variable types</h3>
+<h3><span class="header-section-number">2.8.2</span> Variable types</h3>
 <p>There are several types of variables in R. In this course the only important types will be <code>double</code> (all numbers), <code>character</code> (or strings), and <code>logical</code>:</p>
 <div class="sourceCode" id="cb80"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb80-1"><a href="intro.html#cb80-1"></a>x &lt;-<span class="st"> </span><span class="dv">2</span><span class="op">+</span><span class="dv">3</span></span>
 <span id="cb80-2"><a href="intro.html#cb80-2"></a><span class="kw">typeof</span>(x)</span></code></pre></div>
@@ -406,7 +420,7 @@ As a result, no output in the Console, and a new variable <em>x</em> appear in t
 </div>
 </div>
 <div id="vector" class="section level2">
-<h2><span class="header-section-number">2.7</span> Vector</h2>
+<h2><span class="header-section-number">2.9</span> Vector</h2>
 <p>An R object that contains multiple values of the same type is called <strong>vector</strong>. It could be created with the command <code>c()</code>:</p>
 <div class="sourceCode" id="cb86"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb86-1"><a href="intro.html#cb86-1"></a><span class="kw">c</span>(<span class="dv">3</span>, <span class="dv">0</span>, pi, <span class="fl">23.4</span>, <span class="dv">-53</span>)</span></code></pre></div>
 <pre><code>## [1]   3.000000   0.000000   3.141593  23.400000 -53.000000</code></pre>
@@ -457,7 +471,7 @@ Use the argument <code>length.out</code> of function <code>seq()</code> and crea
 <div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb114-1"><a href="intro.html#cb114-1"></a>month.abb</span></code></pre></div>
 <pre><code>##  [1] &quot;Jan&quot; &quot;Feb&quot; &quot;Mar&quot; &quot;Apr&quot; &quot;May&quot; &quot;Jun&quot; &quot;Jul&quot; &quot;Aug&quot; &quot;Sep&quot; &quot;Oct&quot; &quot;Nov&quot; &quot;Dec&quot;</code></pre>
 <div id="vector-coercion" class="section level3">
-<h3><span class="header-section-number">2.7.1</span> Vector coercion</h3>
+<h3><span class="header-section-number">2.9.1</span> Vector coercion</h3>
 <p>Vectors are R objects that contain multiple values of <strong>the same type</strong>. But what if we merged together different types?</p>
 <div class="sourceCode" id="cb116"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb116-1"><a href="intro.html#cb116-1"></a><span class="kw">c</span>(<span class="dv">1</span>, <span class="st">&quot;34&quot;</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;1&quot;  &quot;34&quot;</code></pre>
@@ -475,7 +489,7 @@ Use the argument <code>length.out</code> of function <code>seq()</code> and crea
 <pre><code>## [1] 6</code></pre>
 </div>
 <div id="vector-operations" class="section level3">
-<h3><span class="header-section-number">2.7.2</span> Vector operations</h3>
+<h3><span class="header-section-number">2.9.2</span> Vector operations</h3>
 <p>All operations, that we discussed earlier, could be done with vectors of the same length:</p>
 <div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb128-1"><a href="intro.html#cb128-1"></a><span class="dv">1</span><span class="op">:</span><span class="dv">5</span> <span class="op">+</span><span class="st"> </span><span class="dv">6</span><span class="op">:</span><span class="dv">10</span></span></code></pre></div>
 <pre><code>## [1]  7  9 11 13 15</code></pre>
@@ -499,7 +513,7 @@ Use the argument <code>length.out</code> of function <code>seq()</code> and crea
 <pre><code>## [1] 5 4 3 2 1 0 1 2 3</code></pre>
 </div>
 <div id="indexing-vectors" class="section level3">
-<h3><span class="header-section-number">2.7.3</span> Indexing vectors</h3>
+<h3><span class="header-section-number">2.9.3</span> Indexing vectors</h3>
 <p>How to get some value or banch of values from a vector? You need to index them:</p>
 <div class="sourceCode" id="cb146"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb146-1"><a href="intro.html#cb146-1"></a>x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">3</span>, <span class="dv">0</span>, pi, <span class="fl">23.4</span>, <span class="dv">-53</span>)</span>
 <span id="cb146-2"><a href="intro.html#cb146-2"></a>y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Kraków&quot;, &quot;</span>Warszawa<span class="st">&quot;, &quot;</span>Cieszyn<span class="st">&quot;)</span></span>
@@ -543,7 +557,7 @@ How many elements in the vector <code>g</code> if expression <code>g[pi &lt; 100
 </div>
 </div>
 <div id="na" class="section level3">
-<h3><span class="header-section-number">2.7.4</span> <code>NA</code></h3>
+<h3><span class="header-section-number">2.9.4</span> <code>NA</code></h3>
 <p>Sometimes there are some missing values in the data, so it is represented with <code>NA</code></p>
 <div class="sourceCode" id="cb170"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb170-1"><a href="intro.html#cb170-1"></a><span class="ot">NA</span></span></code></pre></div>
 <pre><code>## [1] NA</code></pre>
@@ -656,7 +670,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["moroz-2020-ds4l_NN.pdf"],
+"download": null,
 "toc": {
 "collapse": "section"
 },
