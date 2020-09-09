@@ -157,6 +157,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.9.3" data-path="intro.html"><a href="intro.html#индексирование-вектора"><i class="fa fa-check"></i><b>2.9.3</b> Индексирование вектора</a></li>
 <li class="chapter" data-level="2.9.4" data-path="intro.html"><a href="intro.html#пропущенные-значения"><i class="fa fa-check"></i><b>2.9.4</b> Пропущенные значения</a></li>
 </ul></li>
+<li class="chapter" data-level="2.10" data-path="intro.html"><a href="intro.html#пакеты"><i class="fa fa-check"></i><b>2.10</b> Пакеты</a></li>
+<li class="chapter" data-level="2.11" data-path="intro.html"><a href="intro.html#датафрейм-и-тиббл"><i class="fa fa-check"></i><b>2.11</b> Датафрейм и тиббл</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="dplyr.html"><a href="dplyr.html"><i class="fa fa-check"></i><b>3</b> Data manipulation: <code>dplyr</code></a><ul>
 <li class="chapter" data-level="3.1" data-path="dplyr.html"><a href="dplyr.html#data"><i class="fa fa-check"></i><b>3.1</b> Data</a><ul>
@@ -245,8 +247,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>выбор зависимой и независимых переменных</li>
 <li>сбор данных</li>
 <li>работа с данными, которую можно представить следующей схемой:
-<div id="htmlwidget-760f559322fe2b21ee3e" style="width:672px;height:480px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-760f559322fe2b21ee3e">{"x":{"diagram":"digraph {\n\ngraph [compound = true, fillcolor = red, layout = dot]\nnode [shape = rectangle]\n\nимпорт; трансформация; визуализация; моделирование; представление\n\nsubgraph cluster0 {\n  трансформация -> визуализация -> моделирование -> трансформация\n  }\n\nимпорт -> трансформация [lhead = cluster0]\nмоделирование -> представление  [ltail = cluster0]\n\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script></li>
+<div id="htmlwidget-323456b2180466dbaa60" style="width:672px;height:480px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-323456b2180466dbaa60">{"x":{"diagram":"digraph {\n\ngraph [compound = true, fillcolor = red, layout = dot]\nnode [shape = rectangle]\n\nимпорт; трансформация; визуализация; моделирование; представление\n\nsubgraph cluster0 {\n  трансформация -> визуализация -> моделирование -> трансформация\n  }\n\nимпорт -> трансформация [lhead = cluster0]\nмоделирование -> представление  [ltail = cluster0]\n\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script></li>
 </ul>
 <p>При анализе данных бывают разные соблазны, с которыми нужно бороться:</p>
 <ul>
@@ -291,12 +293,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </p>
 </div>
 <p><span class="math display">\[\frac{\pi+2}{2^{3-\pi}}\]</span></p>
-<form name="form_3204" onsubmit="return validate_form_3204()" method="post">
-<input type="text" name="answer_3204"><br><input type="submit" value="check">
+<form name="form_68274" onsubmit="return validate_form_68274()" method="post">
+<input type="text" name="answer_68274"><br><input type="submit" value="check">
 </form>
-<p id="result_3204">
+<p id="result_68274">
 </p>
-<script> function validate_form_3204() {var x, text; var x = document.forms["form_3204"]["answer_3204"].value;if (x == "5.672"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_3204').innerHTML = text; return false;} </script>
+<script> function validate_form_68274() {var x, text; var x = document.forms["form_68274"]["answer_68274"].value;if (x == "5.672"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_68274').innerHTML = text; return false;} </script>
 </div>
 <div id="комментарии" class="section level2">
 <h2><span class="header-section-number">2.6</span> Комментарии</h2>
@@ -342,11 +344,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>## [1] 2</code></pre>
 <p>Существуют функции без аргументов, но с ними все равно нужно использовать скобки:</p>
 <div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="intro.html#cb49-1"></a><span class="kw">Sys.Date</span>() <span class="co"># correct</span></span></code></pre></div>
-<pre><code>## [1] &quot;2020-09-04&quot;</code></pre>
+<pre><code>## [1] &quot;2020-09-10&quot;</code></pre>
 <div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="intro.html#cb51-1"></a>Sys.Date <span class="co"># wrong</span></span></code></pre></div>
 <pre><code>## function () 
 ## as.Date(as.POSIXlt(Sys.time()))
-## &lt;bytecode: 0x5eab0d8a2128&gt;
+## &lt;bytecode: 0x629866fddd20&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 <p>Все функции в R имеют документацию. Ее можно увидеть, если поставить вопросительный знак перед именем функции:</p>
 <div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="intro.html#cb53-1"></a>?Sys.Date</span></code></pre></div>
@@ -356,12 +358,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </p>
 </div>
 <p><span class="math display">\[\log_3(3486784401)\]</span></p>
-<form name="form_61863" onsubmit="return validate_form_61863()" method="post">
-<input type="text" name="answer_61863"><br><input type="submit" value="check">
+<form name="form_12216" onsubmit="return validate_form_12216()" method="post">
+<input type="text" name="answer_12216"><br><input type="submit" value="check">
 </form>
-<p id="result_61863">
+<p id="result_12216">
 </p>
-<script> function validate_form_61863() {var x, text; var x = document.forms["form_61863"]["answer_61863"].value;if (x == "20"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_61863').innerHTML = text; return false;} </script>
+<script> function validate_form_12216() {var x, text; var x = document.forms["form_12216"]["answer_12216"].value;if (x == "20"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_12216').innerHTML = text; return false;} </script>
 </div>
 <div id="переменные" class="section level2">
 <h2><span class="header-section-number">2.8</span> Переменные</h2>
@@ -565,12 +567,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 Во встроенном датасете <code>Nile</code> содержаться данные о ежегодном разливе Нила в 1871–1970 годах (в миллиардах кубических метров). Сколько в датасете наблюдений больше 1000 и меньше 1200.
 </p>
 </div>
-<form name="form_68283" onsubmit="return validate_form_68283()" method="post">
-<input type="text" name="answer_68283"><br><input type="submit" value="check">
+<form name="form_64545" onsubmit="return validate_form_64545()" method="post">
+<input type="text" name="answer_64545"><br><input type="submit" value="check">
 </form>
-<p id="result_68283">
+<p id="result_64545">
 </p>
-<script> function validate_form_68283() {var x, text; var x = document.forms["form_68283"]["answer_68283"].value;if (x == "23"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_68283').innerHTML = text; return false;} </script>
+<script> function validate_form_64545() {var x, text; var x = document.forms["form_64545"]["answer_64545"].value;if (x == "23"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_64545').innerHTML = text; return false;} </script>
 </div>
 <div id="пропущенные-значения" class="section level3">
 <h3><span class="header-section-number">2.9.4</span> Пропущенные значения</h3>
@@ -609,8 +611,46 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 Сколько элементов в векторе <code>g</code>, если выражение <code>g[pi &lt; 1000]</code> не возвращает ошибки?
 </p>
 </div>
-
 </div>
+</div>
+<div id="пакеты" class="section level2">
+<h2><span class="header-section-number">2.10</span> Пакеты</h2>
+<p>Самая большая ценность R не в нем самом, а в пакетах, которые написаны для этого языка. Более ли менее, все, что мы пока обсуждали — основной механизм работы R, который разработали еще в 1979. С тех пор много чего поменялось, так что все новые практики в анализе и трансформации данных хранятся в пакетах — отдельный модуль, после загрузки которого в окружении R появляются дополнительные функции. Мы изучим наиболее популярный диалект R, который называется <code>tidyverse</code> (альтернатива – пакет data.table).</p>
+<p>Для установки пакета следует использовать функцию <code>install.packages()</code></p>
+<div class="sourceCode" id="cb202"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb202-1"><a href="intro.html#cb202-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
+<p>Сегодня нам еще понадобиться пакет <code>readxl</code>:</p>
+<div class="sourceCode" id="cb203"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb203-1"><a href="intro.html#cb203-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;readxl&quot;</span>)</span></code></pre></div>
+<p>После того, как пакет установлен, его можно включить:</p>
+<div class="sourceCode" id="cb204"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb204-1"><a href="intro.html#cb204-1"></a><span class="kw">library</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
+<pre><code>## ── Attaching packages ───────────────────────────────────────── tidyverse 1.3.0 ──</code></pre>
+<pre><code>## ✓ ggplot2 3.3.2     ✓ purrr   0.3.4
+## ✓ tibble  3.0.3     ✓ dplyr   1.0.0
+## ✓ tidyr   1.1.0     ✓ stringr 1.4.0
+## ✓ readr   1.3.1     ✓ forcats 0.5.0</code></pre>
+<pre><code>## ── Conflicts ──────────────────────────────────────────── tidyverse_conflicts() ──
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<p>Не загрузка пакета — самая частая ошибка студентов:</p>
+<ul>
+<li><code>install.packages("...")</code> — это как купить набор отверток;</li>
+<li><code>library("...")</code> — это как собрать и быть готовым использовать купленный набор.</li>
+</ul>
+<p><img src="images/01.05.install-packages-vs-library.png" /></p>
+<div class="rmdtask">
+<p>
+Установите пакеты <code>tidyverse</code> и <code>readxl</code>. К какому пакету принадлежит функция <code>add_column()</code>?
+</p>
+</div>
+<form name="form_99818" onsubmit="return validate_form_99818()" method="post">
+<select name="answer_99818"><option> dplyr </option><option> ggplot2 </option><option> purrr </option><option> readr </option><option> readxl </option><option> tibble </option><option> tidyr </option></select><br><input type="submit" value="check">
+</form>
+<p id="result_99818">
+</p>
+<script> function validate_form_99818() {var x, text; var x = document.forms["form_99818"]["answer_99818"].value;if (x == "tibble"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_99818').innerHTML = text; return false;} </script>
+</div>
+<div id="датафрейм-и-тиббл" class="section level2">
+<h2><span class="header-section-number">2.11</span> Датафрейм и тиббл</h2>
+
 </div>
 </div>
 <h3>References</h3>
