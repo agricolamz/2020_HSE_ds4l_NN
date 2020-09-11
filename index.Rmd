@@ -32,3 +32,9 @@ biblio-style: apalike
     * [Introduction to Data Visualization with ggplot2](https://learn.datacamp.com/courses/introduction-to-data-visualization-with-ggplot2)
     
 Если Вы хотите пройти какие-то другие курсы на [datacamp](https://learn.datacamp.com/courses) (не обязательно связанные с R), можете написать мне, я добавлю Вас в группу, которая позовляет проходить курсы бесплатно.
+
+## Домашние работы
+
+* [домашняя работа 1](https://docs.google.com/forms/d/e/1FAIpQLSeRgoo6G0CALGmYjYI1ZayJ7jpTp2k1vmwRey7Qs5hyNYMC8Q/viewform)
+* домашняя работа 2
+* домашняя работа 3

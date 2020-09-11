@@ -123,7 +123,7 @@ pi
 
 $$\frac{\pi+2}{2^{3-\pi}}$$
 
-```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
+```{r, results='asis', echo = FALSE}
 checkdown::check_question(answer =  round((pi+2)/(2^(3-pi)), 3))
 ```
 
@@ -189,7 +189,7 @@ Sys.Date # wrong
 
 $$\log_3(3486784401)$$
 
-```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
+```{r, results='asis', echo = FALSE}
 checkdown::check_question(answer = log(3486784401, base = 3))
 ```
 
@@ -437,7 +437,7 @@ x[!(x > 2)]
 Во встроенном датасете `Nile` содержаться данные о ежегодном разливе Нила в 1871--1970 годах (в миллиардах кубических метров). Сколько в датасете наблюдений больше 1000 и меньше 1200.
 ```
 
-```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
+```{r, results='asis', echo = FALSE}
 checkdown::check_question(answer = length(Nile[Nile > 1000 & Nile < 1200]))
 ```
 
@@ -510,8 +510,187 @@ library("tidyverse")
 Установите пакеты `tidyverse` и `readxl`. К какому пакету принадлежит функция `add_column()`?
 ```
 
-```{r, results='asis', echo = FALSE, eval = knitr::is_html_output()}
+```{r, results='asis', echo = FALSE}
 checkdown::check_question(answer = "tibble", options = sort(c("tibble", "readr", "dplyr", "tidyr", "ggplot2", "purrr", "readxl")))
 ```
 
 ## Датафрейм и тиббл
+
+Датафрейм --- это собрание векторов одинаковой длины с уникальными названиями. Вот пример датафрейма с фильмографией Тома Мура:
+
+```{r}
+moore_filmography <- tibble(title = c("The Secret of Kells", 
+                                      "Song of the Sea", 
+                                      "Kahlil Gibran's The Prophet", 
+                                      "The Breadwinner", 
+                                      "Wolfwalkers"),
+                            year = c(2009, 2014, 2014, 2017, 2020),
+                            director = c(TRUE, TRUE, TRUE, FALSE, TRUE))
+moore_filmography
+```
+
+Существует много встроенных датафреймов:
+
+```{r,  eval = knitr::is_html_output()}
+mtcars
+iris
+```
+  
+О них точно также модно найти информацию в справке:
+
+```{r, eval = FALSE}
+?mtcars
+?iris
+```
+
+Элементы датафрейма -- векторы -- можно вызывать используя знак `$`:
+
+```{r}
+moore_filmography$year
+moore_filmography$title
+```
+
+К существующему датафрейму можно добавить новый вектор:
+
+```{r}
+moore_filmography$producer <- c(TRUE, TRUE, FALSE, TRUE, TRUE)
+moore_filmography
+```
+
+Существует масса полезных функций, которые говорят что-то о датафрейме:
+
+```{r}
+nrow(moore_filmography)
+ncol(moore_filmography)
+summary(moore_filmography)
+str(moore_filmography)
+```
+
+Мы будем работать исключительно с датафреймами (однако, это не единственная структура данных в R).
+
+```{block, type = "rmdtask"}
+Сколько строчек в датасете `iris`?
+```
+
+```{r, results='asis', echo = FALSE}
+checkdown::check_question(answer =  nrow(iris))
+```
+
+```{block, type = "rmdtask"}
+Сколько колонок в датасете `mtcars`?
+```
+
+```{r, results='asis', echo = FALSE}
+checkdown::check_question(answer =  ncol(mtcars))
+```
+
+### Вызов элементов датафрейма
+
+Датафрейм --- двумерный объект, так что можно вызывать как его строчки, так и его колонки. Это делается при помощи квадратных скобок и индексов: первый отвечает за строчки, второй -- за колонки:
+
+```{r}
+moore_filmography[3, 2]
+moore_filmography[3,]
+moore_filmography[,2]
+moore_filmography[,1:2]
+moore_filmography[,-3]
+moore_filmography[,-c(1:2)]
+moore_filmography[,"year"]
+moore_filmography[,c("title", "year")]
+moore_filmography[moore_filmography$year > 2014,]
+```
+
+## Импорт данных
+
+### `.csv` файлы
+
+`.csv`  файлы (comma-separated values) --- это текст, разделенный запятыми (или другими разделителями, например, табуляцией или точкой с запятой) на отдельные значения. Его широко используют, так как его одинаково легко редактировать людям и парсить компьютерам. Вот датасет `moore_filmography` в формате `.csv`:
+
+```
+title,year,director,producer
+The Secret of Kells,2009,TRUE,TRUE
+Song of the Sea,2014,TRUE,TRUE
+Kahlil Gibran's The Prophet,2014,TRUE,FALSE
+The Breadwinner,2017,FALSE,TRUE
+Wolfwalkers,2020,TRUE,TRUE
+```
+
+Давайте создадим переменную с этими данными:
+
+```{r}
+our_csv <- "title,year,director,producer
+The Secret of Kells,2009,TRUE,TRUE
+Song of the Sea,2014,TRUE,TRUE
+Kahlil Gibran's The Prophet,2014,TRUE,FALSE
+The Breadwinner,2017,FALSE,TRUE
+Wolfwalkers,2020,TRUE,TRUE"
+```
+
+Теперь мы можем использовать функцию `read_csv()` (из `tidyverse`):
+
+```{r}
+read_csv(our_csv)
+```
+
+Так же вы можете загрузить файл с компьютера. Скачайте [этот](https://raw.githubusercontent.com/agricolamz/2020_HSE_ds4l_NN/master/data/moore_filmography.csv) файл на компьютер (нажмите `Ctrl S` или `Cmd S`) и считайте его в:
+
+```{r, eval=FALSE}
+read_csv("C:/path/to/your/file/moore_filmography.csv")
+```
+
+```{r, echo=FALSE}
+read_csv(our_csv)
+```
+
+Еще файл можно скачать непосредственно из интернета:
+
+```{r}
+read_csv("https://raw.githubusercontent.com/agricolamz/2020_HSE_ds4l_NN/master/data/moore_filmography.csv")
+```
+
+```{block, type = "rmdtask"}
+Из-за пандемии про Ухань говорили во всех новостях. [По-русски](https://nplus1.ru/blog/2020/02/03/wuhan) по каким-то причинам этот город носители относят то к мужскому роду, то к женскому. Я посмотрел на другие славянские языки и записал полученные данные в [`.csv` file](https://gist.githubusercontent.com/agricolamz/c280527d6b5d79693b85d8fcf8d35bc3/raw/c46a32a218bc5d6933703ae677b81ff5a4a1dcaa/wuhan.csv). Скачайте датасет в R. Какие там переменные?
+```
+
+Все операции с файлами в R как-то связаны с памятью вашего компьютера. Чтобы узнать папку, в которой R находится, можно запустить команду `getwd()`. Рабочую дерикторию можно поменять, используя функцию `setwd()`. Если файл, с которым Вы хотите работать находится в рабочей дериктории, то нет нужды писать полный путь к файлу:
+
+```{r, eval = FALSE}
+read_csv("moore_filmography.csv")
+```
+
+Кроме того, естественно, в R существует функция, которая позволяет записывать `.csv`:
+
+```{r, eval = FALSE}
+write_csv(moore_filmography, "moore_filmography_v2.csv")
+```
+
+Иногда чтение `.csv` файлов в Microsoft Excel вызывает какие-то трудности, посмотрите [инструкции](https://www.thewindowsclub.com/how-to-convert-a-text-txt-csv-file-into-an-excel-file), если у кого-то возникнут похожие проблемы.
+
+### файлы `.xls` и `.xlsx`
+
+Для чтения файлов `.xsl` and `.xslx` существует пакет  `readxl`. Установите и загрузите библиотеку:
+
+```{r}
+library(readxl)
+```
+
+Вот [тестовый файл](https://github.com/agricolamz/2020.02_Naumburg_R/raw/master/data/moore_filmography.xlsx). Скачайте его к себе на компьютер, положите в рабочую дерикторию и загрузите в R:
+
+
+```{r, eval= FALSE}
+read_xlsx("moore_filmography.xlsx")
+```
+```{r, echo=FALSE}
+read_xlsx("data/moore_filmography.xlsx")
+```
+
+`.xls` и `.xlsx` могут иметь разные таблиц на разных листах:
+
+
+```{r, eval=FALSE}
+read_xlsx("moore_filmography.xlsx", sheet = "iris")
+```
+
+```{r, echo=FALSE}
+read_xlsx("data/moore_filmography.xlsx", sheet = "iris")
+```

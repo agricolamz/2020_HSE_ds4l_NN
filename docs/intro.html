@@ -139,7 +139,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">Основы анализа данных</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Требования</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Требования</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#домашние-работы"><i class="fa fa-check"></i><b>1.1</b> Домашние работы</a></li>
+</ul></li>
 <li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Введение</a><ul>
 <li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#наука-о-данных"><i class="fa fa-check"></i><b>2.1</b> Наука о данных</a></li>
 <li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#не-r-единым"><i class="fa fa-check"></i><b>2.2</b> Не R единым</a></li>
@@ -158,7 +160,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.9.4" data-path="intro.html"><a href="intro.html#пропущенные-значения"><i class="fa fa-check"></i><b>2.9.4</b> Пропущенные значения</a></li>
 </ul></li>
 <li class="chapter" data-level="2.10" data-path="intro.html"><a href="intro.html#пакеты"><i class="fa fa-check"></i><b>2.10</b> Пакеты</a></li>
-<li class="chapter" data-level="2.11" data-path="intro.html"><a href="intro.html#датафрейм-и-тиббл"><i class="fa fa-check"></i><b>2.11</b> Датафрейм и тиббл</a></li>
+<li class="chapter" data-level="2.11" data-path="intro.html"><a href="intro.html#датафрейм-и-тиббл"><i class="fa fa-check"></i><b>2.11</b> Датафрейм и тиббл</a><ul>
+<li class="chapter" data-level="2.11.1" data-path="intro.html"><a href="intro.html#вызов-элементов-датафрейма"><i class="fa fa-check"></i><b>2.11.1</b> Вызов элементов датафрейма</a></li>
+</ul></li>
+<li class="chapter" data-level="2.12" data-path="intro.html"><a href="intro.html#импорт-данных"><i class="fa fa-check"></i><b>2.12</b> Импорт данных</a><ul>
+<li class="chapter" data-level="2.12.1" data-path="intro.html"><a href="intro.html#csv-файлы"><i class="fa fa-check"></i><b>2.12.1</b> <code>.csv</code> файлы</a></li>
+<li class="chapter" data-level="2.12.2" data-path="intro.html"><a href="intro.html#файлы-.xls-и-.xlsx"><i class="fa fa-check"></i><b>2.12.2</b> файлы <code>.xls</code> и <code>.xlsx</code></a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="dplyr.html"><a href="dplyr.html"><i class="fa fa-check"></i><b>3</b> Data manipulation: <code>dplyr</code></a><ul>
 <li class="chapter" data-level="3.1" data-path="dplyr.html"><a href="dplyr.html#data"><i class="fa fa-check"></i><b>3.1</b> Data</a><ul>
@@ -247,8 +255,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>выбор зависимой и независимых переменных</li>
 <li>сбор данных</li>
 <li>работа с данными, которую можно представить следующей схемой:
-<div id="htmlwidget-323456b2180466dbaa60" style="width:672px;height:480px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-323456b2180466dbaa60">{"x":{"diagram":"digraph {\n\ngraph [compound = true, fillcolor = red, layout = dot]\nnode [shape = rectangle]\n\nимпорт; трансформация; визуализация; моделирование; представление\n\nsubgraph cluster0 {\n  трансформация -> визуализация -> моделирование -> трансформация\n  }\n\nимпорт -> трансформация [lhead = cluster0]\nмоделирование -> представление  [ltail = cluster0]\n\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script></li>
+<div id="htmlwidget-b1dfcf0a7f91d7fbe5fe" style="width:672px;height:480px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b1dfcf0a7f91d7fbe5fe">{"x":{"diagram":"digraph {\n\ngraph [compound = true, fillcolor = red, layout = dot]\nnode [shape = rectangle]\n\nимпорт; трансформация; визуализация; моделирование; представление\n\nsubgraph cluster0 {\n  трансформация -> визуализация -> моделирование -> трансформация\n  }\n\nимпорт -> трансформация [lhead = cluster0]\nмоделирование -> представление  [ltail = cluster0]\n\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script></li>
 </ul>
 <p>При анализе данных бывают разные соблазны, с которыми нужно бороться:</p>
 <ul>
@@ -293,12 +301,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </p>
 </div>
 <p><span class="math display">\[\frac{\pi+2}{2^{3-\pi}}\]</span></p>
-<form name="form_68274" onsubmit="return validate_form_68274()" method="post">
-<input type="text" name="answer_68274"><br><input type="submit" value="check">
+<form name="form_52816" onsubmit="return validate_form_52816()" method="post">
+<input type="text" name="answer_52816"><br><input type="submit" value="check">
 </form>
-<p id="result_68274">
+<p id="result_52816">
 </p>
-<script> function validate_form_68274() {var x, text; var x = document.forms["form_68274"]["answer_68274"].value;if (x == "5.672"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_68274').innerHTML = text; return false;} </script>
+<script> function validate_form_52816() {var x, text; var x = document.forms["form_52816"]["answer_52816"].value;if (x == "5.672"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_52816').innerHTML = text; return false;} </script>
 </div>
 <div id="комментарии" class="section level2">
 <h2><span class="header-section-number">2.6</span> Комментарии</h2>
@@ -344,11 +352,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>## [1] 2</code></pre>
 <p>Существуют функции без аргументов, но с ними все равно нужно использовать скобки:</p>
 <div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="intro.html#cb49-1"></a><span class="kw">Sys.Date</span>() <span class="co"># correct</span></span></code></pre></div>
-<pre><code>## [1] &quot;2020-09-10&quot;</code></pre>
+<pre><code>## [1] &quot;2020-09-11&quot;</code></pre>
 <div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="intro.html#cb51-1"></a>Sys.Date <span class="co"># wrong</span></span></code></pre></div>
 <pre><code>## function () 
 ## as.Date(as.POSIXlt(Sys.time()))
-## &lt;bytecode: 0x629866fddd20&gt;
+## &lt;bytecode: 0x60203c357b88&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 <p>Все функции в R имеют документацию. Ее можно увидеть, если поставить вопросительный знак перед именем функции:</p>
 <div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="intro.html#cb53-1"></a>?Sys.Date</span></code></pre></div>
@@ -358,12 +366,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </p>
 </div>
 <p><span class="math display">\[\log_3(3486784401)\]</span></p>
-<form name="form_12216" onsubmit="return validate_form_12216()" method="post">
-<input type="text" name="answer_12216"><br><input type="submit" value="check">
+<form name="form_99717" onsubmit="return validate_form_99717()" method="post">
+<input type="text" name="answer_99717"><br><input type="submit" value="check">
 </form>
-<p id="result_12216">
+<p id="result_99717">
 </p>
-<script> function validate_form_12216() {var x, text; var x = document.forms["form_12216"]["answer_12216"].value;if (x == "20"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_12216').innerHTML = text; return false;} </script>
+<script> function validate_form_99717() {var x, text; var x = document.forms["form_99717"]["answer_99717"].value;if (x == "20"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_99717').innerHTML = text; return false;} </script>
 </div>
 <div id="переменные" class="section level2">
 <h2><span class="header-section-number">2.8</span> Переменные</h2>
@@ -567,12 +575,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 Во встроенном датасете <code>Nile</code> содержаться данные о ежегодном разливе Нила в 1871–1970 годах (в миллиардах кубических метров). Сколько в датасете наблюдений больше 1000 и меньше 1200.
 </p>
 </div>
-<form name="form_64545" onsubmit="return validate_form_64545()" method="post">
-<input type="text" name="answer_64545"><br><input type="submit" value="check">
+<form name="form_36418" onsubmit="return validate_form_36418()" method="post">
+<input type="text" name="answer_36418"><br><input type="submit" value="check">
 </form>
-<p id="result_64545">
+<p id="result_36418">
 </p>
-<script> function validate_form_64545() {var x, text; var x = document.forms["form_64545"]["answer_64545"].value;if (x == "23"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_64545').innerHTML = text; return false;} </script>
+<script> function validate_form_36418() {var x, text; var x = document.forms["form_36418"]["answer_36418"].value;if (x == "23"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_36418').innerHTML = text; return false;} </script>
 </div>
 <div id="пропущенные-значения" class="section level3">
 <h3><span class="header-section-number">2.9.4</span> Пропущенные значения</h3>
@@ -622,12 +630,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb203"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb203-1"><a href="intro.html#cb203-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;readxl&quot;</span>)</span></code></pre></div>
 <p>После того, как пакет установлен, его можно включить:</p>
 <div class="sourceCode" id="cb204"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb204-1"><a href="intro.html#cb204-1"></a><span class="kw">library</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
-<pre><code>## ── Attaching packages ───────────────────────────────────────── tidyverse 1.3.0 ──</code></pre>
+<pre><code>## ── Attaching packages ───────────────────────────────────────────────────── tidyverse 1.3.0 ──</code></pre>
 <pre><code>## ✓ ggplot2 3.3.2     ✓ purrr   0.3.4
 ## ✓ tibble  3.0.3     ✓ dplyr   1.0.0
 ## ✓ tidyr   1.1.0     ✓ stringr 1.4.0
 ## ✓ readr   1.3.1     ✓ forcats 0.5.0</code></pre>
-<pre><code>## ── Conflicts ──────────────────────────────────────────── tidyverse_conflicts() ──
+<pre><code>## ── Conflicts ──────────────────────────────────────────────────────── tidyverse_conflicts() ──
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()</code></pre>
 <p>Не загрузка пакета — самая частая ошибка студентов:</p>
@@ -641,16 +649,238 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 Установите пакеты <code>tidyverse</code> и <code>readxl</code>. К какому пакету принадлежит функция <code>add_column()</code>?
 </p>
 </div>
-<form name="form_99818" onsubmit="return validate_form_99818()" method="post">
-<select name="answer_99818"><option> dplyr </option><option> ggplot2 </option><option> purrr </option><option> readr </option><option> readxl </option><option> tibble </option><option> tidyr </option></select><br><input type="submit" value="check">
+<form name="form_4382" onsubmit="return validate_form_4382()" method="post">
+<select name="answer_4382"><option> dplyr </option><option> ggplot2 </option><option> purrr </option><option> readr </option><option> readxl </option><option> tibble </option><option> tidyr </option></select><br><input type="submit" value="check">
 </form>
-<p id="result_99818">
+<p id="result_4382">
 </p>
-<script> function validate_form_99818() {var x, text; var x = document.forms["form_99818"]["answer_99818"].value;if (x == "tibble"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_99818').innerHTML = text; return false;} </script>
+<script> function validate_form_4382() {var x, text; var x = document.forms["form_4382"]["answer_4382"].value;if (x == "tibble"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_4382').innerHTML = text; return false;} </script>
 </div>
 <div id="датафрейм-и-тиббл" class="section level2">
 <h2><span class="header-section-number">2.11</span> Датафрейм и тиббл</h2>
+<p>Датафрейм — это собрание векторов одинаковой длины с уникальными названиями. Вот пример датафрейма с фильмографией Тома Мура:</p>
+<div class="sourceCode" id="cb208"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb208-1"><a href="intro.html#cb208-1"></a>moore_filmography &lt;-<span class="st"> </span><span class="kw">tibble</span>(<span class="dt">title =</span> <span class="kw">c</span>(<span class="st">&quot;The Secret of Kells&quot;</span>, </span>
+<span id="cb208-2"><a href="intro.html#cb208-2"></a>                                      <span class="st">&quot;Song of the Sea&quot;</span>, </span>
+<span id="cb208-3"><a href="intro.html#cb208-3"></a>                                      <span class="st">&quot;Kahlil Gibran&#39;s The Prophet&quot;</span>, </span>
+<span id="cb208-4"><a href="intro.html#cb208-4"></a>                                      <span class="st">&quot;The Breadwinner&quot;</span>, </span>
+<span id="cb208-5"><a href="intro.html#cb208-5"></a>                                      <span class="st">&quot;Wolfwalkers&quot;</span>),</span>
+<span id="cb208-6"><a href="intro.html#cb208-6"></a>                            <span class="dt">year =</span> <span class="kw">c</span>(<span class="dv">2009</span>, <span class="dv">2014</span>, <span class="dv">2014</span>, <span class="dv">2017</span>, <span class="dv">2020</span>),</span>
+<span id="cb208-7"><a href="intro.html#cb208-7"></a>                            <span class="dt">director =</span> <span class="kw">c</span>(<span class="ot">TRUE</span>, <span class="ot">TRUE</span>, <span class="ot">TRUE</span>, <span class="ot">FALSE</span>, <span class="ot">TRUE</span>))</span>
+<span id="cb208-8"><a href="intro.html#cb208-8"></a>moore_filmography</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["title"],"name":[1],"type":["chr"],"align":["left"]},{"label":["year"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["director"],"name":[3],"type":["lgl"],"align":["right"]}],"data":[{"1":"The Secret of Kells","2":"2009","3":"TRUE"},{"1":"Song of the Sea","2":"2014","3":"TRUE"},{"1":"Kahlil Gibran's The Prophet","2":"2014","3":"TRUE"},{"1":"The Breadwinner","2":"2017","3":"FALSE"},{"1":"Wolfwalkers","2":"2020","3":"TRUE"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<p>Существует много встроенных датафреймов:</p>
+<div class="sourceCode" id="cb209"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb209-1"><a href="intro.html#cb209-1"></a>mtcars</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["mpg"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["cyl"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["disp"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["hp"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["drat"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["wt"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["qsec"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["vs"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["am"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["gear"],"name":[10],"type":["dbl"],"align":["right"]},{"label":["carb"],"name":[11],"type":["dbl"],"align":["right"]}],"data":[{"1":"21.0","2":"6","3":"160.0","4":"110","5":"3.90","6":"2.620","7":"16.46","8":"0","9":"1","10":"4","11":"4","_rn_":"Mazda RX4"},{"1":"21.0","2":"6","3":"160.0","4":"110","5":"3.90","6":"2.875","7":"17.02","8":"0","9":"1","10":"4","11":"4","_rn_":"Mazda RX4 Wag"},{"1":"22.8","2":"4","3":"108.0","4":"93","5":"3.85","6":"2.320","7":"18.61","8":"1","9":"1","10":"4","11":"1","_rn_":"Datsun 710"},{"1":"21.4","2":"6","3":"258.0","4":"110","5":"3.08","6":"3.215","7":"19.44","8":"1","9":"0","10":"3","11":"1","_rn_":"Hornet 4 Drive"},{"1":"18.7","2":"8","3":"360.0","4":"175","5":"3.15","6":"3.440","7":"17.02","8":"0","9":"0","10":"3","11":"2","_rn_":"Hornet Sportabout"},{"1":"18.1","2":"6","3":"225.0","4":"105","5":"2.76","6":"3.460","7":"20.22","8":"1","9":"0","10":"3","11":"1","_rn_":"Valiant"},{"1":"14.3","2":"8","3":"360.0","4":"245","5":"3.21","6":"3.570","7":"15.84","8":"0","9":"0","10":"3","11":"4","_rn_":"Duster 360"},{"1":"24.4","2":"4","3":"146.7","4":"62","5":"3.69","6":"3.190","7":"20.00","8":"1","9":"0","10":"4","11":"2","_rn_":"Merc 240D"},{"1":"22.8","2":"4","3":"140.8","4":"95","5":"3.92","6":"3.150","7":"22.90","8":"1","9":"0","10":"4","11":"2","_rn_":"Merc 230"},{"1":"19.2","2":"6","3":"167.6","4":"123","5":"3.92","6":"3.440","7":"18.30","8":"1","9":"0","10":"4","11":"4","_rn_":"Merc 280"},{"1":"17.8","2":"6","3":"167.6","4":"123","5":"3.92","6":"3.440","7":"18.90","8":"1","9":"0","10":"4","11":"4","_rn_":"Merc 280C"},{"1":"16.4","2":"8","3":"275.8","4":"180","5":"3.07","6":"4.070","7":"17.40","8":"0","9":"0","10":"3","11":"3","_rn_":"Merc 450SE"},{"1":"17.3","2":"8","3":"275.8","4":"180","5":"3.07","6":"3.730","7":"17.60","8":"0","9":"0","10":"3","11":"3","_rn_":"Merc 450SL"},{"1":"15.2","2":"8","3":"275.8","4":"180","5":"3.07","6":"3.780","7":"18.00","8":"0","9":"0","10":"3","11":"3","_rn_":"Merc 450SLC"},{"1":"10.4","2":"8","3":"472.0","4":"205","5":"2.93","6":"5.250","7":"17.98","8":"0","9":"0","10":"3","11":"4","_rn_":"Cadillac Fleetwood"},{"1":"10.4","2":"8","3":"460.0","4":"215","5":"3.00","6":"5.424","7":"17.82","8":"0","9":"0","10":"3","11":"4","_rn_":"Lincoln Continental"},{"1":"14.7","2":"8","3":"440.0","4":"230","5":"3.23","6":"5.345","7":"17.42","8":"0","9":"0","10":"3","11":"4","_rn_":"Chrysler Imperial"},{"1":"32.4","2":"4","3":"78.7","4":"66","5":"4.08","6":"2.200","7":"19.47","8":"1","9":"1","10":"4","11":"1","_rn_":"Fiat 128"},{"1":"30.4","2":"4","3":"75.7","4":"52","5":"4.93","6":"1.615","7":"18.52","8":"1","9":"1","10":"4","11":"2","_rn_":"Honda Civic"},{"1":"33.9","2":"4","3":"71.1","4":"65","5":"4.22","6":"1.835","7":"19.90","8":"1","9":"1","10":"4","11":"1","_rn_":"Toyota Corolla"},{"1":"21.5","2":"4","3":"120.1","4":"97","5":"3.70","6":"2.465","7":"20.01","8":"1","9":"0","10":"3","11":"1","_rn_":"Toyota Corona"},{"1":"15.5","2":"8","3":"318.0","4":"150","5":"2.76","6":"3.520","7":"16.87","8":"0","9":"0","10":"3","11":"2","_rn_":"Dodge Challenger"},{"1":"15.2","2":"8","3":"304.0","4":"150","5":"3.15","6":"3.435","7":"17.30","8":"0","9":"0","10":"3","11":"2","_rn_":"AMC Javelin"},{"1":"13.3","2":"8","3":"350.0","4":"245","5":"3.73","6":"3.840","7":"15.41","8":"0","9":"0","10":"3","11":"4","_rn_":"Camaro Z28"},{"1":"19.2","2":"8","3":"400.0","4":"175","5":"3.08","6":"3.845","7":"17.05","8":"0","9":"0","10":"3","11":"2","_rn_":"Pontiac Firebird"},{"1":"27.3","2":"4","3":"79.0","4":"66","5":"4.08","6":"1.935","7":"18.90","8":"1","9":"1","10":"4","11":"1","_rn_":"Fiat X1-9"},{"1":"26.0","2":"4","3":"120.3","4":"91","5":"4.43","6":"2.140","7":"16.70","8":"0","9":"1","10":"5","11":"2","_rn_":"Porsche 914-2"},{"1":"30.4","2":"4","3":"95.1","4":"113","5":"3.77","6":"1.513","7":"16.90","8":"1","9":"1","10":"5","11":"2","_rn_":"Lotus Europa"},{"1":"15.8","2":"8","3":"351.0","4":"264","5":"4.22","6":"3.170","7":"14.50","8":"0","9":"1","10":"5","11":"4","_rn_":"Ford Pantera L"},{"1":"19.7","2":"6","3":"145.0","4":"175","5":"3.62","6":"2.770","7":"15.50","8":"0","9":"1","10":"5","11":"6","_rn_":"Ferrari Dino"},{"1":"15.0","2":"8","3":"301.0","4":"335","5":"3.54","6":"3.570","7":"14.60","8":"0","9":"1","10":"5","11":"8","_rn_":"Maserati Bora"},{"1":"21.4","2":"4","3":"121.0","4":"109","5":"4.11","6":"2.780","7":"18.60","8":"1","9":"1","10":"4","11":"2","_rn_":"Volvo 142E"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<div class="sourceCode" id="cb210"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb210-1"><a href="intro.html#cb210-1"></a>iris</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["Sepal.Length"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Sepal.Width"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Petal.Length"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["Petal.Width"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["Species"],"name":[5],"type":["fctr"],"align":["left"]}],"data":[{"1":"5.1","2":"3.5","3":"1.4","4":"0.2","5":"setosa"},{"1":"4.9","2":"3.0","3":"1.4","4":"0.2","5":"setosa"},{"1":"4.7","2":"3.2","3":"1.3","4":"0.2","5":"setosa"},{"1":"4.6","2":"3.1","3":"1.5","4":"0.2","5":"setosa"},{"1":"5.0","2":"3.6","3":"1.4","4":"0.2","5":"setosa"},{"1":"5.4","2":"3.9","3":"1.7","4":"0.4","5":"setosa"},{"1":"4.6","2":"3.4","3":"1.4","4":"0.3","5":"setosa"},{"1":"5.0","2":"3.4","3":"1.5","4":"0.2","5":"setosa"},{"1":"4.4","2":"2.9","3":"1.4","4":"0.2","5":"setosa"},{"1":"4.9","2":"3.1","3":"1.5","4":"0.1","5":"setosa"},{"1":"5.4","2":"3.7","3":"1.5","4":"0.2","5":"setosa"},{"1":"4.8","2":"3.4","3":"1.6","4":"0.2","5":"setosa"},{"1":"4.8","2":"3.0","3":"1.4","4":"0.1","5":"setosa"},{"1":"4.3","2":"3.0","3":"1.1","4":"0.1","5":"setosa"},{"1":"5.8","2":"4.0","3":"1.2","4":"0.2","5":"setosa"},{"1":"5.7","2":"4.4","3":"1.5","4":"0.4","5":"setosa"},{"1":"5.4","2":"3.9","3":"1.3","4":"0.4","5":"setosa"},{"1":"5.1","2":"3.5","3":"1.4","4":"0.3","5":"setosa"},{"1":"5.7","2":"3.8","3":"1.7","4":"0.3","5":"setosa"},{"1":"5.1","2":"3.8","3":"1.5","4":"0.3","5":"setosa"},{"1":"5.4","2":"3.4","3":"1.7","4":"0.2","5":"setosa"},{"1":"5.1","2":"3.7","3":"1.5","4":"0.4","5":"setosa"},{"1":"4.6","2":"3.6","3":"1.0","4":"0.2","5":"setosa"},{"1":"5.1","2":"3.3","3":"1.7","4":"0.5","5":"setosa"},{"1":"4.8","2":"3.4","3":"1.9","4":"0.2","5":"setosa"},{"1":"5.0","2":"3.0","3":"1.6","4":"0.2","5":"setosa"},{"1":"5.0","2":"3.4","3":"1.6","4":"0.4","5":"setosa"},{"1":"5.2","2":"3.5","3":"1.5","4":"0.2","5":"setosa"},{"1":"5.2","2":"3.4","3":"1.4","4":"0.2","5":"setosa"},{"1":"4.7","2":"3.2","3":"1.6","4":"0.2","5":"setosa"},{"1":"4.8","2":"3.1","3":"1.6","4":"0.2","5":"setosa"},{"1":"5.4","2":"3.4","3":"1.5","4":"0.4","5":"setosa"},{"1":"5.2","2":"4.1","3":"1.5","4":"0.1","5":"setosa"},{"1":"5.5","2":"4.2","3":"1.4","4":"0.2","5":"setosa"},{"1":"4.9","2":"3.1","3":"1.5","4":"0.2","5":"setosa"},{"1":"5.0","2":"3.2","3":"1.2","4":"0.2","5":"setosa"},{"1":"5.5","2":"3.5","3":"1.3","4":"0.2","5":"setosa"},{"1":"4.9","2":"3.6","3":"1.4","4":"0.1","5":"setosa"},{"1":"4.4","2":"3.0","3":"1.3","4":"0.2","5":"setosa"},{"1":"5.1","2":"3.4","3":"1.5","4":"0.2","5":"setosa"},{"1":"5.0","2":"3.5","3":"1.3","4":"0.3","5":"setosa"},{"1":"4.5","2":"2.3","3":"1.3","4":"0.3","5":"setosa"},{"1":"4.4","2":"3.2","3":"1.3","4":"0.2","5":"setosa"},{"1":"5.0","2":"3.5","3":"1.6","4":"0.6","5":"setosa"},{"1":"5.1","2":"3.8","3":"1.9","4":"0.4","5":"setosa"},{"1":"4.8","2":"3.0","3":"1.4","4":"0.3","5":"setosa"},{"1":"5.1","2":"3.8","3":"1.6","4":"0.2","5":"setosa"},{"1":"4.6","2":"3.2","3":"1.4","4":"0.2","5":"setosa"},{"1":"5.3","2":"3.7","3":"1.5","4":"0.2","5":"setosa"},{"1":"5.0","2":"3.3","3":"1.4","4":"0.2","5":"setosa"},{"1":"7.0","2":"3.2","3":"4.7","4":"1.4","5":"versicolor"},{"1":"6.4","2":"3.2","3":"4.5","4":"1.5","5":"versicolor"},{"1":"6.9","2":"3.1","3":"4.9","4":"1.5","5":"versicolor"},{"1":"5.5","2":"2.3","3":"4.0","4":"1.3","5":"versicolor"},{"1":"6.5","2":"2.8","3":"4.6","4":"1.5","5":"versicolor"},{"1":"5.7","2":"2.8","3":"4.5","4":"1.3","5":"versicolor"},{"1":"6.3","2":"3.3","3":"4.7","4":"1.6","5":"versicolor"},{"1":"4.9","2":"2.4","3":"3.3","4":"1.0","5":"versicolor"},{"1":"6.6","2":"2.9","3":"4.6","4":"1.3","5":"versicolor"},{"1":"5.2","2":"2.7","3":"3.9","4":"1.4","5":"versicolor"},{"1":"5.0","2":"2.0","3":"3.5","4":"1.0","5":"versicolor"},{"1":"5.9","2":"3.0","3":"4.2","4":"1.5","5":"versicolor"},{"1":"6.0","2":"2.2","3":"4.0","4":"1.0","5":"versicolor"},{"1":"6.1","2":"2.9","3":"4.7","4":"1.4","5":"versicolor"},{"1":"5.6","2":"2.9","3":"3.6","4":"1.3","5":"versicolor"},{"1":"6.7","2":"3.1","3":"4.4","4":"1.4","5":"versicolor"},{"1":"5.6","2":"3.0","3":"4.5","4":"1.5","5":"versicolor"},{"1":"5.8","2":"2.7","3":"4.1","4":"1.0","5":"versicolor"},{"1":"6.2","2":"2.2","3":"4.5","4":"1.5","5":"versicolor"},{"1":"5.6","2":"2.5","3":"3.9","4":"1.1","5":"versicolor"},{"1":"5.9","2":"3.2","3":"4.8","4":"1.8","5":"versicolor"},{"1":"6.1","2":"2.8","3":"4.0","4":"1.3","5":"versicolor"},{"1":"6.3","2":"2.5","3":"4.9","4":"1.5","5":"versicolor"},{"1":"6.1","2":"2.8","3":"4.7","4":"1.2","5":"versicolor"},{"1":"6.4","2":"2.9","3":"4.3","4":"1.3","5":"versicolor"},{"1":"6.6","2":"3.0","3":"4.4","4":"1.4","5":"versicolor"},{"1":"6.8","2":"2.8","3":"4.8","4":"1.4","5":"versicolor"},{"1":"6.7","2":"3.0","3":"5.0","4":"1.7","5":"versicolor"},{"1":"6.0","2":"2.9","3":"4.5","4":"1.5","5":"versicolor"},{"1":"5.7","2":"2.6","3":"3.5","4":"1.0","5":"versicolor"},{"1":"5.5","2":"2.4","3":"3.8","4":"1.1","5":"versicolor"},{"1":"5.5","2":"2.4","3":"3.7","4":"1.0","5":"versicolor"},{"1":"5.8","2":"2.7","3":"3.9","4":"1.2","5":"versicolor"},{"1":"6.0","2":"2.7","3":"5.1","4":"1.6","5":"versicolor"},{"1":"5.4","2":"3.0","3":"4.5","4":"1.5","5":"versicolor"},{"1":"6.0","2":"3.4","3":"4.5","4":"1.6","5":"versicolor"},{"1":"6.7","2":"3.1","3":"4.7","4":"1.5","5":"versicolor"},{"1":"6.3","2":"2.3","3":"4.4","4":"1.3","5":"versicolor"},{"1":"5.6","2":"3.0","3":"4.1","4":"1.3","5":"versicolor"},{"1":"5.5","2":"2.5","3":"4.0","4":"1.3","5":"versicolor"},{"1":"5.5","2":"2.6","3":"4.4","4":"1.2","5":"versicolor"},{"1":"6.1","2":"3.0","3":"4.6","4":"1.4","5":"versicolor"},{"1":"5.8","2":"2.6","3":"4.0","4":"1.2","5":"versicolor"},{"1":"5.0","2":"2.3","3":"3.3","4":"1.0","5":"versicolor"},{"1":"5.6","2":"2.7","3":"4.2","4":"1.3","5":"versicolor"},{"1":"5.7","2":"3.0","3":"4.2","4":"1.2","5":"versicolor"},{"1":"5.7","2":"2.9","3":"4.2","4":"1.3","5":"versicolor"},{"1":"6.2","2":"2.9","3":"4.3","4":"1.3","5":"versicolor"},{"1":"5.1","2":"2.5","3":"3.0","4":"1.1","5":"versicolor"},{"1":"5.7","2":"2.8","3":"4.1","4":"1.3","5":"versicolor"},{"1":"6.3","2":"3.3","3":"6.0","4":"2.5","5":"virginica"},{"1":"5.8","2":"2.7","3":"5.1","4":"1.9","5":"virginica"},{"1":"7.1","2":"3.0","3":"5.9","4":"2.1","5":"virginica"},{"1":"6.3","2":"2.9","3":"5.6","4":"1.8","5":"virginica"},{"1":"6.5","2":"3.0","3":"5.8","4":"2.2","5":"virginica"},{"1":"7.6","2":"3.0","3":"6.6","4":"2.1","5":"virginica"},{"1":"4.9","2":"2.5","3":"4.5","4":"1.7","5":"virginica"},{"1":"7.3","2":"2.9","3":"6.3","4":"1.8","5":"virginica"},{"1":"6.7","2":"2.5","3":"5.8","4":"1.8","5":"virginica"},{"1":"7.2","2":"3.6","3":"6.1","4":"2.5","5":"virginica"},{"1":"6.5","2":"3.2","3":"5.1","4":"2.0","5":"virginica"},{"1":"6.4","2":"2.7","3":"5.3","4":"1.9","5":"virginica"},{"1":"6.8","2":"3.0","3":"5.5","4":"2.1","5":"virginica"},{"1":"5.7","2":"2.5","3":"5.0","4":"2.0","5":"virginica"},{"1":"5.8","2":"2.8","3":"5.1","4":"2.4","5":"virginica"},{"1":"6.4","2":"3.2","3":"5.3","4":"2.3","5":"virginica"},{"1":"6.5","2":"3.0","3":"5.5","4":"1.8","5":"virginica"},{"1":"7.7","2":"3.8","3":"6.7","4":"2.2","5":"virginica"},{"1":"7.7","2":"2.6","3":"6.9","4":"2.3","5":"virginica"},{"1":"6.0","2":"2.2","3":"5.0","4":"1.5","5":"virginica"},{"1":"6.9","2":"3.2","3":"5.7","4":"2.3","5":"virginica"},{"1":"5.6","2":"2.8","3":"4.9","4":"2.0","5":"virginica"},{"1":"7.7","2":"2.8","3":"6.7","4":"2.0","5":"virginica"},{"1":"6.3","2":"2.7","3":"4.9","4":"1.8","5":"virginica"},{"1":"6.7","2":"3.3","3":"5.7","4":"2.1","5":"virginica"},{"1":"7.2","2":"3.2","3":"6.0","4":"1.8","5":"virginica"},{"1":"6.2","2":"2.8","3":"4.8","4":"1.8","5":"virginica"},{"1":"6.1","2":"3.0","3":"4.9","4":"1.8","5":"virginica"},{"1":"6.4","2":"2.8","3":"5.6","4":"2.1","5":"virginica"},{"1":"7.2","2":"3.0","3":"5.8","4":"1.6","5":"virginica"},{"1":"7.4","2":"2.8","3":"6.1","4":"1.9","5":"virginica"},{"1":"7.9","2":"3.8","3":"6.4","4":"2.0","5":"virginica"},{"1":"6.4","2":"2.8","3":"5.6","4":"2.2","5":"virginica"},{"1":"6.3","2":"2.8","3":"5.1","4":"1.5","5":"virginica"},{"1":"6.1","2":"2.6","3":"5.6","4":"1.4","5":"virginica"},{"1":"7.7","2":"3.0","3":"6.1","4":"2.3","5":"virginica"},{"1":"6.3","2":"3.4","3":"5.6","4":"2.4","5":"virginica"},{"1":"6.4","2":"3.1","3":"5.5","4":"1.8","5":"virginica"},{"1":"6.0","2":"3.0","3":"4.8","4":"1.8","5":"virginica"},{"1":"6.9","2":"3.1","3":"5.4","4":"2.1","5":"virginica"},{"1":"6.7","2":"3.1","3":"5.6","4":"2.4","5":"virginica"},{"1":"6.9","2":"3.1","3":"5.1","4":"2.3","5":"virginica"},{"1":"5.8","2":"2.7","3":"5.1","4":"1.9","5":"virginica"},{"1":"6.8","2":"3.2","3":"5.9","4":"2.3","5":"virginica"},{"1":"6.7","2":"3.3","3":"5.7","4":"2.5","5":"virginica"},{"1":"6.7","2":"3.0","3":"5.2","4":"2.3","5":"virginica"},{"1":"6.3","2":"2.5","3":"5.0","4":"1.9","5":"virginica"},{"1":"6.5","2":"3.0","3":"5.2","4":"2.0","5":"virginica"},{"1":"6.2","2":"3.4","3":"5.4","4":"2.3","5":"virginica"},{"1":"5.9","2":"3.0","3":"5.1","4":"1.8","5":"virginica"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<p>О них точно также модно найти информацию в справке:</p>
+<div class="sourceCode" id="cb211"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb211-1"><a href="intro.html#cb211-1"></a>?mtcars</span>
+<span id="cb211-2"><a href="intro.html#cb211-2"></a>?iris</span></code></pre></div>
+<p>Элементы датафрейма – векторы – можно вызывать используя знак <code>$</code>:</p>
+<div class="sourceCode" id="cb212"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb212-1"><a href="intro.html#cb212-1"></a>moore_filmography<span class="op">$</span>year</span></code></pre></div>
+<pre><code>## [1] 2009 2014 2014 2017 2020</code></pre>
+<div class="sourceCode" id="cb214"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb214-1"><a href="intro.html#cb214-1"></a>moore_filmography<span class="op">$</span>title</span></code></pre></div>
+<pre><code>## [1] &quot;The Secret of Kells&quot;         &quot;Song of the Sea&quot;            
+## [3] &quot;Kahlil Gibran&#39;s The Prophet&quot; &quot;The Breadwinner&quot;            
+## [5] &quot;Wolfwalkers&quot;</code></pre>
+<p>К существующему датафрейму можно добавить новый вектор:</p>
+<div class="sourceCode" id="cb216"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb216-1"><a href="intro.html#cb216-1"></a>moore_filmography<span class="op">$</span>producer &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="ot">TRUE</span>, <span class="ot">TRUE</span>, <span class="ot">FALSE</span>, <span class="ot">TRUE</span>, <span class="ot">TRUE</span>)</span>
+<span id="cb216-2"><a href="intro.html#cb216-2"></a>moore_filmography</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["title"],"name":[1],"type":["chr"],"align":["left"]},{"label":["year"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["director"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["producer"],"name":[4],"type":["lgl"],"align":["right"]}],"data":[{"1":"The Secret of Kells","2":"2009","3":"TRUE","4":"TRUE"},{"1":"Song of the Sea","2":"2014","3":"TRUE","4":"TRUE"},{"1":"Kahlil Gibran's The Prophet","2":"2014","3":"TRUE","4":"FALSE"},{"1":"The Breadwinner","2":"2017","3":"FALSE","4":"TRUE"},{"1":"Wolfwalkers","2":"2020","3":"TRUE","4":"TRUE"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<p>Существует масса полезных функций, которые говорят что-то о датафрейме:</p>
+<div class="sourceCode" id="cb217"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb217-1"><a href="intro.html#cb217-1"></a><span class="kw">nrow</span>(moore_filmography)</span></code></pre></div>
+<pre><code>## [1] 5</code></pre>
+<div class="sourceCode" id="cb219"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb219-1"><a href="intro.html#cb219-1"></a><span class="kw">ncol</span>(moore_filmography)</span></code></pre></div>
+<pre><code>## [1] 4</code></pre>
+<div class="sourceCode" id="cb221"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb221-1"><a href="intro.html#cb221-1"></a><span class="kw">summary</span>(moore_filmography)</span></code></pre></div>
+<pre><code>##     title                year       director        producer      
+##  Length:5           Min.   :2009   Mode :logical   Mode :logical  
+##  Class :character   1st Qu.:2014   FALSE:1         FALSE:1        
+##  Mode  :character   Median :2014   TRUE :4         TRUE :4        
+##                     Mean   :2015                                  
+##                     3rd Qu.:2017                                  
+##                     Max.   :2020</code></pre>
+<div class="sourceCode" id="cb223"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb223-1"><a href="intro.html#cb223-1"></a><span class="kw">str</span>(moore_filmography)</span></code></pre></div>
+<pre><code>## tibble [5 × 4] (S3: tbl_df/tbl/data.frame)
+##  $ title   : chr [1:5] &quot;The Secret of Kells&quot; &quot;Song of the Sea&quot; &quot;Kahlil Gibran&#39;s The Prophet&quot; &quot;The Breadwinner&quot; ...
+##  $ year    : num [1:5] 2009 2014 2014 2017 2020
+##  $ director: logi [1:5] TRUE TRUE TRUE FALSE TRUE
+##  $ producer: logi [1:5] TRUE TRUE FALSE TRUE TRUE</code></pre>
+<p>Мы будем работать исключительно с датафреймами (однако, это не единственная структура данных в R).</p>
+<div class="rmdtask">
+<p>
+Сколько строчек в датасете <code>iris</code>?
+</p>
+</div>
+<form name="form_3549" onsubmit="return validate_form_3549()" method="post">
+<input type="text" name="answer_3549"><br><input type="submit" value="check">
+</form>
+<p id="result_3549">
+</p>
+<script> function validate_form_3549() {var x, text; var x = document.forms["form_3549"]["answer_3549"].value;if (x == "150"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_3549').innerHTML = text; return false;} </script>
+<div class="rmdtask">
+<p>
+Сколько колонок в датасете <code>mtcars</code>?
+</p>
+</div>
+<form name="form_56011" onsubmit="return validate_form_56011()" method="post">
+<input type="text" name="answer_56011"><br><input type="submit" value="check">
+</form>
+<p id="result_56011">
+</p>
+<script> function validate_form_56011() {var x, text; var x = document.forms["form_56011"]["answer_56011"].value;if (x == "11"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_56011').innerHTML = text; return false;} </script>
+<div id="вызов-элементов-датафрейма" class="section level3">
+<h3><span class="header-section-number">2.11.1</span> Вызов элементов датафрейма</h3>
+<p>Датафрейм — двумерный объект, так что можно вызывать как его строчки, так и его колонки. Это делается при помощи квадратных скобок и индексов: первый отвечает за строчки, второй – за колонки:</p>
+<div class="sourceCode" id="cb225"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb225-1"><a href="intro.html#cb225-1"></a>moore_filmography[<span class="dv">3</span>, <span class="dv">2</span>]</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["year"],"name":[1],"type":["dbl"],"align":["right"]}],"data":[{"1":"2014"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<div class="sourceCode" id="cb226"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb226-1"><a href="intro.html#cb226-1"></a>moore_filmography[<span class="dv">3</span>,]</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["title"],"name":[1],"type":["chr"],"align":["left"]},{"label":["year"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["director"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["producer"],"name":[4],"type":["lgl"],"align":["right"]}],"data":[{"1":"Kahlil Gibran's The Prophet","2":"2014","3":"TRUE","4":"FALSE"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<div class="sourceCode" id="cb227"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb227-1"><a href="intro.html#cb227-1"></a>moore_filmography[,<span class="dv">2</span>]</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["year"],"name":[1],"type":["dbl"],"align":["right"]}],"data":[{"1":"2009"},{"1":"2014"},{"1":"2014"},{"1":"2017"},{"1":"2020"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<div class="sourceCode" id="cb228"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb228-1"><a href="intro.html#cb228-1"></a>moore_filmography[,<span class="dv">1</span><span class="op">:</span><span class="dv">2</span>]</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["title"],"name":[1],"type":["chr"],"align":["left"]},{"label":["year"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"The Secret of Kells","2":"2009"},{"1":"Song of the Sea","2":"2014"},{"1":"Kahlil Gibran's The Prophet","2":"2014"},{"1":"The Breadwinner","2":"2017"},{"1":"Wolfwalkers","2":"2020"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<div class="sourceCode" id="cb229"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb229-1"><a href="intro.html#cb229-1"></a>moore_filmography[,<span class="op">-</span><span class="dv">3</span>]</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["title"],"name":[1],"type":["chr"],"align":["left"]},{"label":["year"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["producer"],"name":[3],"type":["lgl"],"align":["right"]}],"data":[{"1":"The Secret of Kells","2":"2009","3":"TRUE"},{"1":"Song of the Sea","2":"2014","3":"TRUE"},{"1":"Kahlil Gibran's The Prophet","2":"2014","3":"FALSE"},{"1":"The Breadwinner","2":"2017","3":"TRUE"},{"1":"Wolfwalkers","2":"2020","3":"TRUE"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<div class="sourceCode" id="cb230"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb230-1"><a href="intro.html#cb230-1"></a>moore_filmography[,<span class="op">-</span><span class="kw">c</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">2</span>)]</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["director"],"name":[1],"type":["lgl"],"align":["right"]},{"label":["producer"],"name":[2],"type":["lgl"],"align":["right"]}],"data":[{"1":"TRUE","2":"TRUE"},{"1":"TRUE","2":"TRUE"},{"1":"TRUE","2":"FALSE"},{"1":"FALSE","2":"TRUE"},{"1":"TRUE","2":"TRUE"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<div class="sourceCode" id="cb231"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb231-1"><a href="intro.html#cb231-1"></a>moore_filmography[,<span class="st">&quot;year&quot;</span>]</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["year"],"name":[1],"type":["dbl"],"align":["right"]}],"data":[{"1":"2009"},{"1":"2014"},{"1":"2014"},{"1":"2017"},{"1":"2020"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<div class="sourceCode" id="cb232"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb232-1"><a href="intro.html#cb232-1"></a>moore_filmography[,<span class="kw">c</span>(<span class="st">&quot;title&quot;</span>, <span class="st">&quot;year&quot;</span>)]</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["title"],"name":[1],"type":["chr"],"align":["left"]},{"label":["year"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"The Secret of Kells","2":"2009"},{"1":"Song of the Sea","2":"2014"},{"1":"Kahlil Gibran's The Prophet","2":"2014"},{"1":"The Breadwinner","2":"2017"},{"1":"Wolfwalkers","2":"2020"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<div class="sourceCode" id="cb233"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb233-1"><a href="intro.html#cb233-1"></a>moore_filmography[moore_filmography<span class="op">$</span>year <span class="op">&gt;</span><span class="st"> </span><span class="dv">2014</span>,]</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["title"],"name":[1],"type":["chr"],"align":["left"]},{"label":["year"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["director"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["producer"],"name":[4],"type":["lgl"],"align":["right"]}],"data":[{"1":"The Breadwinner","2":"2017","3":"FALSE","4":"TRUE"},{"1":"Wolfwalkers","2":"2020","3":"TRUE","4":"TRUE"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<div id="импорт-данных" class="section level2">
+<h2><span class="header-section-number">2.12</span> Импорт данных</h2>
+<div id="csv-файлы" class="section level3">
+<h3><span class="header-section-number">2.12.1</span> <code>.csv</code> файлы</h3>
+<p><code>.csv</code> файлы (comma-separated values) — это текст, разделенный запятыми (или другими разделителями, например, табуляцией или точкой с запятой) на отдельные значения. Его широко используют, так как его одинаково легко редактировать людям и парсить компьютерам. Вот датасет <code>moore_filmography</code> в формате <code>.csv</code>:</p>
+<pre><code>title,year,director,producer
+The Secret of Kells,2009,TRUE,TRUE
+Song of the Sea,2014,TRUE,TRUE
+Kahlil Gibran&#39;s The Prophet,2014,TRUE,FALSE
+The Breadwinner,2017,FALSE,TRUE
+Wolfwalkers,2020,TRUE,TRUE</code></pre>
+<p>Давайте создадим переменную с этими данными:</p>
+<div class="sourceCode" id="cb235"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb235-1"><a href="intro.html#cb235-1"></a>our_csv &lt;-<span class="st"> &quot;title,year,director,producer</span></span>
+<span id="cb235-2"><a href="intro.html#cb235-2"></a><span class="st">The Secret of Kells,2009,TRUE,TRUE</span></span>
+<span id="cb235-3"><a href="intro.html#cb235-3"></a><span class="st">Song of the Sea,2014,TRUE,TRUE</span></span>
+<span id="cb235-4"><a href="intro.html#cb235-4"></a><span class="st">Kahlil Gibran&#39;s The Prophet,2014,TRUE,FALSE</span></span>
+<span id="cb235-5"><a href="intro.html#cb235-5"></a><span class="st">The Breadwinner,2017,FALSE,TRUE</span></span>
+<span id="cb235-6"><a href="intro.html#cb235-6"></a><span class="st">Wolfwalkers,2020,TRUE,TRUE&quot;</span></span></code></pre></div>
+<p>Теперь мы можем использовать функцию <code>read_csv()</code> (из <code>tidyverse</code>):</p>
+<div class="sourceCode" id="cb236"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb236-1"><a href="intro.html#cb236-1"></a><span class="kw">read_csv</span>(our_csv)</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["title"],"name":[1],"type":["chr"],"align":["left"]},{"label":["year"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["director"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["producer"],"name":[4],"type":["lgl"],"align":["right"]}],"data":[{"1":"The Secret of Kells","2":"2009","3":"TRUE","4":"TRUE"},{"1":"Song of the Sea","2":"2014","3":"TRUE","4":"TRUE"},{"1":"Kahlil Gibran's The Prophet","2":"2014","3":"TRUE","4":"FALSE"},{"1":"The Breadwinner","2":"2017","3":"FALSE","4":"TRUE"},{"1":"Wolfwalkers","2":"2020","3":"TRUE","4":"TRUE"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<p>Так же вы можете загрузить файл с компьютера. Скачайте <a href="https://raw.githubusercontent.com/agricolamz/2020_HSE_ds4l_NN/master/data/moore_filmography.csv">этот</a> файл на компьютер (нажмите <code>Ctrl S</code> или <code>Cmd S</code>) и считайте его в:</p>
+<div class="sourceCode" id="cb237"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb237-1"><a href="intro.html#cb237-1"></a><span class="kw">read_csv</span>(<span class="st">&quot;C:/path/to/your/file/moore_filmography.csv&quot;</span>)</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["title"],"name":[1],"type":["chr"],"align":["left"]},{"label":["year"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["director"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["producer"],"name":[4],"type":["lgl"],"align":["right"]}],"data":[{"1":"The Secret of Kells","2":"2009","3":"TRUE","4":"TRUE"},{"1":"Song of the Sea","2":"2014","3":"TRUE","4":"TRUE"},{"1":"Kahlil Gibran's The Prophet","2":"2014","3":"TRUE","4":"FALSE"},{"1":"The Breadwinner","2":"2017","3":"FALSE","4":"TRUE"},{"1":"Wolfwalkers","2":"2020","3":"TRUE","4":"TRUE"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<p>Еще файл можно скачать непосредственно из интернета:</p>
+<div class="sourceCode" id="cb238"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb238-1"><a href="intro.html#cb238-1"></a><span class="kw">read_csv</span>(<span class="st">&quot;https://raw.githubusercontent.com/agricolamz/2020_HSE_ds4l_NN/master/data/moore_filmography.csv&quot;</span>)</span></code></pre></div>
+<pre><code>## Parsed with column specification:
+## cols(
+##   title = col_character(),
+##   year = col_double(),
+##   director = col_logical(),
+##   producer = col_logical()
+## )</code></pre>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["title"],"name":[1],"type":["chr"],"align":["left"]},{"label":["year"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["director"],"name":[3],"type":["lgl"],"align":["right"]},{"label":["producer"],"name":[4],"type":["lgl"],"align":["right"]}],"data":[{"1":"The Secret of Kells","2":"2009","3":"TRUE","4":"TRUE"},{"1":"Song of the Sea","2":"2014","3":"TRUE","4":"TRUE"},{"1":"Kahlil Gibran's The Prophet","2":"2014","3":"TRUE","4":"FALSE"},{"1":"The Breadwinner","2":"2017","3":"FALSE","4":"TRUE"},{"1":"Wolfwalkers","2":"2020","3":"TRUE","4":"TRUE"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<div class="rmdtask">
+<p>
+Из-за пандемии про Ухань говорили во всех новостях. <a href="https://nplus1.ru/blog/2020/02/03/wuhan">По-русски</a> по каким-то причинам этот город носители относят то к мужскому роду, то к женскому. Я посмотрел на другие славянские языки и записал полученные данные в <a href="https://gist.githubusercontent.com/agricolamz/c280527d6b5d79693b85d8fcf8d35bc3/raw/c46a32a218bc5d6933703ae677b81ff5a4a1dcaa/wuhan.csv"><code>.csv</code> file</a>. Скачайте датасет в R. Какие там переменные?
+</p>
+</div>
+<p>Все операции с файлами в R как-то связаны с памятью вашего компьютера. Чтобы узнать папку, в которой R находится, можно запустить команду <code>getwd()</code>. Рабочую дерикторию можно поменять, используя функцию <code>setwd()</code>. Если файл, с которым Вы хотите работать находится в рабочей дериктории, то нет нужды писать полный путь к файлу:</p>
+<div class="sourceCode" id="cb240"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb240-1"><a href="intro.html#cb240-1"></a><span class="kw">read_csv</span>(<span class="st">&quot;moore_filmography.csv&quot;</span>)</span></code></pre></div>
+<p>Кроме того, естественно, в R существует функция, которая позволяет записывать <code>.csv</code>:</p>
+<div class="sourceCode" id="cb241"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb241-1"><a href="intro.html#cb241-1"></a><span class="kw">write_csv</span>(moore_filmography, <span class="st">&quot;moore_filmography_v2.csv&quot;</span>)</span></code></pre></div>
+<p>Иногда чтение <code>.csv</code> файлов в Microsoft Excel вызывает какие-то трудности, посмотрите <a href="https://www.thewindowsclub.com/how-to-convert-a-text-txt-csv-file-into-an-excel-file">инструкции</a>, если у кого-то возникнут похожие проблемы.</p>
+</div>
+<div id="файлы-.xls-и-.xlsx" class="section level3">
+<h3><span class="header-section-number">2.12.2</span> файлы <code>.xls</code> и <code>.xlsx</code></h3>
+<p>Для чтения файлов <code>.xsl</code> and <code>.xslx</code> существует пакет <code>readxl</code>. Установите и загрузите библиотеку:</p>
+<div class="sourceCode" id="cb242"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb242-1"><a href="intro.html#cb242-1"></a><span class="kw">library</span>(readxl)</span></code></pre></div>
+<p>Вот <a href="https://github.com/agricolamz/2020.02_Naumburg_R/raw/master/data/moore_filmography.xlsx">тестовый файл</a>. Скачайте его к себе на компьютер, положите в рабочую дерикторию и загрузите в R:</p>
+<div class="sourceCode" id="cb243"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb243-1"><a href="intro.html#cb243-1"></a><span class="kw">read_xlsx</span>(<span class="st">&quot;moore_filmography.xlsx&quot;</span>)</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["title"],"name":[1],"type":["chr"],"align":["left"]},{"label":["year"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["director"],"name":[3],"type":["chr"],"align":["left"]},{"label":["producer"],"name":[4],"type":["chr"],"align":["left"]}],"data":[{"1":"The Secret of Kells","2":"2009","3":"TRUE","4":"TRUE"},{"1":"Song of the Sea","2":"2014","3":"TRUE","4":"TRUE"},{"1":"Kahlil Gibran's The Prophet","2":"2014","3":"TRUE","4":"FALSE"},{"1":"The Breadwinner","2":"2017","3":"FALSE","4":"TRUE"},{"1":"Wolfwalkers","2":"2020","3":"TRUE","4":"TRUE"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<p><code>.xls</code> и <code>.xlsx</code> могут иметь разные таблиц на разных листах:</p>
+<div class="sourceCode" id="cb244"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb244-1"><a href="intro.html#cb244-1"></a><span class="kw">read_xlsx</span>(<span class="st">&quot;moore_filmography.xlsx&quot;</span>, <span class="dt">sheet =</span> <span class="st">&quot;iris&quot;</span>)</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["Sepal.Length"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Sepal.Width"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Petal.Length"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["Petal.Width"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["Species"],"name":[5],"type":["chr"],"align":["left"]}],"data":[{"1":"5.1","2":"3.5","3":"1.4","4":"0.2","5":"setosa"},{"1":"4.9","2":"3.0","3":"1.4","4":"0.2","5":"setosa"},{"1":"4.7","2":"3.2","3":"1.3","4":"0.2","5":"setosa"},{"1":"4.6","2":"3.1","3":"1.5","4":"0.2","5":"setosa"},{"1":"5.0","2":"3.6","3":"1.4","4":"0.2","5":"setosa"},{"1":"5.4","2":"3.9","3":"1.7","4":"0.4","5":"setosa"},{"1":"4.6","2":"3.4","3":"1.4","4":"0.3","5":"setosa"},{"1":"5.0","2":"3.4","3":"1.5","4":"0.2","5":"setosa"},{"1":"4.4","2":"2.9","3":"1.4","4":"0.2","5":"setosa"},{"1":"4.9","2":"3.1","3":"1.5","4":"0.1","5":"setosa"},{"1":"5.4","2":"3.7","3":"1.5","4":"0.2","5":"setosa"},{"1":"4.8","2":"3.4","3":"1.6","4":"0.2","5":"setosa"},{"1":"4.8","2":"3.0","3":"1.4","4":"0.1","5":"setosa"},{"1":"4.3","2":"3.0","3":"1.1","4":"0.1","5":"setosa"},{"1":"5.8","2":"4.0","3":"1.2","4":"0.2","5":"setosa"},{"1":"5.7","2":"4.4","3":"1.5","4":"0.4","5":"setosa"},{"1":"5.4","2":"3.9","3":"1.3","4":"0.4","5":"setosa"},{"1":"5.1","2":"3.5","3":"1.4","4":"0.3","5":"setosa"},{"1":"5.7","2":"3.8","3":"1.7","4":"0.3","5":"setosa"},{"1":"5.1","2":"3.8","3":"1.5","4":"0.3","5":"setosa"},{"1":"5.4","2":"3.4","3":"1.7","4":"0.2","5":"setosa"},{"1":"5.1","2":"3.7","3":"1.5","4":"0.4","5":"setosa"},{"1":"4.6","2":"3.6","3":"1.0","4":"0.2","5":"setosa"},{"1":"5.1","2":"3.3","3":"1.7","4":"0.5","5":"setosa"},{"1":"4.8","2":"3.4","3":"1.9","4":"0.2","5":"setosa"},{"1":"5.0","2":"3.0","3":"1.6","4":"0.2","5":"setosa"},{"1":"5.0","2":"3.4","3":"1.6","4":"0.4","5":"setosa"},{"1":"5.2","2":"3.5","3":"1.5","4":"0.2","5":"setosa"},{"1":"5.2","2":"3.4","3":"1.4","4":"0.2","5":"setosa"},{"1":"4.7","2":"3.2","3":"1.6","4":"0.2","5":"setosa"},{"1":"4.8","2":"3.1","3":"1.6","4":"0.2","5":"setosa"},{"1":"5.4","2":"3.4","3":"1.5","4":"0.4","5":"setosa"},{"1":"5.2","2":"4.1","3":"1.5","4":"0.1","5":"setosa"},{"1":"5.5","2":"4.2","3":"1.4","4":"0.2","5":"setosa"},{"1":"4.9","2":"3.1","3":"1.5","4":"0.2","5":"setosa"},{"1":"5.0","2":"3.2","3":"1.2","4":"0.2","5":"setosa"},{"1":"5.5","2":"3.5","3":"1.3","4":"0.2","5":"setosa"},{"1":"4.9","2":"3.6","3":"1.4","4":"0.1","5":"setosa"},{"1":"4.4","2":"3.0","3":"1.3","4":"0.2","5":"setosa"},{"1":"5.1","2":"3.4","3":"1.5","4":"0.2","5":"setosa"},{"1":"5.0","2":"3.5","3":"1.3","4":"0.3","5":"setosa"},{"1":"4.5","2":"2.3","3":"1.3","4":"0.3","5":"setosa"},{"1":"4.4","2":"3.2","3":"1.3","4":"0.2","5":"setosa"},{"1":"5.0","2":"3.5","3":"1.6","4":"0.6","5":"setosa"},{"1":"5.1","2":"3.8","3":"1.9","4":"0.4","5":"setosa"},{"1":"4.8","2":"3.0","3":"1.4","4":"0.3","5":"setosa"},{"1":"5.1","2":"3.8","3":"1.6","4":"0.2","5":"setosa"},{"1":"4.6","2":"3.2","3":"1.4","4":"0.2","5":"setosa"},{"1":"5.3","2":"3.7","3":"1.5","4":"0.2","5":"setosa"},{"1":"5.0","2":"3.3","3":"1.4","4":"0.2","5":"setosa"},{"1":"7.0","2":"3.2","3":"4.7","4":"1.4","5":"versicolor"},{"1":"6.4","2":"3.2","3":"4.5","4":"1.5","5":"versicolor"},{"1":"6.9","2":"3.1","3":"4.9","4":"1.5","5":"versicolor"},{"1":"5.5","2":"2.3","3":"4.0","4":"1.3","5":"versicolor"},{"1":"6.5","2":"2.8","3":"4.6","4":"1.5","5":"versicolor"},{"1":"5.7","2":"2.8","3":"4.5","4":"1.3","5":"versicolor"},{"1":"6.3","2":"3.3","3":"4.7","4":"1.6","5":"versicolor"},{"1":"4.9","2":"2.4","3":"3.3","4":"1.0","5":"versicolor"},{"1":"6.6","2":"2.9","3":"4.6","4":"1.3","5":"versicolor"},{"1":"5.2","2":"2.7","3":"3.9","4":"1.4","5":"versicolor"},{"1":"5.0","2":"2.0","3":"3.5","4":"1.0","5":"versicolor"},{"1":"5.9","2":"3.0","3":"4.2","4":"1.5","5":"versicolor"},{"1":"6.0","2":"2.2","3":"4.0","4":"1.0","5":"versicolor"},{"1":"6.1","2":"2.9","3":"4.7","4":"1.4","5":"versicolor"},{"1":"5.6","2":"2.9","3":"3.6","4":"1.3","5":"versicolor"},{"1":"6.7","2":"3.1","3":"4.4","4":"1.4","5":"versicolor"},{"1":"5.6","2":"3.0","3":"4.5","4":"1.5","5":"versicolor"},{"1":"5.8","2":"2.7","3":"4.1","4":"1.0","5":"versicolor"},{"1":"6.2","2":"2.2","3":"4.5","4":"1.5","5":"versicolor"},{"1":"5.6","2":"2.5","3":"3.9","4":"1.1","5":"versicolor"},{"1":"5.9","2":"3.2","3":"4.8","4":"1.8","5":"versicolor"},{"1":"6.1","2":"2.8","3":"4.0","4":"1.3","5":"versicolor"},{"1":"6.3","2":"2.5","3":"4.9","4":"1.5","5":"versicolor"},{"1":"6.1","2":"2.8","3":"4.7","4":"1.2","5":"versicolor"},{"1":"6.4","2":"2.9","3":"4.3","4":"1.3","5":"versicolor"},{"1":"6.6","2":"3.0","3":"4.4","4":"1.4","5":"versicolor"},{"1":"6.8","2":"2.8","3":"4.8","4":"1.4","5":"versicolor"},{"1":"6.7","2":"3.0","3":"5.0","4":"1.7","5":"versicolor"},{"1":"6.0","2":"2.9","3":"4.5","4":"1.5","5":"versicolor"},{"1":"5.7","2":"2.6","3":"3.5","4":"1.0","5":"versicolor"},{"1":"5.5","2":"2.4","3":"3.8","4":"1.1","5":"versicolor"},{"1":"5.5","2":"2.4","3":"3.7","4":"1.0","5":"versicolor"},{"1":"5.8","2":"2.7","3":"3.9","4":"1.2","5":"versicolor"},{"1":"6.0","2":"2.7","3":"5.1","4":"1.6","5":"versicolor"},{"1":"5.4","2":"3.0","3":"4.5","4":"1.5","5":"versicolor"},{"1":"6.0","2":"3.4","3":"4.5","4":"1.6","5":"versicolor"},{"1":"6.7","2":"3.1","3":"4.7","4":"1.5","5":"versicolor"},{"1":"6.3","2":"2.3","3":"4.4","4":"1.3","5":"versicolor"},{"1":"5.6","2":"3.0","3":"4.1","4":"1.3","5":"versicolor"},{"1":"5.5","2":"2.5","3":"4.0","4":"1.3","5":"versicolor"},{"1":"5.5","2":"2.6","3":"4.4","4":"1.2","5":"versicolor"},{"1":"6.1","2":"3.0","3":"4.6","4":"1.4","5":"versicolor"},{"1":"5.8","2":"2.6","3":"4.0","4":"1.2","5":"versicolor"},{"1":"5.0","2":"2.3","3":"3.3","4":"1.0","5":"versicolor"},{"1":"5.6","2":"2.7","3":"4.2","4":"1.3","5":"versicolor"},{"1":"5.7","2":"3.0","3":"4.2","4":"1.2","5":"versicolor"},{"1":"5.7","2":"2.9","3":"4.2","4":"1.3","5":"versicolor"},{"1":"6.2","2":"2.9","3":"4.3","4":"1.3","5":"versicolor"},{"1":"5.1","2":"2.5","3":"3.0","4":"1.1","5":"versicolor"},{"1":"5.7","2":"2.8","3":"4.1","4":"1.3","5":"versicolor"},{"1":"6.3","2":"3.3","3":"6.0","4":"2.5","5":"virginica"},{"1":"5.8","2":"2.7","3":"5.1","4":"1.9","5":"virginica"},{"1":"7.1","2":"3.0","3":"5.9","4":"2.1","5":"virginica"},{"1":"6.3","2":"2.9","3":"5.6","4":"1.8","5":"virginica"},{"1":"6.5","2":"3.0","3":"5.8","4":"2.2","5":"virginica"},{"1":"7.6","2":"3.0","3":"6.6","4":"2.1","5":"virginica"},{"1":"4.9","2":"2.5","3":"4.5","4":"1.7","5":"virginica"},{"1":"7.3","2":"2.9","3":"6.3","4":"1.8","5":"virginica"},{"1":"6.7","2":"2.5","3":"5.8","4":"1.8","5":"virginica"},{"1":"7.2","2":"3.6","3":"6.1","4":"2.5","5":"virginica"},{"1":"6.5","2":"3.2","3":"5.1","4":"2.0","5":"virginica"},{"1":"6.4","2":"2.7","3":"5.3","4":"1.9","5":"virginica"},{"1":"6.8","2":"3.0","3":"5.5","4":"2.1","5":"virginica"},{"1":"5.7","2":"2.5","3":"5.0","4":"2.0","5":"virginica"},{"1":"5.8","2":"2.8","3":"5.1","4":"2.4","5":"virginica"},{"1":"6.4","2":"3.2","3":"5.3","4":"2.3","5":"virginica"},{"1":"6.5","2":"3.0","3":"5.5","4":"1.8","5":"virginica"},{"1":"7.7","2":"3.8","3":"6.7","4":"2.2","5":"virginica"},{"1":"7.7","2":"2.6","3":"6.9","4":"2.3","5":"virginica"},{"1":"6.0","2":"2.2","3":"5.0","4":"1.5","5":"virginica"},{"1":"6.9","2":"3.2","3":"5.7","4":"2.3","5":"virginica"},{"1":"5.6","2":"2.8","3":"4.9","4":"2.0","5":"virginica"},{"1":"7.7","2":"2.8","3":"6.7","4":"2.0","5":"virginica"},{"1":"6.3","2":"2.7","3":"4.9","4":"1.8","5":"virginica"},{"1":"6.7","2":"3.3","3":"5.7","4":"2.1","5":"virginica"},{"1":"7.2","2":"3.2","3":"6.0","4":"1.8","5":"virginica"},{"1":"6.2","2":"2.8","3":"4.8","4":"1.8","5":"virginica"},{"1":"6.1","2":"3.0","3":"4.9","4":"1.8","5":"virginica"},{"1":"6.4","2":"2.8","3":"5.6","4":"2.1","5":"virginica"},{"1":"7.2","2":"3.0","3":"5.8","4":"1.6","5":"virginica"},{"1":"7.4","2":"2.8","3":"6.1","4":"1.9","5":"virginica"},{"1":"7.9","2":"3.8","3":"6.4","4":"2.0","5":"virginica"},{"1":"6.4","2":"2.8","3":"5.6","4":"2.2","5":"virginica"},{"1":"6.3","2":"2.8","3":"5.1","4":"1.5","5":"virginica"},{"1":"6.1","2":"2.6","3":"5.6","4":"1.4","5":"virginica"},{"1":"7.7","2":"3.0","3":"6.1","4":"2.3","5":"virginica"},{"1":"6.3","2":"3.4","3":"5.6","4":"2.4","5":"virginica"},{"1":"6.4","2":"3.1","3":"5.5","4":"1.8","5":"virginica"},{"1":"6.0","2":"3.0","3":"4.8","4":"1.8","5":"virginica"},{"1":"6.9","2":"3.1","3":"5.4","4":"2.1","5":"virginica"},{"1":"6.7","2":"3.1","3":"5.6","4":"2.4","5":"virginica"},{"1":"6.9","2":"3.1","3":"5.1","4":"2.3","5":"virginica"},{"1":"5.8","2":"2.7","3":"5.1","4":"1.9","5":"virginica"},{"1":"6.8","2":"3.2","3":"5.9","4":"2.3","5":"virginica"},{"1":"6.7","2":"3.3","3":"5.7","4":"2.5","5":"virginica"},{"1":"6.7","2":"3.0","3":"5.2","4":"2.3","5":"virginica"},{"1":"6.3","2":"2.5","3":"5.0","4":"1.9","5":"virginica"},{"1":"6.5","2":"3.0","3":"5.2","4":"2.0","5":"virginica"},{"1":"6.2","2":"3.4","3":"5.4","4":"2.3","5":"virginica"},{"1":"5.9","2":"3.0","3":"5.1","4":"1.8","5":"virginica"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
 
+</div>
 </div>
 </div>
 <h3>References</h3>
