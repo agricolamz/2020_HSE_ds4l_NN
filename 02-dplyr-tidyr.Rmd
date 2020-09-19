@@ -192,7 +192,7 @@ starwars %>%
   mutate(height = height/100,
          BMI = mass/(height^2)) %>% 
   select(name, height, mass, BMI) %>% 
-  filter(BMI >= 20) %>% 
+  filter(BMI >= 30) %>% 
   nrow() %>% 
   checkdown::check_question()
 ```

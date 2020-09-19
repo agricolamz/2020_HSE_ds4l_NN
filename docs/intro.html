@@ -272,8 +272,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>выбор зависимой и независимых переменных</li>
 <li>сбор данных</li>
 <li>работа с данными, которую можно представить следующей схемой:
-<div id="htmlwidget-5c7b88e10e6315a242e2" style="width:672px;height:480px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5c7b88e10e6315a242e2">{"x":{"diagram":"digraph {\n\ngraph [compound = true, fillcolor = red, layout = dot]\nnode [shape = rectangle]\n\nимпорт; трансформация; визуализация; моделирование; представление\n\nsubgraph cluster0 {\n  трансформация -> визуализация -> моделирование -> трансформация\n  }\n\nимпорт -> трансформация [lhead = cluster0]\nмоделирование -> представление  [ltail = cluster0]\n\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script></li>
+<div id="htmlwidget-2b3de76fd9f6ac0a93db" style="width:672px;height:480px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2b3de76fd9f6ac0a93db">{"x":{"diagram":"digraph {\n\ngraph [compound = true, fillcolor = red, layout = dot]\nnode [shape = rectangle]\n\nимпорт; трансформация; визуализация; моделирование; представление\n\nsubgraph cluster0 {\n  трансформация -> визуализация -> моделирование -> трансформация\n  }\n\nимпорт -> трансформация [lhead = cluster0]\nмоделирование -> представление  [ltail = cluster0]\n\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script></li>
 </ul>
 <p>При анализе данных бывают разные соблазны, с которыми нужно бороться:</p>
 <ul>
@@ -318,12 +318,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </p>
 </div>
 <p><span class="math display">\[\frac{\pi+2}{2^{3-\pi}}\]</span></p>
-<form name="form_64007" onsubmit="return validate_form_64007()" method="post">
-<input type="text" name="answer_64007"><br><input type="submit" value="check">
+<form name="form_79712" onsubmit="return validate_form_79712()" method="post">
+<input type="text" name="answer_79712"><br><input type="submit" value="check">
 </form>
-<p id="result_64007">
+<p id="result_79712">
 </p>
-<script> function validate_form_64007() {var x, text; var x = document.forms["form_64007"]["answer_64007"].value;if (x == "5.672"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_64007').innerHTML = text; return false;} </script>
+<script> function validate_form_79712() {var x, text; var x = document.forms["form_79712"]["answer_79712"].value;if (x == "5.672"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_79712').innerHTML = text; return false;} </script>
 </div>
 <div id="комментарии" class="section level2">
 <h2><span class="header-section-number">2.6</span> Комментарии</h2>
@@ -369,11 +369,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>## [1] 2</code></pre>
 <p>Существуют функции без аргументов, но с ними все равно нужно использовать скобки:</p>
 <div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="intro.html#cb49-1"></a><span class="kw">Sys.Date</span>() <span class="co"># correct</span></span></code></pre></div>
-<pre><code>## [1] &quot;2020-09-18&quot;</code></pre>
+<pre><code>## [1] &quot;2020-09-19&quot;</code></pre>
 <div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="intro.html#cb51-1"></a>Sys.Date <span class="co"># wrong</span></span></code></pre></div>
 <pre><code>## function () 
 ## as.Date(as.POSIXlt(Sys.time()))
-## &lt;bytecode: 0x5df354442670&gt;
+## &lt;bytecode: 0x5826bb2e5780&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 <p>Все функции в R имеют документацию. Ее можно увидеть, если поставить вопросительный знак перед именем функции:</p>
 <div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="intro.html#cb53-1"></a>?Sys.Date</span></code></pre></div>
@@ -383,12 +383,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </p>
 </div>
 <p><span class="math display">\[\log_3(3486784401)\]</span></p>
-<form name="form_80149" onsubmit="return validate_form_80149()" method="post">
-<input type="text" name="answer_80149"><br><input type="submit" value="check">
+<form name="form_98454" onsubmit="return validate_form_98454()" method="post">
+<input type="text" name="answer_98454"><br><input type="submit" value="check">
 </form>
-<p id="result_80149">
+<p id="result_98454">
 </p>
-<script> function validate_form_80149() {var x, text; var x = document.forms["form_80149"]["answer_80149"].value;if (x == "20"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_80149').innerHTML = text; return false;} </script>
+<script> function validate_form_98454() {var x, text; var x = document.forms["form_98454"]["answer_98454"].value;if (x == "20"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_98454').innerHTML = text; return false;} </script>
 </div>
 <div id="переменные" class="section level2">
 <h2><span class="header-section-number">2.8</span> Переменные</h2>
@@ -592,12 +592,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 Во встроенном датасете <code>Nile</code> содержаться данные о ежегодном разливе Нила в 1871–1970 годах (в миллиардах кубических метров). Сколько в датасете наблюдений больше 1000 и меньше 1200.
 </p>
 </div>
-<form name="form_60641" onsubmit="return validate_form_60641()" method="post">
-<input type="text" name="answer_60641"><br><input type="submit" value="check">
+<form name="form_80249" onsubmit="return validate_form_80249()" method="post">
+<input type="text" name="answer_80249"><br><input type="submit" value="check">
 </form>
-<p id="result_60641">
+<p id="result_80249">
 </p>
-<script> function validate_form_60641() {var x, text; var x = document.forms["form_60641"]["answer_60641"].value;if (x == "23"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_60641').innerHTML = text; return false;} </script>
+<script> function validate_form_80249() {var x, text; var x = document.forms["form_80249"]["answer_80249"].value;if (x == "23"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_80249').innerHTML = text; return false;} </script>
 </div>
 <div id="пропущенные-значения" class="section level3">
 <h3><span class="header-section-number">2.9.4</span> Пропущенные значения</h3>
@@ -666,12 +666,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 Установите пакеты <code>tidyverse</code> и <code>readxl</code>. К какому пакету принадлежит функция <code>add_column()</code>?
 </p>
 </div>
-<form name="form_49576" onsubmit="return validate_form_49576()" method="post">
-<select name="answer_49576"><option> dplyr </option><option> ggplot2 </option><option> purrr </option><option> readr </option><option> readxl </option><option> tibble </option><option> tidyr </option></select><br><input type="submit" value="check">
+<form name="form_9299" onsubmit="return validate_form_9299()" method="post">
+<select name="answer_9299"><option> dplyr </option><option> ggplot2 </option><option> purrr </option><option> readr </option><option> readxl </option><option> tibble </option><option> tidyr </option></select><br><input type="submit" value="check">
 </form>
-<p id="result_49576">
+<p id="result_9299">
 </p>
-<script> function validate_form_49576() {var x, text; var x = document.forms["form_49576"]["answer_49576"].value;if (x == "tibble"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_49576').innerHTML = text; return false;} </script>
+<script> function validate_form_9299() {var x, text; var x = document.forms["form_9299"]["answer_9299"].value;if (x == "tibble"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_9299').innerHTML = text; return false;} </script>
 </div>
 <div id="датафрейм-и-тиббл" class="section level2">
 <h2><span class="header-section-number">2.11</span> Датафрейм и тиббл</h2>
@@ -745,23 +745,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 Сколько строчек в датасете <code>iris</code>?
 </p>
 </div>
-<form name="form_95834" onsubmit="return validate_form_95834()" method="post">
-<input type="text" name="answer_95834"><br><input type="submit" value="check">
+<form name="form_4652" onsubmit="return validate_form_4652()" method="post">
+<input type="text" name="answer_4652"><br><input type="submit" value="check">
 </form>
-<p id="result_95834">
+<p id="result_4652">
 </p>
-<script> function validate_form_95834() {var x, text; var x = document.forms["form_95834"]["answer_95834"].value;if (x == "150"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_95834').innerHTML = text; return false;} </script>
+<script> function validate_form_4652() {var x, text; var x = document.forms["form_4652"]["answer_4652"].value;if (x == "150"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_4652').innerHTML = text; return false;} </script>
 <div class="rmdtask">
 <p>
 Сколько колонок в датасете <code>mtcars</code>?
 </p>
 </div>
-<form name="form_98268" onsubmit="return validate_form_98268()" method="post">
-<input type="text" name="answer_98268"><br><input type="submit" value="check">
+<form name="form_76313" onsubmit="return validate_form_76313()" method="post">
+<input type="text" name="answer_76313"><br><input type="submit" value="check">
 </form>
-<p id="result_98268">
+<p id="result_76313">
 </p>
-<script> function validate_form_98268() {var x, text; var x = document.forms["form_98268"]["answer_98268"].value;if (x == "11"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_98268').innerHTML = text; return false;} </script>
+<script> function validate_form_76313() {var x, text; var x = document.forms["form_76313"]["answer_76313"].value;if (x == "11"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_76313').innerHTML = text; return false;} </script>
 <div id="вызов-элементов-датафрейма" class="section level3">
 <h3><span class="header-section-number">2.11.1</span> Вызов элементов датафрейма</h3>
 <p>Датафрейм — двумерный объект, так что можно вызывать как его строчки, так и его колонки. Это делается при помощи квадратных скобок и индексов: первый отвечает за строчки, второй – за колонки:</p>
