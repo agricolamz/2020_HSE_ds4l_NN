@@ -30,7 +30,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="ggplot2.html"/>
+<link rel="prev" href="viz-1.html"/>
 
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -190,10 +190,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.4.1" data-path="трансформация-данных-с-dplyr-и-tidyr.html"><a href="трансформация-данных-с-dplyr-и-tidyr.html#концепция-tidy-data"><i class="fa fa-check"></i><b>3.4.1</b> Концепция <em>tidy data</em></a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="ggplot2.html"><a href="ggplot2.html"><i class="fa fa-check"></i><b>4</b> Data visualisation: <code>ggplot2</code></a><ul>
-<li class="chapter" data-level="4.1" data-path="ggplot2.html"><a href="ggplot2.html#why-visualising-data"><i class="fa fa-check"></i><b>4.1</b> Why visualising data?</a><ul>
-<li class="chapter" data-level="4.1.1" data-path="ggplot2.html"><a href="ggplot2.html#the-anscombes-quartet"><i class="fa fa-check"></i><b>4.1.1</b> The Anscombe’s Quartet</a></li>
+<li class="chapter" data-level="4" data-path="viz-1.html"><a href="viz-1.html"><i class="fa fa-check"></i><b>4</b> Визуализация данных</a><ul>
+<li class="chapter" data-level="4.1" data-path="viz-1.html"><a href="viz-1.html#зачем-визуализировать-данные"><i class="fa fa-check"></i><b>4.1</b> Зачем визуализировать данные?</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="viz-1.html"><a href="viz-1.html#квартет-анскомба"><i class="fa fa-check"></i><b>4.1.1</b> Квартет Анскомба</a></li>
+<li class="chapter" data-level="4.1.2" data-path="viz-1.html"><a href="viz-1.html#датазаурус"><i class="fa fa-check"></i><b>4.1.2</b> Датазаурус</a></li>
 </ul></li>
+<li class="chapter" data-level="4.2" data-path="viz-1.html"><a href="viz-1.html#основы-ggplot2"><i class="fa fa-check"></i><b>4.2</b> Основы <code>ggplot2</code></a><ul>
+<li class="chapter" data-level="4.2.1" data-path="viz-1.html"><a href="viz-1.html#диаграмма-рассеяния-scaterplot"><i class="fa fa-check"></i><b>4.2.1</b> Диаграмма рассеяния (Scaterplot)</a></li>
+<li class="chapter" data-level="4.2.2" data-path="viz-1.html"><a href="viz-1.html#слои"><i class="fa fa-check"></i><b>4.2.2</b> Слои</a></li>
+<li class="chapter" data-level="4.2.3" data-path="viz-1.html"><a href="viz-1.html#aes"><i class="fa fa-check"></i><b>4.2.3</b> <code>aes()</code></a></li>
+<li class="chapter" data-level="4.2.4" data-path="viz-1.html"><a href="viz-1.html#оформление"><i class="fa fa-check"></i><b>4.2.4</b> Оформление</a></li>
+<li class="chapter" data-level="4.2.5" data-path="viz-1.html"><a href="viz-1.html#логарифмические-шкалы"><i class="fa fa-check"></i><b>4.2.5</b> Логарифмические шкалы</a></li>
+<li class="chapter" data-level="4.2.6" data-path="viz-1.html"><a href="viz-1.html#annotate"><i class="fa fa-check"></i><b>4.2.6</b> <code>annotate()</code></a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="viz-1.html"><a href="viz-1.html#столбчатые-диаграммы-barplots"><i class="fa fa-check"></i><b>4.3</b> Столбчатые диаграммы (barplots)</a></li>
+<li class="chapter" data-level="4.4" data-path="viz-1.html"><a href="viz-1.html#факторы"><i class="fa fa-check"></i><b>4.4</b> Факторы</a></li>
+<li class="chapter" data-level="4.5" data-path="viz-1.html"><a href="viz-1.html#дотплот"><i class="fa fa-check"></i><b>4.5</b> Дотплот</a></li>
+<li class="chapter" data-level="4.6" data-path="viz-1.html"><a href="viz-1.html#гистограммы"><i class="fa fa-check"></i><b>4.6</b> Гистограммы</a></li>
+<li class="chapter" data-level="4.7" data-path="viz-1.html"><a href="viz-1.html#функции-плотности"><i class="fa fa-check"></i><b>4.7</b> Функции плотности</a></li>
+<li class="chapter" data-level="4.8" data-path="viz-1.html"><a href="viz-1.html#точки-джиттер-jitter-вайолинплот-violinplot-ящики-с-усами-boxplot"><i class="fa fa-check"></i><b>4.8</b> Точки, джиттер (jitter), вайолинплот (violinplot), ящики с усами (boxplot),</a></li>
+<li class="chapter" data-level="4.9" data-path="viz-1.html"><a href="viz-1.html#фасетизация"><i class="fa fa-check"></i><b>4.9</b> Фасетизация</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 </ul>
@@ -260,7 +276,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="ggplot2.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="viz-1.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>

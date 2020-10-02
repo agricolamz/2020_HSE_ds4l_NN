@@ -190,10 +190,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.4.1" data-path="трансформация-данных-с-dplyr-и-tidyr.html"><a href="трансформация-данных-с-dplyr-и-tidyr.html#концепция-tidy-data"><i class="fa fa-check"></i><b>3.4.1</b> Концепция <em>tidy data</em></a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="ggplot2.html"><a href="ggplot2.html"><i class="fa fa-check"></i><b>4</b> Data visualisation: <code>ggplot2</code></a><ul>
-<li class="chapter" data-level="4.1" data-path="ggplot2.html"><a href="ggplot2.html#why-visualising-data"><i class="fa fa-check"></i><b>4.1</b> Why visualising data?</a><ul>
-<li class="chapter" data-level="4.1.1" data-path="ggplot2.html"><a href="ggplot2.html#the-anscombes-quartet"><i class="fa fa-check"></i><b>4.1.1</b> The Anscombe’s Quartet</a></li>
+<li class="chapter" data-level="4" data-path="viz-1.html"><a href="viz-1.html"><i class="fa fa-check"></i><b>4</b> Визуализация данных</a><ul>
+<li class="chapter" data-level="4.1" data-path="viz-1.html"><a href="viz-1.html#зачем-визуализировать-данные"><i class="fa fa-check"></i><b>4.1</b> Зачем визуализировать данные?</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="viz-1.html"><a href="viz-1.html#квартет-анскомба"><i class="fa fa-check"></i><b>4.1.1</b> Квартет Анскомба</a></li>
+<li class="chapter" data-level="4.1.2" data-path="viz-1.html"><a href="viz-1.html#датазаурус"><i class="fa fa-check"></i><b>4.1.2</b> Датазаурус</a></li>
 </ul></li>
+<li class="chapter" data-level="4.2" data-path="viz-1.html"><a href="viz-1.html#основы-ggplot2"><i class="fa fa-check"></i><b>4.2</b> Основы <code>ggplot2</code></a><ul>
+<li class="chapter" data-level="4.2.1" data-path="viz-1.html"><a href="viz-1.html#диаграмма-рассеяния-scaterplot"><i class="fa fa-check"></i><b>4.2.1</b> Диаграмма рассеяния (Scaterplot)</a></li>
+<li class="chapter" data-level="4.2.2" data-path="viz-1.html"><a href="viz-1.html#слои"><i class="fa fa-check"></i><b>4.2.2</b> Слои</a></li>
+<li class="chapter" data-level="4.2.3" data-path="viz-1.html"><a href="viz-1.html#aes"><i class="fa fa-check"></i><b>4.2.3</b> <code>aes()</code></a></li>
+<li class="chapter" data-level="4.2.4" data-path="viz-1.html"><a href="viz-1.html#оформление"><i class="fa fa-check"></i><b>4.2.4</b> Оформление</a></li>
+<li class="chapter" data-level="4.2.5" data-path="viz-1.html"><a href="viz-1.html#логарифмические-шкалы"><i class="fa fa-check"></i><b>4.2.5</b> Логарифмические шкалы</a></li>
+<li class="chapter" data-level="4.2.6" data-path="viz-1.html"><a href="viz-1.html#annotate"><i class="fa fa-check"></i><b>4.2.6</b> <code>annotate()</code></a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="viz-1.html"><a href="viz-1.html#столбчатые-диаграммы-barplots"><i class="fa fa-check"></i><b>4.3</b> Столбчатые диаграммы (barplots)</a></li>
+<li class="chapter" data-level="4.4" data-path="viz-1.html"><a href="viz-1.html#факторы"><i class="fa fa-check"></i><b>4.4</b> Факторы</a></li>
+<li class="chapter" data-level="4.5" data-path="viz-1.html"><a href="viz-1.html#дотплот"><i class="fa fa-check"></i><b>4.5</b> Дотплот</a></li>
+<li class="chapter" data-level="4.6" data-path="viz-1.html"><a href="viz-1.html#гистограммы"><i class="fa fa-check"></i><b>4.6</b> Гистограммы</a></li>
+<li class="chapter" data-level="4.7" data-path="viz-1.html"><a href="viz-1.html#функции-плотности"><i class="fa fa-check"></i><b>4.7</b> Функции плотности</a></li>
+<li class="chapter" data-level="4.8" data-path="viz-1.html"><a href="viz-1.html#точки-джиттер-jitter-вайолинплот-violinplot-ящики-с-усами-boxplot"><i class="fa fa-check"></i><b>4.8</b> Точки, джиттер (jitter), вайолинплот (violinplot), ящики с усами (boxplot),</a></li>
+<li class="chapter" data-level="4.9" data-path="viz-1.html"><a href="viz-1.html#фасетизация"><i class="fa fa-check"></i><b>4.9</b> Фасетизация</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 </ul>
@@ -272,8 +288,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>выбор зависимой и независимых переменных</li>
 <li>сбор данных</li>
 <li>работа с данными, которую можно представить следующей схемой:
-<div id="htmlwidget-2b3de76fd9f6ac0a93db" style="width:672px;height:480px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-2b3de76fd9f6ac0a93db">{"x":{"diagram":"digraph {\n\ngraph [compound = true, fillcolor = red, layout = dot]\nnode [shape = rectangle]\n\nимпорт; трансформация; визуализация; моделирование; представление\n\nsubgraph cluster0 {\n  трансформация -> визуализация -> моделирование -> трансформация\n  }\n\nимпорт -> трансформация [lhead = cluster0]\nмоделирование -> представление  [ltail = cluster0]\n\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script></li>
+<div id="htmlwidget-a07452158b3e677169af" style="width:672px;height:480px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a07452158b3e677169af">{"x":{"diagram":"digraph {\n\ngraph [compound = true, fillcolor = red, layout = dot]\nnode [shape = rectangle]\n\nимпорт; трансформация; визуализация; моделирование; представление\n\nsubgraph cluster0 {\n  трансформация -> визуализация -> моделирование -> трансформация\n  }\n\nимпорт -> трансформация [lhead = cluster0]\nмоделирование -> представление  [ltail = cluster0]\n\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script></li>
 </ul>
 <p>При анализе данных бывают разные соблазны, с которыми нужно бороться:</p>
 <ul>
@@ -318,12 +334,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </p>
 </div>
 <p><span class="math display">\[\frac{\pi+2}{2^{3-\pi}}\]</span></p>
-<form name="form_79712" onsubmit="return validate_form_79712()" method="post">
-<input type="text" name="answer_79712"><br><input type="submit" value="check">
+<form name="form_61510" onsubmit="return validate_form_61510()" method="post">
+<input type="text" name="answer_61510"><br><input type="submit" value="check">
 </form>
-<p id="result_79712">
+<p id="result_61510">
 </p>
-<script> function validate_form_79712() {var x, text; var x = document.forms["form_79712"]["answer_79712"].value;if (x == "5.672"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_79712').innerHTML = text; return false;} </script>
+<script> function validate_form_61510() {var x, text; var x = document.forms["form_61510"]["answer_61510"].value;if (x == "5.672"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_61510').innerHTML = text; return false;} </script>
 </div>
 <div id="комментарии" class="section level2">
 <h2><span class="header-section-number">2.6</span> Комментарии</h2>
@@ -369,11 +385,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>## [1] 2</code></pre>
 <p>Существуют функции без аргументов, но с ними все равно нужно использовать скобки:</p>
 <div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="intro.html#cb49-1"></a><span class="kw">Sys.Date</span>() <span class="co"># correct</span></span></code></pre></div>
-<pre><code>## [1] &quot;2020-09-19&quot;</code></pre>
+<pre><code>## [1] &quot;2020-10-02&quot;</code></pre>
 <div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="intro.html#cb51-1"></a>Sys.Date <span class="co"># wrong</span></span></code></pre></div>
 <pre><code>## function () 
 ## as.Date(as.POSIXlt(Sys.time()))
-## &lt;bytecode: 0x5826bb2e5780&gt;
+## &lt;bytecode: 0x577c0e3f7528&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 <p>Все функции в R имеют документацию. Ее можно увидеть, если поставить вопросительный знак перед именем функции:</p>
 <div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="intro.html#cb53-1"></a>?Sys.Date</span></code></pre></div>
@@ -383,12 +399,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </p>
 </div>
 <p><span class="math display">\[\log_3(3486784401)\]</span></p>
-<form name="form_98454" onsubmit="return validate_form_98454()" method="post">
-<input type="text" name="answer_98454"><br><input type="submit" value="check">
+<form name="form_29218" onsubmit="return validate_form_29218()" method="post">
+<input type="text" name="answer_29218"><br><input type="submit" value="check">
 </form>
-<p id="result_98454">
+<p id="result_29218">
 </p>
-<script> function validate_form_98454() {var x, text; var x = document.forms["form_98454"]["answer_98454"].value;if (x == "20"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_98454').innerHTML = text; return false;} </script>
+<script> function validate_form_29218() {var x, text; var x = document.forms["form_29218"]["answer_29218"].value;if (x == "20"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_29218').innerHTML = text; return false;} </script>
 </div>
 <div id="переменные" class="section level2">
 <h2><span class="header-section-number">2.8</span> Переменные</h2>
@@ -592,12 +608,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 Во встроенном датасете <code>Nile</code> содержаться данные о ежегодном разливе Нила в 1871–1970 годах (в миллиардах кубических метров). Сколько в датасете наблюдений больше 1000 и меньше 1200.
 </p>
 </div>
-<form name="form_80249" onsubmit="return validate_form_80249()" method="post">
-<input type="text" name="answer_80249"><br><input type="submit" value="check">
+<form name="form_92662" onsubmit="return validate_form_92662()" method="post">
+<input type="text" name="answer_92662"><br><input type="submit" value="check">
 </form>
-<p id="result_80249">
+<p id="result_92662">
 </p>
-<script> function validate_form_80249() {var x, text; var x = document.forms["form_80249"]["answer_80249"].value;if (x == "23"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_80249').innerHTML = text; return false;} </script>
+<script> function validate_form_92662() {var x, text; var x = document.forms["form_92662"]["answer_92662"].value;if (x == "23"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_92662').innerHTML = text; return false;} </script>
 </div>
 <div id="пропущенные-значения" class="section level3">
 <h3><span class="header-section-number">2.9.4</span> Пропущенные значения</h3>
@@ -647,12 +663,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb203"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb203-1"><a href="intro.html#cb203-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;readxl&quot;</span>)</span></code></pre></div>
 <p>После того, как пакет установлен, его можно включить:</p>
 <div class="sourceCode" id="cb204"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb204-1"><a href="intro.html#cb204-1"></a><span class="kw">library</span>(<span class="st">&quot;tidyverse&quot;</span>)</span></code></pre></div>
-<pre><code>## ── Attaching packages ────────</code></pre>
+<pre><code>## ── Attaching packages ──────────────────── tidyverse 1.3.0 ──</code></pre>
 <pre><code>## ✓ ggplot2 3.3.2     ✓ purrr   0.3.4
 ## ✓ tibble  3.0.3     ✓ dplyr   1.0.2
 ## ✓ tidyr   1.1.2     ✓ stringr 1.4.0
 ## ✓ readr   1.3.1     ✓ forcats 0.5.0</code></pre>
-<pre><code>## ── Conflicts ─────────────────
+<pre><code>## ── Conflicts ─────────────────────── tidyverse_conflicts() ──
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()</code></pre>
 <p>Не загрузка пакета — самая частая ошибка студентов:</p>
@@ -666,12 +682,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 Установите пакеты <code>tidyverse</code> и <code>readxl</code>. К какому пакету принадлежит функция <code>add_column()</code>?
 </p>
 </div>
-<form name="form_9299" onsubmit="return validate_form_9299()" method="post">
-<select name="answer_9299"><option> dplyr </option><option> ggplot2 </option><option> purrr </option><option> readr </option><option> readxl </option><option> tibble </option><option> tidyr </option></select><br><input type="submit" value="check">
+<form name="form_30493" onsubmit="return validate_form_30493()" method="post">
+<select name="answer_30493"><option> dplyr </option><option> ggplot2 </option><option> purrr </option><option> readr </option><option> readxl </option><option> tibble </option><option> tidyr </option></select><br><input type="submit" value="check">
 </form>
-<p id="result_9299">
+<p id="result_30493">
 </p>
-<script> function validate_form_9299() {var x, text; var x = document.forms["form_9299"]["answer_9299"].value;if (x == "tibble"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_9299').innerHTML = text; return false;} </script>
+<script> function validate_form_30493() {var x, text; var x = document.forms["form_30493"]["answer_30493"].value;if (x == "tibble"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_30493').innerHTML = text; return false;} </script>
 </div>
 <div id="датафрейм-и-тиббл" class="section level2">
 <h2><span class="header-section-number">2.11</span> Датафрейм и тиббл</h2>
@@ -745,23 +761,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 Сколько строчек в датасете <code>iris</code>?
 </p>
 </div>
-<form name="form_4652" onsubmit="return validate_form_4652()" method="post">
-<input type="text" name="answer_4652"><br><input type="submit" value="check">
+<form name="form_94322" onsubmit="return validate_form_94322()" method="post">
+<input type="text" name="answer_94322"><br><input type="submit" value="check">
 </form>
-<p id="result_4652">
+<p id="result_94322">
 </p>
-<script> function validate_form_4652() {var x, text; var x = document.forms["form_4652"]["answer_4652"].value;if (x == "150"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_4652').innerHTML = text; return false;} </script>
+<script> function validate_form_94322() {var x, text; var x = document.forms["form_94322"]["answer_94322"].value;if (x == "150"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_94322').innerHTML = text; return false;} </script>
 <div class="rmdtask">
 <p>
 Сколько колонок в датасете <code>mtcars</code>?
 </p>
 </div>
-<form name="form_76313" onsubmit="return validate_form_76313()" method="post">
-<input type="text" name="answer_76313"><br><input type="submit" value="check">
+<form name="form_51210" onsubmit="return validate_form_51210()" method="post">
+<input type="text" name="answer_51210"><br><input type="submit" value="check">
 </form>
-<p id="result_76313">
+<p id="result_51210">
 </p>
-<script> function validate_form_76313() {var x, text; var x = document.forms["form_76313"]["answer_76313"].value;if (x == "11"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_76313').innerHTML = text; return false;} </script>
+<script> function validate_form_51210() {var x, text; var x = document.forms["form_51210"]["answer_51210"].value;if (x == "11"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_51210').innerHTML = text; return false;} </script>
 <div id="вызов-элементов-датафрейма" class="section level3">
 <h3><span class="header-section-number">2.11.1</span> Вызов элементов датафрейма</h3>
 <p>Датафрейм — двумерный объект, так что можно вызывать как его строчки, так и его колонки. Это делается при помощи квадратных скобок и индексов: первый отвечает за строчки, второй – за колонки:</p>
