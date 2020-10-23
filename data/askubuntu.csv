@@ -1,0 +1,751 @@
+votes,name,value,link
+494,4,"My computer boots to a black screen, what options do I have to fix it?",https://askubuntu.com/questions?tab=frequent&page=1
+565,5,How do I install Ubuntu alongside a pre-installed Windows with UEFI?,https://askubuntu.com/questions?tab=frequent&page=1
+167,6,How do I install Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=1
+358,7,Installing Broadcom Wireless Drivers,https://askubuntu.com/questions?tab=frequent&page=1
+437,8,How to install software or upgrade from an old unsupported release?,https://askubuntu.com/questions?tab=frequent&page=1
+204,9,How to remove Ubuntu and put Windows back on?,https://askubuntu.com/questions?tab=frequent&page=1
+588,10,How do I resolve unmet dependencies after adding a PPA?,https://askubuntu.com/questions?tab=frequent&page=1
+364,11,How can I repair grub? (How to get Ubuntu back after installing Windows?),https://askubuntu.com/questions?tab=frequent&page=1
+465,12,How do I report a bug?,https://askubuntu.com/questions?tab=frequent&page=1
+154,13,How do I find out which version and derivative of Ubuntu is right for my hardware in terms of minimal system requirements?,https://askubuntu.com/questions?tab=frequent&page=1
+124,14,How to resize partitions?,https://askubuntu.com/questions?tab=frequent&page=1
+701,15,How do I reset a lost administrative password?,https://askubuntu.com/questions?tab=frequent&page=1
+516,16,Ubuntu gets stuck in a login loop,https://askubuntu.com/questions?tab=frequent&page=1
+562,17,"Unity doesn't load, no Launcher, no Dash appears",https://askubuntu.com/questions?tab=frequent&page=1
+277,18,"Unable to correct problems, you have held broken packages",https://askubuntu.com/questions?tab=frequent&page=1
+289,4,How can I fix a 404 Error when using a PPA or updating my package lists?,https://askubuntu.com/questions?tab=frequent&page=2
+104,5,My wireless/WiFi connection does not work. What information is needed to diagnose the issue?,https://askubuntu.com/questions?tab=frequent&page=2
+271,6,How to use manual partitioning during installation?,https://askubuntu.com/questions?tab=frequent&page=2
+352,7,Unable to mount Windows (NTFS) filesystem due to hibernation,https://askubuntu.com/questions?tab=frequent&page=2
+1086,8,Unable to lock the administration directory (/var/lib/dpkg/) is another process using it?,https://askubuntu.com/questions?tab=frequent&page=2
+76,9,What can I do if a repository/PPA does not have a Release file?,https://askubuntu.com/questions?tab=frequent&page=2
+56,10,How do I recover my accidentally lost Windows partitions after installing Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=2
+183,11,How do I install Ubuntu to a USB key? (without using Startup Disk Creator),https://askubuntu.com/questions?tab=frequent&page=2
+656,12,What should I do when Ubuntu freezes?,https://askubuntu.com/questions?tab=frequent&page=2
+269,13,How can I install software or packages without Internet (offline)?,https://askubuntu.com/questions?tab=frequent&page=2
+74,14,How do I remove a malformed line from my sources.list?,https://askubuntu.com/questions?tab=frequent&page=2
+198,15,How do I enable the “Universe” repository?,https://askubuntu.com/questions?tab=frequent&page=2
+40,16,"Unable to boot into Windows after installing Ubuntu, how to fix?",https://askubuntu.com/questions?tab=frequent&page=2
+131,17,What hardware does Ubuntu Touch support?,https://askubuntu.com/questions?tab=frequent&page=2
+157,18,How do I restore the default repositories?,https://askubuntu.com/questions?tab=frequent&page=2
+250,4,How can I install Windows after I've installed Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=3
+518,5,What are PPAs and how do I use them?,https://askubuntu.com/questions?tab=frequent&page=3
+165,6,How do I install the Nvidia drivers?,https://askubuntu.com/questions?tab=frequent&page=3
+180,7,"I have a hardware detection problem, what logs do I need to look into?",https://askubuntu.com/questions?tab=frequent&page=3
+113,8,What are the system requirements for each flavour of Ubuntu Desktop?,https://askubuntu.com/questions?tab=frequent&page=3
+127,9,Can I skip over releases when upgrading?,https://askubuntu.com/questions?tab=frequent&page=3
+541,10,How do I install a .tar.gz (or .tar.bz2) file?,https://askubuntu.com/questions?tab=frequent&page=3
+575,11,How do I free up more space in /boot?,https://askubuntu.com/questions?tab=frequent&page=3
+418,12,How do I fix the GPG error “NO_PUBKEY”?,https://askubuntu.com/questions?tab=frequent&page=3
+437,13,How do I upgrade to a newer version of Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=3
+493,14,How can I create a Windows bootable USB stick using Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=3
+292,15,How to fix “The system is running in low-graphics mode” error?,https://askubuntu.com/questions?tab=frequent&page=3
+159,16,Why don't the Ubuntu repositories have the latest versions of software?,https://askubuntu.com/questions?tab=frequent&page=3
+43,17,Will my device work with Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=3
+100,18,How can I install Windows software or games?,https://askubuntu.com/questions?tab=frequent&page=3
+34,4,What is the proper way of creating installation media from Ubuntu iso?,https://askubuntu.com/questions?tab=frequent&page=4
+130,5,"dpkg error: “trying to overwrite file, which is also in…”",https://askubuntu.com/questions?tab=frequent&page=4
+172,6,Is a NVIDIA GeForce with Optimus Technology supported by Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=4
+213,7,How to customize the Ubuntu Live CD?,https://askubuntu.com/questions?tab=frequent&page=4
+380,8,How do I start applications automatically on login?,https://askubuntu.com/questions?tab=frequent&page=4
+165,9,What is the correct way to install proprietary ATI Catalyst Video Drivers (fglrx) directly from AMD?,https://askubuntu.com/questions?tab=frequent&page=4
+144,10,"What are the differences between 32-bit and 64-bit, and which should I choose?",https://askubuntu.com/questions?tab=frequent&page=4
+721,11,How do I remove old kernel versions to clean up the boot menu?,https://askubuntu.com/questions?tab=frequent&page=4
+86,12,How do I install applications in Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=4
+57,13,How do I get a Realtek RTL8723BE wireless card to work?,https://askubuntu.com/questions?tab=frequent&page=4
+60,14,What's a good back-up strategy for 1 desktop PC?,https://askubuntu.com/questions?tab=frequent&page=4
+315,15,Are PPAs safe to add to my system and what are some “red flags” to watch out for?,https://askubuntu.com/questions?tab=frequent&page=4
+570,16,How can I install Sun/Oracle's proprietary Java JDK 6/7/8 or JRE?,https://askubuntu.com/questions?tab=frequent&page=4
+139,17,How to roll back Ubuntu to a previous version?,https://askubuntu.com/questions?tab=frequent&page=4
+487,18,How do I install Guest Additions in a VirtualBox VM?,https://askubuntu.com/questions?tab=frequent&page=4
+93,4,Why do I get “Required key not available” when install 3rd party kernel modules or after a kernel upgrade?,https://askubuntu.com/questions?tab=frequent&page=5
+69,5,How can I install Ubuntu without removing Windows?,https://askubuntu.com/questions?tab=frequent&page=5
+1192,6,How do I install a .deb file via the command line?,https://askubuntu.com/questions?tab=frequent&page=5
+134,7,How to recover deleted files?,https://askubuntu.com/questions?tab=frequent&page=5
+116,8,How do I set 'nomodeset' after I've already installed Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=5
+185,9,How to avoid using sudo when working in /var/www?,https://askubuntu.com/questions?tab=frequent&page=5
+369,10,How do I fix a “Problem with MergeList” or “status file could not be parsed” error when trying to do an update?,https://askubuntu.com/questions?tab=frequent&page=5
+61,11,"What if I accidentally run command “chmod -R” on system directories (/, /etc, …)",https://askubuntu.com/questions?tab=frequent&page=5
+13,12,Dual boot Win 8 / Ubuntu loads only Win,https://askubuntu.com/questions?tab=frequent&page=5
+46,13,Bluetooth Broadcom 43142 isn't working,https://askubuntu.com/questions?tab=frequent&page=5
+591,14,How to run scripts on start up?,https://askubuntu.com/questions?tab=frequent&page=5
+423,15,How to prevent updating of a specific package?,https://askubuntu.com/questions?tab=frequent&page=5
+253,16,“Unable to locate package” while trying to install packages with APT,https://askubuntu.com/questions?tab=frequent&page=5
+142,17,How do I use 'chmod' on an NTFS (or FAT32) partition?,https://askubuntu.com/questions?tab=frequent&page=5
+184,18,Graphics issues after/while installing Ubuntu 16.04/16.10 with NVIDIA graphics,https://askubuntu.com/questions?tab=frequent&page=5
+419,4,Trouble downloading packages list due to a “Hash sum mismatch” error,https://askubuntu.com/questions?tab=frequent&page=6
+35,5,“Install alongside” option missing. How do I install Ubuntu beside Windows using “Something Else”?,https://askubuntu.com/questions?tab=frequent&page=6
+1354,6,How can PPAs be removed?,https://askubuntu.com/questions?tab=frequent&page=6
+188,7,How can I fix apt error “W: Target Packages … is configured multiple times”?,https://askubuntu.com/questions?tab=frequent&page=6
+55,8,Ubuntu 14.04.5/16.04 and newer on AMD graphics,https://askubuntu.com/questions?tab=frequent&page=6
+540,9,How do I find the package that provides a file?,https://askubuntu.com/questions?tab=frequent&page=6
+281,10,How can I create launchers on my desktop?,https://askubuntu.com/questions?tab=frequent&page=6
+161,11,How to update kernel to the latest mainline version without any Distro-upgrade?,https://askubuntu.com/questions?tab=frequent&page=6
+36,12,How do I fix this “E: Type '*' is not known on line * in source list …” update error?,https://askubuntu.com/questions?tab=frequent&page=6
+183,13,Is there a power saving application similar to Jupiter?,https://askubuntu.com/questions?tab=frequent&page=6
+38,14,Nothing shows up in the terminal when I type my password,https://askubuntu.com/questions?tab=frequent&page=6
+418,15,What kinds of desktop environments and shells are available?,https://askubuntu.com/questions?tab=frequent&page=6
+18,16,How to prepare a disk on an EFI based PC for Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=6
+94,17,"Permission denied, are you root?",https://askubuntu.com/questions?tab=frequent&page=6
+76,18,How do I install additional drivers?,https://askubuntu.com/questions?tab=frequent&page=6
+14,4,Recovering broken or deleted NTFS partitions,https://askubuntu.com/questions?tab=frequent&page=7
+796,5,How to add a directory to the PATH?,https://askubuntu.com/questions?tab=frequent&page=7
+121,6,Why should users never use normal sudo to start graphical applications?,https://askubuntu.com/questions?tab=frequent&page=7
+182,7,How do I install Java?,https://askubuntu.com/questions?tab=frequent&page=7
+160,8,My /boot partition hit 100% and now I can't upgrade. Can't remove old kernels to make room,https://askubuntu.com/questions?tab=frequent&page=7
+116,9,How do I install and manage GNOME Shell extensions?,https://askubuntu.com/questions?tab=frequent&page=7
+45,10,Why don't gksu/gksudo or launching a graphical application with sudo work with Wayland?,https://askubuntu.com/questions?tab=frequent&page=7
+193,11,How to install and configure Wine?,https://askubuntu.com/questions?tab=frequent&page=7
+25,12,Installing Wi-Fi driver for Realtek Semiconductor RTL8723DE Device [10ec:d723],https://askubuntu.com/questions?tab=frequent&page=7
+183,13,How do I reset my Unity configuration?,https://askubuntu.com/questions?tab=frequent&page=7
+40,14,How do I make a bootable Ubuntu USB?,https://askubuntu.com/questions?tab=frequent&page=7
+116,15,"There's an issue with an Alpha/Beta Release of Ubuntu, what should I do?",https://askubuntu.com/questions?tab=frequent&page=7
+99,16,What's the difference between a Long Term Support Release and a Normal Release?,https://askubuntu.com/questions?tab=frequent&page=7
+242,17,How to revert to GNOME Classic Desktop?,https://askubuntu.com/questions?tab=frequent&page=7
+458,18,How can I edit/create new launcher items in Unity by hand?,https://askubuntu.com/questions?tab=frequent&page=7
+132,4,How do I install Skype?,https://askubuntu.com/questions?tab=frequent&page=8
+346,5,How can I improve Ubuntu overall system performance?,https://askubuntu.com/questions?tab=frequent&page=8
+17,6,Can't format my usb drive. I have already tried with mkdosfs and gparted,https://askubuntu.com/questions?tab=frequent&page=8
+229,7,Do I need to have antivirus software installed? [closed],https://askubuntu.com/questions?tab=frequent&page=8
+336,8,Comparison of backup tools,https://askubuntu.com/questions?tab=frequent&page=8
+541,9,How to install Google Chrome,https://askubuntu.com/questions?tab=frequent&page=8
+168,10,How do I install and use the latest version of GNOME?,https://askubuntu.com/questions?tab=frequent&page=8
+38,11,"My disk already has 4 primary partitions, how can I install Ubuntu?",https://askubuntu.com/questions?tab=frequent&page=8
+80,12,What is a terminal and how do I open and use it?,https://askubuntu.com/questions?tab=frequent&page=8
+65,13,How do I add myself back as a sudo user?,https://askubuntu.com/questions?tab=frequent&page=8
+48,14,How do I remove “Ubuntu” in the bios boot menu? (UEFI),https://askubuntu.com/questions?tab=frequent&page=8
+145,15,How can I change what keys on my keyboard do? (How can I create custom keyboard commands/shortcuts?),https://askubuntu.com/questions?tab=frequent&page=8
+13,16,Unable to mount Windows 10 partition; it “is in an unsafe state” [duplicate],https://askubuntu.com/questions?tab=frequent&page=8
+210,17,"How can I get apt to use a mirror close to me, or choose a faster mirror?",https://askubuntu.com/questions?tab=frequent&page=8
+44,18,How can I dual boot Windows and Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=8
+2167,4,How to list all installed packages,https://askubuntu.com/questions?tab=frequent&page=9
+21,5,Wi-Fi not working on Lenovo ThinkPad E570 (Realtek RTL8821CE),https://askubuntu.com/questions?tab=frequent&page=9
+253,6,Why is “No new release found” when upgrading from a LTS to the next?,https://askubuntu.com/questions?tab=frequent&page=9
+107,7,How do I install Adobe Flash player?,https://askubuntu.com/questions?tab=frequent&page=9
+362,8,How do I change the GRUB boot order?,https://askubuntu.com/questions?tab=frequent&page=9
+722,9,What Application Indicators are available?,https://askubuntu.com/questions?tab=frequent&page=9
+524,10,What are Unity's keyboard and mouse shortcuts?,https://askubuntu.com/questions?tab=frequent&page=9
+31,11,How do I fix Flash issues?,https://askubuntu.com/questions?tab=frequent&page=9
+32,12,True Ubuntu on Chromebook ARM,https://askubuntu.com/questions?tab=frequent&page=9
+8,13,Can't boot into Ubuntu in Windows 10 / Ubuntu dual boot,https://askubuntu.com/questions?tab=frequent&page=9
+184,14,How do I add a kernel boot parameter?,https://askubuntu.com/questions?tab=frequent&page=9
+19,15,How do I install Ubuntu from an USB drive / create a live USB-stick in Windows?,https://askubuntu.com/questions?tab=frequent&page=9
+352,16,Clock time is off on dual boot,https://askubuntu.com/questions?tab=frequent&page=9
+351,17,How can I accept the Microsoft EULA agreement for ttf-mscorefonts-installer?,https://askubuntu.com/questions?tab=frequent&page=9
+104,18,How can I check the SMART status of a SSD or HDD on current versions of Ubuntu 14.04 through 18.10?,https://askubuntu.com/questions?tab=frequent&page=9
+302,4,How to backup settings and list of installed packages,https://askubuntu.com/questions?tab=frequent&page=10
+254,5,How do I set Windows to boot as the default in the boot loader?,https://askubuntu.com/questions?tab=frequent&page=10
+304,6,How can I configure Unity?,https://askubuntu.com/questions?tab=frequent&page=10
+64,7,How do you switch from Wayland back to Xorg in Ubuntu 17.10?,https://askubuntu.com/questions?tab=frequent&page=10
+209,8,How to control fan speed?,https://askubuntu.com/questions?tab=frequent&page=10
+427,9,How to enable hibernation?,https://askubuntu.com/questions?tab=frequent&page=10
+116,10,How to automount NTFS partitions?,https://askubuntu.com/questions?tab=frequent&page=10
+156,11,How to solve “permission denied” when using sudo with redirection in Bash?,https://askubuntu.com/questions?tab=frequent&page=10
+121,12,How to set up USB for Virtualbox?,https://askubuntu.com/questions?tab=frequent&page=10
+25,13,Realtek RTL8723BE Wi-Fi incredibly weak,https://askubuntu.com/questions?tab=frequent&page=10
+8,14,Boot Ubuntu from external drive [duplicate],https://askubuntu.com/questions?tab=frequent&page=10
+236,15,How do I disable X at boot time so that the system boots in text mode?,https://askubuntu.com/questions?tab=frequent&page=10
+118,16,How to create UEFI-only bootable USB live media?,https://askubuntu.com/questions?tab=frequent&page=10
+326,17,How to get to the GRUB menu at boot-time?,https://askubuntu.com/questions?tab=frequent&page=10
+121,18,How can I use Netflix on Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=10
+24,4,Acer Aspire E15 will not dual boot,https://askubuntu.com/questions?tab=frequent&page=11
+108,5,How to install Ubuntu on VirtualBox?,https://askubuntu.com/questions?tab=frequent&page=11
+52,6,How to convert Wubi install into regular install?,https://askubuntu.com/questions?tab=frequent&page=11
+33,7,How do I reset a lost password (using recovery mode requires me to type the password)?,https://askubuntu.com/questions?tab=frequent&page=11
+569,8,How do I set up a Cron job?,https://askubuntu.com/questions?tab=frequent&page=11
+67,9,How to make a persistent live Ubuntu USB with more than 4GB,https://askubuntu.com/questions?tab=frequent&page=11
+59,10,How to run scripts without typing the full path?,https://askubuntu.com/questions?tab=frequent&page=11
+26,11,How do I install the VirtualBox version from Oracle to install an Extension Pack?,https://askubuntu.com/questions?tab=frequent&page=11
+101,12,What are some of the issues with CCSM and why would I want to avoid it?,https://askubuntu.com/questions?tab=frequent&page=11
+131,13,What is the easiest way to resolve apt-get BADSIG GPG errors?,https://askubuntu.com/questions?tab=frequent&page=11
+139,14,"E: Unable to correct problems, you have held broken packages",https://askubuntu.com/questions?tab=frequent&page=11
+95,15,How can I play encrypted DVD movies?,https://askubuntu.com/questions?tab=frequent&page=11
+165,16,How to setup an Access Point mode Wi-Fi Hotspot?,https://askubuntu.com/questions?tab=frequent&page=11
+119,17,"apt-get update fails to fetch files, “Temporary failure resolving …” error",https://askubuntu.com/questions?tab=frequent&page=11
+97,18,How can I resize an LVM partition? (i.e: physical volume),https://askubuntu.com/questions?tab=frequent&page=11
+74,4,How do I boot into a root shell?,https://askubuntu.com/questions?tab=frequent&page=12
+42,5,Can't boot without Flash Drive plugged in,https://askubuntu.com/questions?tab=frequent&page=12
+123,6,Strange artifacts along window borders after waking computer from sleep mode,https://askubuntu.com/questions?tab=frequent&page=12
+107,7,How to fix “Package is in a very bad inconsistent state” error?,https://askubuntu.com/questions?tab=frequent&page=12
+39,8,Windows 8 removes Grub as default boot manager,https://askubuntu.com/questions?tab=frequent&page=12
+32,9,How to install latest HPLIP on my Ubuntu to support my HP printer and/or scanner?,https://askubuntu.com/questions?tab=frequent&page=12
+189,10,How to make a disk image and restore from it later?,https://askubuntu.com/questions?tab=frequent&page=12
+31,11,How to install Broadcom wireless drivers offline?,https://askubuntu.com/questions?tab=frequent&page=12
+434,12,How do I create a permanent Bash alias?,https://askubuntu.com/questions?tab=frequent&page=12
+232,13,How do I run specific sudo commands without a password?,https://askubuntu.com/questions?tab=frequent&page=12
+133,14,“debconf: DbDriver ”config“: config.dat is locked by another process: Resource temporarily unavailable” while installing packages,https://askubuntu.com/questions?tab=frequent&page=12
+46,15,"E:Error, pkgProblemResolver::Resolve generated breaks, this may be caused by held packages",https://askubuntu.com/questions?tab=frequent&page=12
+4,16,Is Ubuntu compatible with my hardware? [duplicate],https://askubuntu.com/questions?tab=frequent&page=12
+236,17,How to understand the Ubuntu file system layout?,https://askubuntu.com/questions?tab=frequent&page=12
+257,18,Can I move the Unity launcher?,https://askubuntu.com/questions?tab=frequent&page=12
+50,4,error: file '/grub/i386-pc/normal.mod' not found,https://askubuntu.com/questions?tab=frequent&page=13
+855,5,How to enable or disable services?,https://askubuntu.com/questions?tab=frequent&page=13
+624,6,What is the correct way to completely remove an application?,https://askubuntu.com/questions?tab=frequent&page=13
+231,7,How do I install different (upgrade or downgrade) PHP version in still supported Ubuntu release?,https://askubuntu.com/questions?tab=frequent&page=13
+137,8,Uninstall GRUB and use Windows bootloader,https://askubuntu.com/questions?tab=frequent&page=13
+34,9,How to install Ubuntu on portable external Hard Drive?,https://askubuntu.com/questions?tab=frequent&page=13
+186,10,Difference between the i386 download and the amd64?,https://askubuntu.com/questions?tab=frequent&page=13
+17,11,"Removed Python 3 and now Ubuntu Software Center, terminal and other applications don't work",https://askubuntu.com/questions?tab=frequent&page=13
+4,12,Why Doesn't a Bootable USB Boot,https://askubuntu.com/questions?tab=frequent&page=13
+73,13,How to restore a system after accidentally removing all kernels?,https://askubuntu.com/questions?tab=frequent&page=13
+60,14,How do I check the integrity of a storage medium (hard disk or flash drive)? [duplicate],https://askubuntu.com/questions?tab=frequent&page=13
+138,15,What Custom Launchers and Unity Quicklists are available?,https://askubuntu.com/questions?tab=frequent&page=13
+168,16,How do I add swap after system installation?,https://askubuntu.com/questions?tab=frequent&page=13
+56,17,How do I remove Windows but keep Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=13
+369,18,How do I change my username?,https://askubuntu.com/questions?tab=frequent&page=13
+295,4,I have 16GB RAM. Do I need 32GB swap?,https://askubuntu.com/questions?tab=frequent&page=14
+79,5,What does “Package <package> has no installation candidate” mean?,https://askubuntu.com/questions?tab=frequent&page=14
+65,6,How can I boot with an older kernel version?,https://askubuntu.com/questions?tab=frequent&page=14
+22,7,Failed to download repository information due to missing CDROM,https://askubuntu.com/questions?tab=frequent&page=14
+275,8,Boot drops to a (initramfs) prompts/busybox,https://askubuntu.com/questions?tab=frequent&page=14
+49,9,How do I get permissions to edit system configuration files?,https://askubuntu.com/questions?tab=frequent&page=14
+32,10,Is the 64-Bit version of Ubuntu only compatible with AMD CPUs?,https://askubuntu.com/questions?tab=frequent&page=14
+260,11,How do I remap certain keys or devices?,https://askubuntu.com/questions?tab=frequent&page=14
+168,12,If I build a package from source how can I uninstall or remove completely?,https://askubuntu.com/questions?tab=frequent&page=14
+387,13,How do I configure swappiness?,https://askubuntu.com/questions?tab=frequent&page=14
+113,14,How can I uninstall a nvidia driver completely ?,https://askubuntu.com/questions?tab=frequent&page=14
+147,15,How to enable root login?,https://askubuntu.com/questions?tab=frequent&page=14
+170,16,How do I run executable scripts in Nautilus?,https://askubuntu.com/questions?tab=frequent&page=14
+31,17,Windows installer for Ubuntu 14.04 LTS onwards,https://askubuntu.com/questions?tab=frequent&page=14
+63,18,How do I enable hardware virtualization technology (VT-x) for use in Virtualbox?,https://askubuntu.com/questions?tab=frequent&page=14
+153,4,Running programs in the background from terminal,https://askubuntu.com/questions?tab=frequent&page=15
+271,5,fsck error on boot: /dev/sda6: UNEXPECTED INCONSISTENCY; RUN fsck MANUALLY,https://askubuntu.com/questions?tab=frequent&page=15
+208,6,Why is it bad to log in as root?,https://askubuntu.com/questions?tab=frequent&page=15
+127,7,What's the easiest way to set up a LAMP stack?,https://askubuntu.com/questions?tab=frequent&page=15
+116,8,How do I reset GNOME to the defaults?,https://askubuntu.com/questions?tab=frequent&page=15
+68,9,Move home folder to second drive,https://askubuntu.com/questions?tab=frequent&page=15
+98,10,Virtualbox Kernel driver not installed [duplicate],https://askubuntu.com/questions?tab=frequent&page=15
+103,11,What is the difference between “gksudo nautilus” and “sudo nautilus”?,https://askubuntu.com/questions?tab=frequent&page=15
+218,12,How do I set the grub timeout and the grub default boot entry?,https://askubuntu.com/questions?tab=frequent&page=15
+204,13,How to install Eclipse?,https://askubuntu.com/questions?tab=frequent&page=15
+264,14,How to modify an invalid '/etc/sudoers' file?,https://askubuntu.com/questions?tab=frequent&page=15
+34,15,How can I install a Canon printer or scanner driver?,https://askubuntu.com/questions?tab=frequent&page=15
+575,16,Why crontab scripts are not working?,https://askubuntu.com/questions?tab=frequent&page=15
+154,17,Whats the simplest way to edit and add files to “/var/www”?,https://askubuntu.com/questions?tab=frequent&page=15
+71,18,How to share files through the local network?,https://askubuntu.com/questions?tab=frequent&page=15
+47,4,How do I enter a file or directory with special characters in its name?,https://askubuntu.com/questions?tab=frequent&page=16
+278,5,How can I set up password-less SSH login?,https://askubuntu.com/questions?tab=frequent&page=16
+105,6,Blank screen after installing nvidia restricted driver,https://askubuntu.com/questions?tab=frequent&page=16
+7,7,How to download all required Ubuntu drivers,https://askubuntu.com/questions?tab=frequent&page=16
+1032,8,“The following packages have been kept back:” Why and how do I solve it?,https://askubuntu.com/questions?tab=frequent&page=16
+131,9,How to install Flash player on Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=16
+33,10,How can I check the integrity of a downloaded Ubuntu CD?,https://askubuntu.com/questions?tab=frequent&page=16
+220,11,How do you run Ubuntu Server with a GUI?,https://askubuntu.com/questions?tab=frequent&page=16
+192,12,How to fix “W: Duplicate sources.list entry”?,https://askubuntu.com/questions?tab=frequent&page=16
+56,13,"My WiFi adapter is not working at all, how to troubleshoot?",https://askubuntu.com/questions?tab=frequent&page=16
+60,14,How to read ext4 partitions in Windows? [closed],https://askubuntu.com/questions?tab=frequent&page=16
+35,15,How to install the Boot-Repair tool in an Ubuntu live disc?,https://askubuntu.com/questions?tab=frequent&page=16
+8,16,How to change boot priority?,https://askubuntu.com/questions?tab=frequent&page=16
+444,17,What is “dist-upgrade” and why does it upgrade more than “upgrade”?,https://askubuntu.com/questions?tab=frequent&page=16
+309,18,How can I stop being prompted to unlock the 'default' keyring on boot?,https://askubuntu.com/questions?tab=frequent&page=16
+397,4,How do I run .sh scripts?,https://askubuntu.com/questions?tab=frequent&page=17
+173,5,How to increase swap space?,https://askubuntu.com/questions?tab=frequent&page=17
+43,6,Is my ATI graphics card supported in Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=17
+107,7,No more updates for Google Chrome 32-bit,https://askubuntu.com/questions?tab=frequent&page=17
+34,8,System freezes completely with Intel Bay Trail,https://askubuntu.com/questions?tab=frequent&page=17
+209,9,How do I create a desktop wallpaper slideshow?,https://askubuntu.com/questions?tab=frequent&page=17
+121,10,What's the easiest way to run GUI apps on Windows Subsystem for Linux as of 2018?,https://askubuntu.com/questions?tab=frequent&page=17
+81,11,How to extend my root (/) partition?,https://askubuntu.com/questions?tab=frequent&page=17
+60,12,Ubuntu GNOME 17.04: wi-fi not working — mac address keeps changing?,https://askubuntu.com/questions?tab=frequent&page=17
+62,13,"I installed an alpha or beta, am I up to date with the final release if I keep upgrading?",https://askubuntu.com/questions?tab=frequent&page=17
+348,14,Execute sudo without Password?,https://askubuntu.com/questions?tab=frequent&page=17
+15,15,Bash script to backkup/clone Ubuntu to another partition,https://askubuntu.com/questions?tab=frequent&page=17
+10,16,How to Create a Full Install of Ubuntu 20.04 to USB Device Step by Step,https://askubuntu.com/questions?tab=frequent&page=17
+14,17,How to create a bootable USB stick?,https://askubuntu.com/questions?tab=frequent&page=17
+583,18,What does “sudo apt-get update” do?,https://askubuntu.com/questions?tab=frequent&page=17
+118,4,How can I restore configuration files?,https://askubuntu.com/questions?tab=frequent&page=18
+77,5,GRUB does not detect Windows,https://askubuntu.com/questions?tab=frequent&page=18
+61,6,Grub rescue - error: unknown filesystem,https://askubuntu.com/questions?tab=frequent&page=18
+71,7,How can I get my graphics card to be recognized in System Info?,https://askubuntu.com/questions?tab=frequent&page=18
+32,8,How to install Wi-Fi driver for Realtek RTL8821CE on Ubuntu 18.04? [duplicate],https://askubuntu.com/questions?tab=frequent&page=18
+16,9,can't install wine on ubuntu (actually lubuntu) 18.04,https://askubuntu.com/questions?tab=frequent&page=18
+197,10,How to make partitions mount at startup?,https://askubuntu.com/questions?tab=frequent&page=18
+72,11,How do I install the Nvidia driver for a GeForce GT 630 [duplicate],https://askubuntu.com/questions?tab=frequent&page=18
+66,12,How do I get AMD/Intel Hybrid Graphics drivers to work?,https://askubuntu.com/questions?tab=frequent&page=18
+79,13,Windows 10 upgrade led to grub rescue,https://askubuntu.com/questions?tab=frequent&page=18
+37,14,How do I remove the proprietary ATI drivers?,https://askubuntu.com/questions?tab=frequent&page=18
+156,15,How do I install the latest stable version of Firefox?,https://askubuntu.com/questions?tab=frequent&page=18
+79,16,Error when installing: “unable to find a medium containing a live file system”,https://askubuntu.com/questions?tab=frequent&page=18
+15,17,How to recover a deleted NTFS partition with data,https://askubuntu.com/questions?tab=frequent&page=18
+30,18,Re-install Ubuntu without losing data in home folder,https://askubuntu.com/questions?tab=frequent&page=18
+71,4,How can I get my graphics card to be recognized in System Info?,https://askubuntu.com/questions?tab=frequent&page=19
+105,5,How can I install on a non-PAE CPU? (error “Kernel requires features not present on the CPU: PAE”),https://askubuntu.com/questions?tab=frequent&page=19
+819,6,Error message “sudo: unable to resolve host (none)”,https://askubuntu.com/questions?tab=frequent&page=19
+125,7,What IDEs are available for Ubuntu? [closed],https://askubuntu.com/questions?tab=frequent&page=19
+138,8,"Kernel Panic - not syncing: VFS: Unable to mount root fs on unknown-block(0,0)",https://askubuntu.com/questions?tab=frequent&page=19
+185,9,How do I change fonts and adjust their size?,https://askubuntu.com/questions?tab=frequent&page=19
+119,10,How do I install the Cinnamon Desktop?,https://askubuntu.com/questions?tab=frequent&page=19
+183,11,Tips to extend battery life for laptops and notebooks,https://askubuntu.com/questions?tab=frequent&page=19
+177,12,How to install Android Studio on Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=19
+69,13,What's your recommendation on drive partitioning schemes for a desktop and home server? [closed],https://askubuntu.com/questions?tab=frequent&page=19
+62,14,How do I get my Mac to boot from an Ubuntu USB key?,https://askubuntu.com/questions?tab=frequent&page=19
+338,15,How can I tell Ubuntu to do nothing when I close my laptop lid?,https://askubuntu.com/questions?tab=frequent&page=19
+298,16,How to format a USB flash drive?,https://askubuntu.com/questions?tab=frequent&page=19
+46,17,How do I go about porting Ubuntu Touch to different devices?,https://askubuntu.com/questions?tab=frequent&page=19
+45,18,How do I install and switch to the Unity 2D desktop?,https://askubuntu.com/questions?tab=frequent&page=19
+870,4,How can I add a new user as sudoer using the command line?,https://askubuntu.com/questions?tab=frequent&page=20
+194,5,How to enable TRIM?,https://askubuntu.com/questions?tab=frequent&page=20
+97,6,How do I set a custom resolution?,https://askubuntu.com/questions?tab=frequent&page=20
+42,7,Apt/Synaptic needs to reinstall package but can't find the archive for it,https://askubuntu.com/questions?tab=frequent&page=20
+58,8,How do I install Ubuntu-Tweak?,https://askubuntu.com/questions?tab=frequent&page=20
+33,9,How can I get help on terminal commands?,https://askubuntu.com/questions?tab=frequent&page=20
+422,10,How to create a bootable Ubuntu USB flash drive from terminal?,https://askubuntu.com/questions?tab=frequent&page=20
+377,11,How can I deactivate Bluetooth on system startup?,https://askubuntu.com/questions?tab=frequent&page=20
+484,12,How do I modify or disable the HUD's use of the Alt key?,https://askubuntu.com/questions?tab=frequent&page=20
+192,13,Is there a Google Drive client available?,https://askubuntu.com/questions?tab=frequent&page=20
+37,14,TTY doesn't wait for password,https://askubuntu.com/questions?tab=frequent&page=20
+18,15,How to get access to USB-storage from an application installed as Snap?,https://askubuntu.com/questions?tab=frequent&page=20
+12,16,MD5 hash for ubuntu .iso (14.04 through 18.10),https://askubuntu.com/questions?tab=frequent&page=20
+573,17,How can I record my screen?,https://askubuntu.com/questions?tab=frequent&page=20
+107,18,Set “older” kernel as default grub entry,https://askubuntu.com/questions?tab=frequent&page=20
+53,4,Where to place my local website starting with the 2.4.7 version of apache2?,https://askubuntu.com/questions?tab=frequent&page=21
+127,5,"Cannot install Ubuntu in VirtualBox due to “this kernel requires an x86-64 CPU, but only detects an i686 CPU, unable to boot” error",https://askubuntu.com/questions?tab=frequent&page=21
+72,6,What's the difference between Wubi and a regular “alongside Windows” installation?,https://askubuntu.com/questions?tab=frequent&page=21
+22,7,How to efficiently partition a single Windows-Ubuntu dual boot disk?,https://askubuntu.com/questions?tab=frequent&page=21
+36,8,Why I'm seeing a lock besides the partition I'm trying to modify with gparted?,https://askubuntu.com/questions?tab=frequent&page=21
+606,9,Change folder permissions and ownership,https://askubuntu.com/questions?tab=frequent&page=21
+146,10,Could not load 'vboxdrv' after upgrade to Ubuntu 16.04 (and I want to keep secure boot),https://askubuntu.com/questions?tab=frequent&page=21
+195,11,How do I free up disk space?,https://askubuntu.com/questions?tab=frequent&page=21
+215,12,How to delete file(s) in secure manner?,https://askubuntu.com/questions?tab=frequent&page=21
+80,13,Desktop forgets theme?,https://askubuntu.com/questions?tab=frequent&page=21
+105,14,Why is gksu no longer installed by default?,https://askubuntu.com/questions?tab=frequent&page=21
+84,15,16.04 new installation gives grub-efi-amd64-signed failed installation /target/ ubuntu 16.04 at the end,https://askubuntu.com/questions?tab=frequent&page=21
+59,16,How can I easily share the output of a command or a text file with others?,https://askubuntu.com/questions?tab=frequent&page=21
+24,17,How do I get a Ralink RT3290 wireless card working?,https://askubuntu.com/questions?tab=frequent&page=21
+25,18,How do I install software using the Ubuntu Software Center?,https://askubuntu.com/questions?tab=frequent&page=21
+9,4,Deleted Partition Recovery,https://askubuntu.com/questions?tab=frequent&page=22
+92,5,How to manage users and groups using GUI?,https://askubuntu.com/questions?tab=frequent&page=22
+112,6,What is different about the Mac ISO image?,https://askubuntu.com/questions?tab=frequent&page=22
+21,7,Why can't I install Ubuntu or Wubi on a Windows Dynamic Disk?,https://askubuntu.com/questions?tab=frequent&page=22
+9,8,How should I install HPLIP binary/proprietary plugin/driver for my HP printer or printer+scanner?,https://askubuntu.com/questions?tab=frequent&page=22
+27,9,Is the “Final Release” a “Development Release”?,https://askubuntu.com/questions?tab=frequent&page=22
+9,10,Bootable USB of Ubuntu Minimal CD,https://askubuntu.com/questions?tab=frequent&page=22
+113,11,How to get GRUB to be the default bootloader instead of Windows Boot Manager on a UEFI laptop?,https://askubuntu.com/questions?tab=frequent&page=22
+410,12,How to let `dpkg -i` install dependencies for me?,https://askubuntu.com/questions?tab=frequent&page=22
+166,13,What's the right terminology for Unity's UI elements?,https://askubuntu.com/questions?tab=frequent&page=22
+67,14,How can I make xrandr customization permanent?,https://askubuntu.com/questions?tab=frequent&page=22
+70,15,"“dev/sda1: clean, …” This message appears after I startup my laptop, then it won't continue booting",https://askubuntu.com/questions?tab=frequent&page=22
+43,16,How do file permissions work?,https://askubuntu.com/questions?tab=frequent&page=22
+58,17,How do I enable the “multiverse” repository?,https://askubuntu.com/questions?tab=frequent&page=22
+33,18,“errno 5 - input/output error” when trying to install Ubuntu,https://askubuntu.com/questions?tab=frequent&page=22
+42,4,Wifi problems with rtl8723be in Ubuntu 14.04,https://askubuntu.com/questions?tab=frequent&page=23
+46,5,"Ubuntu 20.04 interface font too small after restart, even with high scaling factor",https://askubuntu.com/questions?tab=frequent&page=23
+34,6,Duplicate application icons in Ubuntu dock upon launch,https://askubuntu.com/questions?tab=frequent&page=23
+5,7,Partitions disappeared after power loss while installing,https://askubuntu.com/questions?tab=frequent&page=23
+2,8,"Storing data on second HDD, mounting",https://askubuntu.com/questions?tab=frequent&page=23
+539,9,How do I fix my locale issue?,https://askubuntu.com/questions?tab=frequent&page=23
+181,10,How do I get and modify the source code of packages installed through apt-get?,https://askubuntu.com/questions?tab=frequent&page=23
+164,11,How to install Skype 4.3? [duplicate],https://askubuntu.com/questions?tab=frequent&page=23
+41,12,"GUI/Unity crashing in 16.04 LTS after updates 2018-01-04, compiz segfaults",https://askubuntu.com/questions?tab=frequent&page=23
+233,13,How can I securely erase a hard drive?,https://askubuntu.com/questions?tab=frequent&page=23
+166,14,"What are the differences between “su”, “sudo -s”, “sudo -i”, “sudo su”?",https://askubuntu.com/questions?tab=frequent&page=23
+152,15,How to run 32-bit app in Ubuntu 64-bit?,https://askubuntu.com/questions?tab=frequent&page=23
+114,16,Where is the X.org config file? How do I configure X there?,https://askubuntu.com/questions?tab=frequent&page=23
+139,17,What's the difference between the server version and the desktop version?,https://askubuntu.com/questions?tab=frequent&page=23
+85,18,How can I install Ubuntu without CD and USB?,https://askubuntu.com/questions?tab=frequent&page=23
+45,4,Root drive is running out of disk space. How can I free up space?,https://askubuntu.com/questions?tab=frequent&page=24
+31,5,Ralink MT7601U (148f:7601) Wi-Fi adapter installation,https://askubuntu.com/questions?tab=frequent&page=24
+19,6,Qualcomm Atheros Device [168c:0042] (rev 30) Wi-Fi driver installation,https://askubuntu.com/questions?tab=frequent&page=24
+37,7,How do I install the ubuntu-restricted-extras package?,https://askubuntu.com/questions?tab=frequent&page=24
+9,8,Is it still possible to install Ubuntu to an external harddrive with UEFI?,https://askubuntu.com/questions?tab=frequent&page=24
+16,9,Where can I get an Ubuntu Installation CD/DVD/USB?,https://askubuntu.com/questions?tab=frequent&page=24
+203,10,What is the Linux equivalent to Windows' Program Files?,https://askubuntu.com/questions?tab=frequent&page=24
+180,11,How to change LCD brightness from command line (or via script)?,https://askubuntu.com/questions?tab=frequent&page=24
+104,12,Problem with installing Steam on Ubuntu 15.04+,https://askubuntu.com/questions?tab=frequent&page=24
+73,13,GRUB rescue problem after deleting Ubuntu partition! [duplicate],https://askubuntu.com/questions?tab=frequent&page=24
+75,14,How do I change the default session for when using auto-logins?,https://askubuntu.com/questions?tab=frequent&page=24
+108,15,Is it possible to “upgrade” from a 32bit to a 64bit installation?,https://askubuntu.com/questions?tab=frequent&page=24
+31,16,How to install Minecraft (Client),https://askubuntu.com/questions?tab=frequent&page=24
+63,17,What are point releases in LTS versions?,https://askubuntu.com/questions?tab=frequent&page=24
+8,18,Set myself as owner of /etc with chown command now getting all kinds of errors [duplicate],https://askubuntu.com/questions?tab=frequent&page=24
+6,4,How to install HPLIP on my Ubuntu to support my HP printer and/or scanner?,https://askubuntu.com/questions?tab=frequent&page=25
+50,5,Install Nvidia driver instead of nouveau,https://askubuntu.com/questions?tab=frequent&page=25
+54,6,How to install Tor?,https://askubuntu.com/questions?tab=frequent&page=25
+518,7,How do I change the hostname without a restart?,https://askubuntu.com/questions?tab=frequent&page=25
+215,8,How to install the latest versions of NodeJS and NPM?,https://askubuntu.com/questions?tab=frequent&page=25
+63,9,Is there a program to mount all of my drives automatically?,https://askubuntu.com/questions?tab=frequent&page=25
+73,10,What is the difference between Ubuntu and its derivatives?,https://askubuntu.com/questions?tab=frequent&page=25
+61,11,E: dpkg was interrupted… run 'sudo dpkg --configure -a',https://askubuntu.com/questions?tab=frequent&page=25
+50,12,How to blacklist kernel modules?,https://askubuntu.com/questions?tab=frequent&page=25
+20,13,"What is taking up so much space on my disk, beside the filesystem?",https://askubuntu.com/questions?tab=frequent&page=25
+575,14,What is the difference between apt and apt-get?,https://askubuntu.com/questions?tab=frequent&page=25
+125,15,Can't upgrade due to low disk space on /boot,https://askubuntu.com/questions?tab=frequent&page=25
+86,16,"Last upgrade crashes network manager (no internet connection, no applet)",https://askubuntu.com/questions?tab=frequent&page=25
+16,17,How much swap should I take for 1GB to 8TB of RAM on 14.04 or higher?,https://askubuntu.com/questions?tab=frequent&page=25
+17,18,How to run xrandr commands at startup in Ubuntu,https://askubuntu.com/questions?tab=frequent&page=25
+20,4,Basic desktop actions are not available on Ubuntu 20.04,https://askubuntu.com/questions?tab=frequent&page=26
+20,5,Restore default apt repositories in sources.list from command line,https://askubuntu.com/questions?tab=frequent&page=26
+587,6,How do I get the CPU temperature?,https://askubuntu.com/questions?tab=frequent&page=26
+206,7,How do I download a YouTube video?,https://askubuntu.com/questions?tab=frequent&page=26
+74,8,"How can I change/convert a Ubuntu MBR drive to a GPT, and make Ubuntu boot from EFI?",https://askubuntu.com/questions?tab=frequent&page=26
+210,9,What is hardware enablement (HWE)?,https://askubuntu.com/questions?tab=frequent&page=26
+127,10,How do I enable or disable the global application menu?,https://askubuntu.com/questions?tab=frequent&page=26
+85,11,Can't install Ubuntu 18.10 on XPS 15 - EFI\BOOT\mmx64.efi not found,https://askubuntu.com/questions?tab=frequent&page=26
+66,12,How to run a script during boot as root,https://askubuntu.com/questions?tab=frequent&page=26
+52,13,Basic Web Development IDE/Editor like Dreamweaver? [duplicate],https://askubuntu.com/questions?tab=frequent&page=26
+33,14,Execute a script upon logout/reboot/shutdown in Ubuntu,https://askubuntu.com/questions?tab=frequent&page=26
+25,15,Got NODATA issue: 'NODATA' (does the network require authentication?),https://askubuntu.com/questions?tab=frequent&page=26
+22,16,How can I replace Windows with Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=26
+250,17,How do I install Oracle Java JDK 7? [duplicate],https://askubuntu.com/questions?tab=frequent&page=26
+534,18,How to create a soft or symbolic link?,https://askubuntu.com/questions?tab=frequent&page=26
+310,4,How do I install fonts?,https://askubuntu.com/questions?tab=frequent&page=27
+202,5,How to create a permanent “alias”? [duplicate],https://askubuntu.com/questions?tab=frequent&page=27
+256,6,"How to install specific Ubuntu packages, with exact version?",https://askubuntu.com/questions?tab=frequent&page=27
+134,7,16.04 upgrade broke mysql-server,https://askubuntu.com/questions?tab=frequent&page=27
+69,8,How do I change the wallpaper of the login screen?,https://askubuntu.com/questions?tab=frequent&page=27
+102,9,What does `nomodeset` do,https://askubuntu.com/questions?tab=frequent&page=27
+81,10,What is Ubuntu's status on the Meltdown and Spectre vulnerabilities?,https://askubuntu.com/questions?tab=frequent&page=27
+40,11,How do I boot into recovery mode?,https://askubuntu.com/questions?tab=frequent&page=27
+54,12,How can I install Steam?,https://askubuntu.com/questions?tab=frequent&page=27
+43,13,Add Windows 10 to GRUB OS list,https://askubuntu.com/questions?tab=frequent&page=27
+22,14,Ubuntu system is broken after accidentally uninstalling many packages,https://askubuntu.com/questions?tab=frequent&page=27
+10,15,How do I get Mediatek MT7630E 802.11bgn Wi-Fi Adapter working?,https://askubuntu.com/questions?tab=frequent&page=27
+403,16,What do the different colors mean in ls?,https://askubuntu.com/questions?tab=frequent&page=27
+515,17,How do I check if I have a 32-bit or a 64-bit OS?,https://askubuntu.com/questions?tab=frequent&page=27
+238,18,How can I uninstall software?,https://askubuntu.com/questions?tab=frequent&page=27
+150,4,How do I use the latest GCC on Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=28
+291,5,How can I resize an ext root partition at runtime?,https://askubuntu.com/questions?tab=frequent&page=28
+155,6,Best way to cache apt downloads on a LAN?,https://askubuntu.com/questions?tab=frequent&page=28
+126,7,How to get my software into Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=28
+193,8,Traditional search-as-you-type on newer Nautilus versions,https://askubuntu.com/questions?tab=frequent&page=28
+106,9,What happened to the ia32-libs package?,https://askubuntu.com/questions?tab=frequent&page=28
+132,10,How to execute a script just by double clicking like .EXE files in Windows?,https://askubuntu.com/questions?tab=frequent&page=28
+51,11,How can I reinstall GRUB to the EFI partition?,https://askubuntu.com/questions?tab=frequent&page=28
+69,12,Getting MTP enabled devices to work with Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=28
+76,13,Creating a .desktop file for a new application,https://askubuntu.com/questions?tab=frequent&page=28
+61,14,What is the proper way to change the DNS IP?,https://askubuntu.com/questions?tab=frequent&page=28
+76,15,E: Problem executing scripts APT Update::Post-Invoke-Success error during apt-get update,https://askubuntu.com/questions?tab=frequent&page=28
+51,16,How can I add custom '.desktop' application launchers to Ubuntu Dock?,https://askubuntu.com/questions?tab=frequent&page=28
+26,17,How do I enable the “Universe” repository from the command line? [duplicate],https://askubuntu.com/questions?tab=frequent&page=28
+22,18,How can I replace Windows with Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=28
+30,4,Should I be offered the option to upgrade to 18.04.1?,https://askubuntu.com/questions?tab=frequent&page=29
+18,5,Not booting from USB or CD (SYSLINUX Message),https://askubuntu.com/questions?tab=frequent&page=29
+17,6,How to make grub menu appear instead grub minimal bash-like in booting?,https://askubuntu.com/questions?tab=frequent&page=29
+3,7,Touchpad gestures and holding keys does not work,https://askubuntu.com/questions?tab=frequent&page=29
+20,8,How to burn or mount an ISO file?,https://askubuntu.com/questions?tab=frequent&page=29
+3,9,"'Upgraded' to Windows 10 on dual boot, and can't boot to Ubuntu partition",https://askubuntu.com/questions?tab=frequent&page=29
+160,10,Wifi doesn't work after suspend after 16.04 upgrade,https://askubuntu.com/questions?tab=frequent&page=29
+113,11,How to create a local APT repository?,https://askubuntu.com/questions?tab=frequent&page=29
+184,12,How do I disable the guest session?,https://askubuntu.com/questions?tab=frequent&page=29
+106,13,How do I easily rename multiple files using command line?,https://askubuntu.com/questions?tab=frequent&page=29
+87,14,How to create a bootable USB with multiple ISO images in it,https://askubuntu.com/questions?tab=frequent&page=29
+121,15,How do I deal with “unauthenticated sources” errors in the Software Center?,https://askubuntu.com/questions?tab=frequent&page=29
+90,16,How can I move all the window controls to the right (or left)?,https://askubuntu.com/questions?tab=frequent&page=29
+65,17,How do I restrict my kids' computing time?,https://askubuntu.com/questions?tab=frequent&page=29
+91,18,Configure proxy for APT?,https://askubuntu.com/questions?tab=frequent&page=29
+64,4,Switching window manager/desktop environments?,https://askubuntu.com/questions?tab=frequent&page=30
+72,5,What is Ubuntu Touch (Ubuntu for Phones),https://askubuntu.com/questions?tab=frequent&page=30
+37,6,"Can I install Microsoft Office? If so, how?",https://askubuntu.com/questions?tab=frequent&page=30
+53,7,How do I use the gconf editor?,https://askubuntu.com/questions?tab=frequent&page=30
+47,8,"Very large log files, what should I do?",https://askubuntu.com/questions?tab=frequent&page=30
+48,9,Small snap loop devices visible in gnome-disk-utility OR what is the function of snap ubuntu-core,https://askubuntu.com/questions?tab=frequent&page=30
+25,10,What would be the differences between a persistent USB Live Session and a installed Ubuntu in a USB drive?,https://askubuntu.com/questions?tab=frequent&page=30
+10,11,How do I uninstall Ubuntu Wubi?,https://askubuntu.com/questions?tab=frequent&page=30
+238,12,How to choose the default gcc and g++ version?,https://askubuntu.com/questions?tab=frequent&page=30
+94,13,Windows 10 upgrade kills grub and boot-repair doesn't help,https://askubuntu.com/questions?tab=frequent&page=30
+150,14,How do I optimize the OS for SSDs?,https://askubuntu.com/questions?tab=frequent&page=30
+57,15,Dual Boot Windows 10 and Linux Ubuntu on Separate Hard Drives [duplicate],https://askubuntu.com/questions?tab=frequent&page=30
+102,16,How can I hibernate on Ubuntu 16.04?,https://askubuntu.com/questions?tab=frequent&page=30
+65,17,How do I change the plymouth bootscreen?,https://askubuntu.com/questions?tab=frequent&page=30
+62,18,Where to declare environment variables?,https://askubuntu.com/questions?tab=frequent&page=30
+73,4,How do I improve boot speed?,https://askubuntu.com/questions?tab=frequent&page=31
+92,5,How do I boot into single-user mode from GRUB?,https://askubuntu.com/questions?tab=frequent&page=31
+41,6,How to Connect & Share your Internet Connection (Wired & Wireless),https://askubuntu.com/questions?tab=frequent&page=31
+77,7,How do I upgrade to the development release (aka. Ubuntu+1)?,https://askubuntu.com/questions?tab=frequent&page=31
+21,8,How do I set up a folder so that anything created in it inherits permissions?,https://askubuntu.com/questions?tab=frequent&page=31
+61,9,How do I resume a release upgrade?,https://askubuntu.com/questions?tab=frequent&page=31
+34,10,How do I change to a theme not listed in the Appearance screen?,https://askubuntu.com/questions?tab=frequent&page=31
+78,11,How do I enable auto-login in LightDM?,https://askubuntu.com/questions?tab=frequent&page=31
+22,12,"What is the current state of apple device (iPhone, iPod, etc.) support?",https://askubuntu.com/questions?tab=frequent&page=31
+12,13,Dual-boot boot menu does not show up after installing Ubuntu 15.10 alongside Windows 10,https://askubuntu.com/questions?tab=frequent&page=31
+17,14,How do I resize my current ubuntu partition? [duplicate],https://askubuntu.com/questions?tab=frequent&page=31
+14,15,Wireless doesn't work on a Broadcom BCM4312 [duplicate],https://askubuntu.com/questions?tab=frequent&page=31
+2,16,Installing Ubuntu On Second Hard Drive,https://askubuntu.com/questions?tab=frequent&page=31
+1,17,Ubuntu 14.04 is not booting normaly after a manual hard boot,https://askubuntu.com/questions?tab=frequent&page=31
+464,18,How do I get a list of installed files from a package?,https://askubuntu.com/questions?tab=frequent&page=31
+129,4,How do I create a WiFi hotspot sharing wireless internet connection (single adapter)?,https://askubuntu.com/questions?tab=frequent&page=32
+98,5,How do I modify the options for the power button?,https://askubuntu.com/questions?tab=frequent&page=32
+111,6,E: Could not get lock /var/lib/dpkg/lock-frontend - open (11: Resource temporarily unavailable) [duplicate],https://askubuntu.com/questions?tab=frequent&page=32
+107,7,How do I run a 'sudo' command inside a script?,https://askubuntu.com/questions?tab=frequent&page=32
+102,8,Can I run Android apps on Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=32
+76,9,How do I make a program auto-start every time I log in?,https://askubuntu.com/questions?tab=frequent&page=32
+85,10,How can you remove Unity?,https://askubuntu.com/questions?tab=frequent&page=32
+94,11,How to use Alt+Shift to switch keyboard layouts?,https://askubuntu.com/questions?tab=frequent&page=32
+47,12,How to set the monitor to its native resolution which is not listed in the resolutions list?,https://askubuntu.com/questions?tab=frequent&page=32
+56,13,How can I switch a 32-bit installation to a 64-bit one?,https://askubuntu.com/questions?tab=frequent&page=32
+65,14,Live CD asks for a username and password,https://askubuntu.com/questions?tab=frequent&page=32
+27,15,How do I subscribe to a bug?,https://askubuntu.com/questions?tab=frequent&page=32
+15,16,Where can I find the status of the released versions of Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=32
+14,17,How do I cd into a directory in the home folder?,https://askubuntu.com/questions?tab=frequent&page=32
+286,18,What is the safest way to clean up /boot partition?,https://askubuntu.com/questions?tab=frequent&page=32
+340,4,How to downgrade a package via apt-get?,https://askubuntu.com/questions?tab=frequent&page=33
+221,5,How do I enable or disable Apport?,https://askubuntu.com/questions?tab=frequent&page=33
+84,6,What download managers are available for Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=33
+85,7,"What is dconf, what is its function, and how do I use it?",https://askubuntu.com/questions?tab=frequent&page=33
+59,8,Install Ubuntu from ISO image directly from hard disk of a system running Linux? [duplicate],https://askubuntu.com/questions?tab=frequent&page=33
+92,9,Am I using Unity or Unity 2D?,https://askubuntu.com/questions?tab=frequent&page=33
+34,10,How do I customize the context menu in Nautilus?,https://askubuntu.com/questions?tab=frequent&page=33
+69,11,Package system is broken. How to fix it?,https://askubuntu.com/questions?tab=frequent&page=33
+25,12,Grub not showing on startup for Windows 8.1 Ubuntu 13.10 Dual boot,https://askubuntu.com/questions?tab=frequent&page=33
+56,13,How do I fix a “Failed to download package files” error?,https://askubuntu.com/questions?tab=frequent&page=33
+33,14,"Radeon HD 2000, 3000, 4000 on Ubuntu 12.04.2 and higher: fglrx (legacy) unsupported, what to do?",https://askubuntu.com/questions?tab=frequent&page=33
+25,15,How do I install the Tor Browser Bundle in Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=33
+25,16,How do I list the default installed packages?,https://askubuntu.com/questions?tab=frequent&page=33
+12,17,Recovering user files with a Live CD,https://askubuntu.com/questions?tab=frequent&page=33
+16,18,How do I decide what version of Ubuntu to install?,https://askubuntu.com/questions?tab=frequent&page=33
+953,4,How do I save terminal output to a file?,https://askubuntu.com/questions?tab=frequent&page=34
+170,5,How to completely uninstall Java?,https://askubuntu.com/questions?tab=frequent&page=34
+447,6,How to make 'python' program command execute Python 3?,https://askubuntu.com/questions?tab=frequent&page=34
+234,7,How to burn a Windows .iso to a USB device? [duplicate],https://askubuntu.com/questions?tab=frequent&page=34
+109,8,How to back up my entire system?,https://askubuntu.com/questions?tab=frequent&page=34
+109,9,How do I sudo a command in a script without being asked for a password?,https://askubuntu.com/questions?tab=frequent&page=34
+195,10,Skipping acquire of configured file 'main/binary-i386/Packages' as repository 'xxx' doesn't support architecture 'i386',https://askubuntu.com/questions?tab=frequent&page=34
+110,11,What screenshot tools are available?,https://askubuntu.com/questions?tab=frequent&page=34
+103,12,Steam not opening in Ubuntu 16.04 LTS,https://askubuntu.com/questions?tab=frequent&page=34
+34,13,32-Bit UEFI Boot Support,https://askubuntu.com/questions?tab=frequent&page=34
+59,14,Dash search gives no result,https://askubuntu.com/questions?tab=frequent&page=34
+101,15,Can I smoothly upgrade from one LTS to next LTS release?,https://askubuntu.com/questions?tab=frequent&page=34
+14,16,I can't boot into a usable system after updates. What should I do?,https://askubuntu.com/questions?tab=frequent&page=34
+35,17,"No facility exists in Update Manager to upgrade to a new version, why?",https://askubuntu.com/questions?tab=frequent&page=34
+17,18,How do I install wine?,https://askubuntu.com/questions?tab=frequent&page=34
+6,4,Get latest Flash player on Ubuntu,https://askubuntu.com/questions?tab=frequent&page=35
+246,5,How to pin Eclipse to the Unity launcher?,https://askubuntu.com/questions?tab=frequent&page=35
+117,6,Headphone jack not working?,https://askubuntu.com/questions?tab=frequent&page=35
+79,7,Wireless networking not working after resume in Ubuntu 14.04,https://askubuntu.com/questions?tab=frequent&page=35
+111,8,How to stop using built-in home directory encryption?,https://askubuntu.com/questions?tab=frequent&page=35
+89,9,How do I change mirrors in Ubuntu Server from regional to main?,https://askubuntu.com/questions?tab=frequent&page=35
+82,10,Error mounting VirtualBox shared folders in an Ubuntu guest,https://askubuntu.com/questions?tab=frequent&page=35
+89,11,How do I install and manage RPMs?,https://askubuntu.com/questions?tab=frequent&page=35
+115,12,18.04 ctrl+shift to change language,https://askubuntu.com/questions?tab=frequent&page=35
+43,13,How to create a Customized Ubuntu Server ISO?,https://askubuntu.com/questions?tab=frequent&page=35
+44,14,Is it possible to boot Ubuntu using the Windows bootloader?,https://askubuntu.com/questions?tab=frequent&page=35
+59,15,Why disable Fast Boot on Windows 8 when having dual booting?,https://askubuntu.com/questions?tab=frequent&page=35
+37,16,Wireless card Realtek RTL8723AE-BT is not recognized,https://askubuntu.com/questions?tab=frequent&page=35
+35,17,Under what license is Ubuntu? Can it be legally modified and distributed?,https://askubuntu.com/questions?tab=frequent&page=35
+18,18,How do I install the latest NVIDIA drivers from the .run file?,https://askubuntu.com/questions?tab=frequent&page=35
+13,4,Installing applications from source,https://askubuntu.com/questions?tab=frequent&page=36
+479,5,How do I install Sublime Text 2/3?,https://askubuntu.com/questions?tab=frequent&page=36
+279,6,How do I increase the hard disk size of the virtual machine?,https://askubuntu.com/questions?tab=frequent&page=36
+306,7,"How to make a file (e.g. a .sh script) executable, so it can be run from a terminal",https://askubuntu.com/questions?tab=frequent&page=36
+94,8,How do I create a completely unattended install of Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=36
+93,9,How to find and change the screen DPI?,https://askubuntu.com/questions?tab=frequent&page=36
+192,10,How can I reduce or increase the number of workspaces in Unity?,https://askubuntu.com/questions?tab=frequent&page=36
+57,11,Add Fake Display when No Monitor is Plugged In,https://askubuntu.com/questions?tab=frequent&page=36
+70,12,Desktop does not show when I installed nvidia drivers!,https://askubuntu.com/questions?tab=frequent&page=36
+46,13,Can't install ATI proprietary drivers in 12.10,https://askubuntu.com/questions?tab=frequent&page=36
+72,14,How to find out the terminal command of an application?,https://askubuntu.com/questions?tab=frequent&page=36
+52,15,how to execute a command after resume from suspend?,https://askubuntu.com/questions?tab=frequent&page=36
+56,16,'apt-get' does not work with Proxy,https://askubuntu.com/questions?tab=frequent&page=36
+116,17,How can I configure Unity's launcher auto-hide behavior?,https://askubuntu.com/questions?tab=frequent&page=36
+27,18,Install on Second Hard Drive with startup boot option?,https://askubuntu.com/questions?tab=frequent&page=36
+62,4,Should I upgrade to the “mainline” kernels?,https://askubuntu.com/questions?tab=frequent&page=37
+31,5,How to find out root password for installing software,https://askubuntu.com/questions?tab=frequent&page=37
+19,6,What antivirus programs are available?,https://askubuntu.com/questions?tab=frequent&page=37
+17,7,OS keyboard shortcuts conflict with apps keyboard shortcuts in GNOME 3,https://askubuntu.com/questions?tab=frequent&page=37
+16,8,How is it easier to make a persistent live drive with Ubuntu 19.10?,https://askubuntu.com/questions?tab=frequent&page=37
+13,9,What are the dev-loop services that started on boot?,https://askubuntu.com/questions?tab=frequent&page=37
+7,10,Why is the installer not showing any partitions?,https://askubuntu.com/questions?tab=frequent&page=37
+14,11,"Ubuntu Development version / How to participate, or how to get a smooth ride",https://askubuntu.com/questions?tab=frequent&page=37
+7,12,How can I make Ubuntu 18.04 / 18.10 desktop use Unity (be like Ubuntu 14.04)?,https://askubuntu.com/questions?tab=frequent&page=37
+217,13,How can you completely remove a package?,https://askubuntu.com/questions?tab=frequent&page=37
+147,14,How do you select the fastest mirror from the command line?,https://askubuntu.com/questions?tab=frequent&page=37
+232,15,How can I highlight or annotate PDFs?,https://askubuntu.com/questions?tab=frequent&page=37
+190,16,How to install Chrome browser properly via command line?,https://askubuntu.com/questions?tab=frequent&page=37
+146,17,Brightness is reset to maximum on every restart,https://askubuntu.com/questions?tab=frequent&page=37
+83,18,Permanent xmodmap in Ubuntu 13.04,https://askubuntu.com/questions?tab=frequent&page=37
+83,4,Permanent xmodmap in Ubuntu 13.04,https://askubuntu.com/questions?tab=frequent&page=38
+137,5,"How can I type a Unicode character (for example, em-dash —?)",https://askubuntu.com/questions?tab=frequent&page=38
+137,6,How to recover/reset forgotten Gnome Keyring Password?,https://askubuntu.com/questions?tab=frequent&page=38
+69,7,"How to fix ""error: unknown filesystem. grub rescue> [duplicate]",https://askubuntu.com/questions?tab=frequent&page=38
+97,8,Video editing software options? [closed],https://askubuntu.com/questions?tab=frequent&page=38
+61,9,PHP script not executing on Apache server,https://askubuntu.com/questions?tab=frequent&page=38
+56,10,How to diagnose/fix very slow boot on Ubuntu 18.04,https://askubuntu.com/questions?tab=frequent&page=38
+67,11,“Require Installation Of Untrusted Packages” while upgrading with the update manager,https://askubuntu.com/questions?tab=frequent&page=38
+44,12,How can I prevent iwconfig power management from being turned on?,https://askubuntu.com/questions?tab=frequent&page=38
+122,13,Prevent gedit from creating files with the '~' (tilde) suffix,https://askubuntu.com/questions?tab=frequent&page=38
+64,14,How do I pre-install Ubuntu for someone (OEM install)?,https://askubuntu.com/questions?tab=frequent&page=38
+22,15,Synaptic touchpad on laptop not working,https://askubuntu.com/questions?tab=frequent&page=38
+41,16,How can I configure the Ubuntu Dock to show windows only from the current workspace?,https://askubuntu.com/questions?tab=frequent&page=38
+55,17,Boot Error - ACPI PCC Probe Failed,https://askubuntu.com/questions?tab=frequent&page=38
+21,18,2/15/18 compiz update broke unity,https://askubuntu.com/questions?tab=frequent&page=38
+7,4,How to boot WUBI installed Ubuntu within Windows 8?,https://askubuntu.com/questions?tab=frequent&page=39
+6,5,Installing Ubuntu on one of two hard drives,https://askubuntu.com/questions?tab=frequent&page=39
+20,6,Update manager doesn't offer an upgrade to the new release,https://askubuntu.com/questions?tab=frequent&page=39
+5,7,How to partition SSD+HDD?,https://askubuntu.com/questions?tab=frequent&page=39
+220,8,Generating list of manually installed packages and querying individual packages,https://askubuntu.com/questions?tab=frequent&page=39
+188,9,How can I shorten my command line (bash) prompt?,https://askubuntu.com/questions?tab=frequent&page=39
+216,10,How do I add a DNS server via resolv.conf?,https://askubuntu.com/questions?tab=frequent&page=39
+157,11,How can I find my hardware details?,https://askubuntu.com/questions?tab=frequent&page=39
+183,12,Is there any Sound enhancers/equalizer?,https://askubuntu.com/questions?tab=frequent&page=39
+146,13,How do I disable overlay scrollbars?,https://askubuntu.com/questions?tab=frequent&page=39
+66,14,How do I setup an Icecast server for broadcasting audio in my network?,https://askubuntu.com/questions?tab=frequent&page=39
+115,15,How do I set the default program?,https://askubuntu.com/questions?tab=frequent&page=39
+29,16,Windows Ubuntu dual boot - Share files between OS,https://askubuntu.com/questions?tab=frequent&page=39
+67,17,Where can I find the source code of Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=39
+58,18,Where can I find a list of computers guaranteed to work with Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=39
+43,4,How do I change / spoof my MAC address and easily switch between multiple ones?,https://askubuntu.com/questions?tab=frequent&page=40
+73,5,My processor is 64-bit - does that mean I need the amd64 image?,https://askubuntu.com/questions?tab=frequent&page=40
+27,6,Can I install Ubuntu inside Windows?,https://askubuntu.com/questions?tab=frequent&page=40
+46,7,Why isn't an upgrade to 20.04 from 18.04 available yet?,https://askubuntu.com/questions?tab=frequent&page=40
+355,8,Getting “System program problem detected” pops up regularly after upgrade,https://askubuntu.com/questions?tab=frequent&page=40
+120,9,How to connect and disconnect to a network manually in terminal?,https://askubuntu.com/questions?tab=frequent&page=40
+145,10,Not enough free disk space when upgrading,https://askubuntu.com/questions?tab=frequent&page=40
+422,11,Mount error: “unknown filesystem type 'exfat'”,https://askubuntu.com/questions?tab=frequent&page=40
+129,12,How do I create a script file for terminal commands?,https://askubuntu.com/questions?tab=frequent&page=40
+82,13,Is it possible to have a different background for each workspace?,https://askubuntu.com/questions?tab=frequent&page=40
+62,14,Changing Network Interfaces name Ubuntu 16.04,https://askubuntu.com/questions?tab=frequent&page=40
+84,15,“Welcome to emergency mode!” Think it is a fsck problem,https://askubuntu.com/questions?tab=frequent&page=40
+186,16,How to add programs to the Unity Launcher or Ubuntu Dock?,https://askubuntu.com/questions?tab=frequent&page=40
+73,17,Ubuntu 18.04 - Dell XPS13 9370 no longer suspends on lid close,https://askubuntu.com/questions?tab=frequent&page=40
+133,18,Ubuntu 17.10 and later: can't change the input switching shortcut to alt+shift,https://askubuntu.com/questions?tab=frequent&page=40
+61,4,How do I avoid the “S to Skip” message on boot?,https://askubuntu.com/questions?tab=frequent&page=41
+126,5,How to show hidden folders in File Manager (Nautilus) on Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=41
+78,6,How do I access and enable more icons to be in the system tray?,https://askubuntu.com/questions?tab=frequent&page=41
+90,7,How do I remove a website from Ubuntu's web applications?,https://askubuntu.com/questions?tab=frequent&page=41
+42,8,How do you run a 32-bit program on a 64-bit version of Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=41
+31,9,How to install Windows 7 after Ubuntu and dual boot? [duplicate],https://askubuntu.com/questions?tab=frequent&page=41
+40,10,su command + authentication failure,https://askubuntu.com/questions?tab=frequent&page=41
+33,11,Customize Ubuntu for a library Internet kiosk,https://askubuntu.com/questions?tab=frequent&page=41
+33,12,No version of Ubuntu can be installed with any Skylake 6th generation Intel processor,https://askubuntu.com/questions?tab=frequent&page=41
+13,13,How do I install BCM43142 wireless drivers for Dell Vostro 3460/3560?,https://askubuntu.com/questions?tab=frequent&page=41
+45,14,apt-get remove with wildcard removed way more than expected. why?,https://askubuntu.com/questions?tab=frequent&page=41
+21,15,How to start a GUI application from cron?,https://askubuntu.com/questions?tab=frequent&page=41
+3,16,Can not boot anymore after a boot repair,https://askubuntu.com/questions?tab=frequent&page=41
+19,17,Colored borders around windows after update [duplicate],https://askubuntu.com/questions?tab=frequent&page=41
+474,18,Apache error “Could not reliably determine the server's fully qualified domain name”,https://askubuntu.com/questions?tab=frequent&page=41
+352,4,How do I check the battery's status via the terminal?,https://askubuntu.com/questions?tab=frequent&page=42
+237,5,How do I install .run files?,https://askubuntu.com/questions?tab=frequent&page=42
+122,6,16.04 LTS wifi connection issues with Realtek RTL8723BE adapter,https://askubuntu.com/questions?tab=frequent&page=42
+82,7,How can I install Ubuntu encrypted with LUKS with dual-boot?,https://askubuntu.com/questions?tab=frequent&page=42
+299,8,Is FFmpeg missing from the official repositories in 14.04?,https://askubuntu.com/questions?tab=frequent&page=42
+134,9,How to disable IPv6 in Ubuntu 14.04?,https://askubuntu.com/questions?tab=frequent&page=42
+68,10,Recovering GRUB after installing Windows 7? [duplicate],https://askubuntu.com/questions?tab=frequent&page=42
+173,11,Running a .desktop file in the terminal,https://askubuntu.com/questions?tab=frequent&page=42
+100,12,How do I remove 'Places' entries from the Nautilus sidebar?,https://askubuntu.com/questions?tab=frequent&page=42
+223,13,How can I find the version of Ubuntu that is installed?,https://askubuntu.com/questions?tab=frequent&page=42
+55,14,Enabling Nvidia driver messes up splash screen,https://askubuntu.com/questions?tab=frequent&page=42
+31,15,How to set up nVidia Optimus/Bumblebee in 14.04,https://askubuntu.com/questions?tab=frequent&page=42
+141,16,How to remove a repository? [duplicate],https://askubuntu.com/questions?tab=frequent&page=42
+150,17,How can I execute a .jar file from the terminal,https://askubuntu.com/questions?tab=frequent&page=42
+170,18,How to format a USB or external drive?,https://askubuntu.com/questions?tab=frequent&page=42
+56,4,How to edit files in a terminal with nano?,https://askubuntu.com/questions?tab=frequent&page=43
+65,5,Shutdown does not power off computer,https://askubuntu.com/questions?tab=frequent&page=43
+132,6,How to fix apt: Signature by key uses weak digest algorithm (SHA1)?,https://askubuntu.com/questions?tab=frequent&page=43
+36,7,How to start Ubuntu in Console mode,https://askubuntu.com/questions?tab=frequent&page=43
+57,8,How can I enable Ctrl+Alt+Backspace?,https://askubuntu.com/questions?tab=frequent&page=43
+47,9,Ubuntu 16.04 slow boot (apt-daily.service),https://askubuntu.com/questions?tab=frequent&page=43
+35,10,Install packages from newer release without building (apt pinning),https://askubuntu.com/questions?tab=frequent&page=43
+25,11,How can I move my /home directory to another partition if it's already part of the / partition?,https://askubuntu.com/questions?tab=frequent&page=43
+41,12,Where can I send feature requests?,https://askubuntu.com/questions?tab=frequent&page=43
+33,13,Problem with sudo apt get update: The repository cdrom… does not have a Release file,https://askubuntu.com/questions?tab=frequent&page=43
+32,14,How can I install Minecraft?,https://askubuntu.com/questions?tab=frequent&page=43
+13,15,Why does my laptop with AMD Radeon HD 76xx graphics get overheated when using Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=43
+13,16,How to set a domain to ip address?,https://askubuntu.com/questions?tab=frequent&page=43
+3,17,Dual Boot with SSD and HDD Storage [closed],https://askubuntu.com/questions?tab=frequent&page=43
+401,18,How can I suspend/hibernate from command line?,https://askubuntu.com/questions?tab=frequent&page=43
+408,4,How do I install Python 3.6 using apt-get?,https://askubuntu.com/questions?tab=frequent&page=44
+378,5,How do I use variables in a sed command?,https://askubuntu.com/questions?tab=frequent&page=44
+176,6,apt-get stuck at 0 [Connecting to us.archive.ubuntu.com],https://askubuntu.com/questions?tab=frequent&page=44
+246,7,Flash video appears blue,https://askubuntu.com/questions?tab=frequent&page=44
+222,8,"Installed Teamviewer using a 64-bit system, but I get a dependency error",https://askubuntu.com/questions?tab=frequent&page=44
+176,9,What is the simplest Debian Packaging Guide?,https://askubuntu.com/questions?tab=frequent&page=44
+271,10,How can I remove Amazon search results from the dash or disable the feature?,https://askubuntu.com/questions?tab=frequent&page=44
+205,11,Force alt + tab to switch only on current workspace in GNOME shell,https://askubuntu.com/questions?tab=frequent&page=44
+94,12,Ubuntu 15.10 and 16.04 keep freezing randomly,https://askubuntu.com/questions?tab=frequent&page=44
+143,13,How do I enable automatic updates?,https://askubuntu.com/questions?tab=frequent&page=44
+71,14,Why shouldn't /var/www have chmod 777,https://askubuntu.com/questions?tab=frequent&page=44
+110,15,How to enable numlock at boot time for login screen?,https://askubuntu.com/questions?tab=frequent&page=44
+70,16,How do I fix DNS resolving which doesn't work after upgrading to Ubuntu 13.10 (Saucy),https://askubuntu.com/questions?tab=frequent&page=44
+49,17,Problems after upgrading to 14.04 (only background and pointer after login) [duplicate],https://askubuntu.com/questions?tab=frequent&page=44
+95,18,How can I show or hide boot messages when Ubuntu starts?,https://askubuntu.com/questions?tab=frequent&page=44
+81,4,"What is a tty, and how do I access a tty?",https://askubuntu.com/questions?tab=frequent&page=45
+55,5,Why doesn't “cd” work in a shell script?,https://askubuntu.com/questions?tab=frequent&page=45
+51,6,Failed to get canonical path of /cow,https://askubuntu.com/questions?tab=frequent&page=45
+33,7,How do I install Ubuntu Server (step-by-step)?,https://askubuntu.com/questions?tab=frequent&page=45
+24,8,How to install Ubuntu 14.04/16.04 64-bit with a dual-boot RAID 1 partition on an UEFI/GPT system?,https://askubuntu.com/questions?tab=frequent&page=45
+66,9,How do I create an Ubuntu live USB using a Mac?,https://askubuntu.com/questions?tab=frequent&page=45
+93,10,Is a clean install better than upgrading? [closed],https://askubuntu.com/questions?tab=frequent&page=45
+39,11,Why is there no option to login as root?,https://askubuntu.com/questions?tab=frequent&page=45
+32,12,How do I install MATE (the desktop environment)?,https://askubuntu.com/questions?tab=frequent&page=45
+35,13,[Firmware Bug]: TSC_DEADLINE disabled due to Errata - what should I do about this?,https://askubuntu.com/questions?tab=frequent&page=45
+47,14,Can I disable full-disk encryption?,https://askubuntu.com/questions?tab=frequent&page=45
+22,15,“Unable to connect to Upstart” error when installing git-all,https://askubuntu.com/questions?tab=frequent&page=45
+42,16,What does NetworkManager-wait-online.service do?,https://askubuntu.com/questions?tab=frequent&page=45
+7,17,Bootable device not found after clean install of Ubuntu 14.04 UEFI on Acer,https://askubuntu.com/questions?tab=frequent&page=45
+13,18,Wireless Network in Virtualbox,https://askubuntu.com/questions?tab=frequent&page=45
+13,4,Wireless Network in Virtualbox,https://askubuntu.com/questions?tab=frequent&page=46
+21,5,My Ubuntu is running fsck on every bootup,https://askubuntu.com/questions?tab=frequent&page=46
+10,6,How to install wifi driver Ralink RT3290,https://askubuntu.com/questions?tab=frequent&page=46
+15,7,Why is Wine not installable on my system?,https://askubuntu.com/questions?tab=frequent&page=46
+10,8,How do I give Ubuntu more space (when installed inside Windows 7 (via wubi))?,https://askubuntu.com/questions?tab=frequent&page=46
+15,9,What are the minimum system requirements for 12.04 LTS? [duplicate],https://askubuntu.com/questions?tab=frequent&page=46
+43,10,How to safely upgrade from an older Ubuntu version to a newer one? [duplicate],https://askubuntu.com/questions?tab=frequent&page=46
+3,11,Ubuntu 19.04 problems install upgrades,https://askubuntu.com/questions?tab=frequent&page=46
+766,12,How to install updates via command line?,https://askubuntu.com/questions?tab=frequent&page=46
+186,13,What lenses for Unity are available?,https://askubuntu.com/questions?tab=frequent&page=46
+233,14,How to disable the touchpad?,https://askubuntu.com/questions?tab=frequent&page=46
+192,15,How do I scan for viruses with ClamAV?,https://askubuntu.com/questions?tab=frequent&page=46
+204,16,What is “umask” and how does it work?,https://askubuntu.com/questions?tab=frequent&page=46
+128,17,How do I connect to a WPA wifi network using the command line?,https://askubuntu.com/questions?tab=frequent&page=46
+121,18,Why is my network interface named enp0s25 instead of eth0?,https://askubuntu.com/questions?tab=frequent&page=46
+90,4,How to encrypt individual folders?,https://askubuntu.com/questions?tab=frequent&page=47
+74,5,create a .deb Package from scripts or binaries,https://askubuntu.com/questions?tab=frequent&page=47
+73,6,What is the default root password?,https://askubuntu.com/questions?tab=frequent&page=47
+55,7,Desktop doesn't remember brightness settings after a reboot,https://askubuntu.com/questions?tab=frequent&page=47
+35,8,Why does my computer get less battery life with Ubuntu compared to Windows?,https://askubuntu.com/questions?tab=frequent&page=47
+108,9,Why is defragmentation unnecessary?,https://askubuntu.com/questions?tab=frequent&page=47
+38,10,What to do when I get an “attempt to read or write outside of disk 'hd0'” error and Boot Repair does not solve the problem?,https://askubuntu.com/questions?tab=frequent&page=47
+84,11,Can auto-hide for the application menu be turned off in Unity?,https://askubuntu.com/questions?tab=frequent&page=47
+62,12,How can I change or install screensavers?,https://askubuntu.com/questions?tab=frequent&page=47
+78,13,How can I type accented characters like ë?,https://askubuntu.com/questions?tab=frequent&page=47
+42,14,Gnome terminal will not start,https://askubuntu.com/questions?tab=frequent&page=47
+21,15,Unable to get wifi adapter working - clean 19.04 install - network unclaimed,https://askubuntu.com/questions?tab=frequent&page=47
+27,16,Long boot delay on Ubuntu loading/splash screen following regular dist-upgrade on clean SSD install (18.04),https://askubuntu.com/questions?tab=frequent&page=47
+19,17,How to make a live Ubuntu 18.04 USB with a persistent storage of more than 4GB,https://askubuntu.com/questions?tab=frequent&page=47
+12,18,How can I determine the sudo password?,https://askubuntu.com/questions?tab=frequent&page=47
+12,4,How do I make a persistent live USB of Ubuntu 16.04?,https://askubuntu.com/questions?tab=frequent&page=48
+9,5,FSCK reports that filesystem still has errors [duplicate],https://askubuntu.com/questions?tab=frequent&page=48
+20,6,Why are some of my screen-recording/capturing/sharing applications (or app features) not working in Ubuntu 17.10 (and later releases)?,https://askubuntu.com/questions?tab=frequent&page=48
+3,7,How do I fix “malformed line” errors in sources.list? [duplicate],https://askubuntu.com/questions?tab=frequent&page=48
+158,8,Complete Installation Guide for Android SDK / ADT Bundle on Ubuntu,https://askubuntu.com/questions?tab=frequent&page=48
+186,9,How do I install the latest Python 2.7.X or 3.X on Ubuntu?,https://askubuntu.com/questions?tab=frequent&page=48
+211,10,How can I find what video driver is in use on my system?,https://askubuntu.com/questions?tab=frequent&page=48
+107,11,Share wireless Internet connection through ethernet,https://askubuntu.com/questions?tab=frequent&page=48
+113,12,What do the various dpkg flags like 'ii' 'rc' mean?,https://askubuntu.com/questions?tab=frequent&page=48
+97,13,Fix corrupt NTFS partition without Windows,https://askubuntu.com/questions?tab=frequent&page=48
+157,14,Uninstall a program installed with Wine,https://askubuntu.com/questions?tab=frequent&page=48
+100,15,Ubuntu 16.04 hangs on shutdown/restart,https://askubuntu.com/questions?tab=frequent&page=48
+93,16,How do I hide a particular user from the login screen?,https://askubuntu.com/questions?tab=frequent&page=48
+141,17,Error :: You must put some 'source' URIs in your sources.list,https://askubuntu.com/questions?tab=frequent&page=48
+89,18,/usr/bin/sudo must be owned by uid 0 and have the setuid bit set [duplicate],https://askubuntu.com/questions?tab=frequent&page=48
+108,4,How do I set environment variables?,https://askubuntu.com/questions?tab=frequent&page=49
+31,5,Ubuntu 14.04 not booting after error message. /tmp could not be mounted,https://askubuntu.com/questions?tab=frequent&page=49
+65,6,How to set custom keyboard shortcuts from terminal?,https://askubuntu.com/questions?tab=frequent&page=49
+57,7,How do I start Nautilus as root?,https://askubuntu.com/questions?tab=frequent&page=49
+20,8,How do I install OpenStack?,https://askubuntu.com/questions?tab=frequent&page=49
+67,9,How to install Dropbox?,https://askubuntu.com/questions?tab=frequent&page=49
+38,10,How do you repair an “input/output error” in an NTFS partition?,https://askubuntu.com/questions?tab=frequent&page=49
+30,11,Hibernate and resume from a swap file,https://askubuntu.com/questions?tab=frequent&page=49
+27,12,Grub does not show a Windows 8 option after dual boot,https://askubuntu.com/questions?tab=frequent&page=49
+71,13,"Could not calculate the upgrade, what happened?",https://askubuntu.com/questions?tab=frequent&page=49
+25,14,NMI watchdog: BUG: soft lockup - CPU#2 stuck for 23s! [plymouthd:305],https://askubuntu.com/questions?tab=frequent&page=49
+5,15,How to get Intel Dual Band Wireless-AC 3168 work on Ubuntu 16.04?,https://askubuntu.com/questions?tab=frequent&page=49
+19,16,Why do I have two docks in Ubuntu desktop (with GNOME 3) after installing Dash to Dock?,https://askubuntu.com/questions?tab=frequent&page=49
+20,17,How can I change the size of Unity 2D launcher icons?,https://askubuntu.com/questions?tab=frequent&page=49
+15,18,Sound comes out of my speakers even when headphones are plugged in [closed],https://askubuntu.com/questions?tab=frequent&page=49
+15,4,WoeUSB Error Code 256 with NTFS formatted USB,https://askubuntu.com/questions?tab=frequent&page=50
+8,5,Ubuntu 14.04 Wireless not working: no network interface. Atheros [168c:003e] device,https://askubuntu.com/questions?tab=frequent&page=50
+4,6,Ubuntu 18.04: Audio doesn't work unless I switch between outputs,https://askubuntu.com/questions?tab=frequent&page=50
+6,7,Changing Windows dynamic disk partition to basic partition and not the full drive,https://askubuntu.com/questions?tab=frequent&page=50
+21,8,Can I uninstall and reinstall Ubuntu Software Center?,https://askubuntu.com/questions?tab=frequent&page=50
+343,9,How do I change the computer name?,https://askubuntu.com/questions?tab=frequent&page=50
+230,10,"When installing user applications, where do “best practices” suggest they be located?",https://askubuntu.com/questions?tab=frequent&page=50
+146,11,Is it possible to have different DPI configurations for two different screens?,https://askubuntu.com/questions?tab=frequent&page=50
+264,12,How to restart the networking service?,https://askubuntu.com/questions?tab=frequent&page=50
+159,13,What system monitoring tools are available?,https://askubuntu.com/questions?tab=frequent&page=50
+291,14,How can I check the available version of a package in the repositories?,https://askubuntu.com/questions?tab=frequent&page=50
+131,15,How to harden an SSH server?,https://askubuntu.com/questions?tab=frequent&page=50
+124,16,How to add a shell script to launcher as shortcut [duplicate],https://askubuntu.com/questions?tab=frequent&page=50
+159,17,Enable fractional scaling for Ubuntu 18.04,https://askubuntu.com/questions?tab=frequent&page=50
+106,18,Mount encrypted volumes from command line?,https://askubuntu.com/questions?tab=frequent&page=50
